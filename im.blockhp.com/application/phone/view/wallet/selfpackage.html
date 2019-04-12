@@ -1,0 +1,276 @@
+{include file="common/header"}
+<script src="/public/static/mobile/js/web3.1.js"></script>
+<script src="/public/static/mobile/js/jquery.qrcode.min.js"></script>
+<script src="/public/static/mobile/js/clipboard.min.js"></script>
+<style>
+    .div-hade {
+        display: none;
+    }
+    .mine-center .rank-box .rank-item {
+        min-height: 4rem;
+        word-break:break-all;
+        padding: 0 3rem;
+    }
+    .special-div {
+        text-align: center;
+        font-size: 1rem;
+    }
+    .qrcode {
+        width: 150px;
+        height: 150px;
+        display: block;
+        border: 1px solid #f4f4f4;
+        margin: 0 auto;
+    }
+    .spec-span {
+        display: block;
+        margin: 0 auto;
+    }
+    .special-item {
+        height: 12rem !important;
+    }
+    .for-copy {
+        margin-top: 2rem;
+    }
+    .for-copy .copy {
+        border-radius: 5px;
+        font-size: 1rem;
+        width: 35%;
+        margin: 0 auto;
+    }
+    .copy {
+        background: #666;
+    }
+    .left-arrow {
+        color: #fff;
+        position: relative;
+        top: 4px;
+        line-height: 30px;
+        font-size: 1.9rem;
+    }
+    .backChat {
+        color: #fff;
+        position: relative;
+        font-size: 1.2rem;
+    }
+    .user-list-box .weui-cell .iconfont {
+        position: relative;
+        font-size: 2rem;
+        top: 3px;
+    }
+    #wallet_create .tip[data-v-2f9b2984] {
+        background: #fb3838;
+    }
+    .weui-btn_primary {
+        background-color: #ed5356;
+    }
+    #app>.app-body {
+        height: auto;
+        margin-bottom: 0;
+    }
+</style>
+<div id="app">
+    <div class="vux-header">
+        <div class="vux-header-left">
+            <span class="iconfont left-arrow">&#xe61f;</span>
+        </div>
+        <h1 class="vux-header-title">钱包地址</h1>
+        <div class="vux-header-right">
+            <a href="{:url('Index/index')}" class="exalt">
+                <span class="iconfont backChat">&#xe658;</span>
+            </a>
+        </div>
+    </div>
+    <div class="app-body">
+        <div data-v-2f9b2984="" id="wallet_create">
+            {if condition="$openStatus eq 0"}
+            <div data-v-2f9b2984="" class="tip">
+                <ul data-v-2f9b2984="" class="tip_ul">
+                    <li data-v-2f9b2984="">密码用于保护私钥和交易授权，强度非常重要</li>
+                    <li data-v-2f9b2984="">钱包不存储密码，也无法帮您找回，请务必牢记</li>
+                </ul>
+            </div>
+            <div>
+                <div class="weui-cells vux-no-group-title">
+                    <div data-v-2f9b2984="" class="vux-x-input weui-cell">
+                        <div class="weui-cell__hd"></div>
+                        <div class="weui-cell__bd weui-cell__primary">
+                            <input id="package" maxlength="16" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" type="text" placeholder="请输入钱包名称" class="weui-input">
+                        </div>
+                    </div>
+                    <div data-v-2f9b2984="" class="vux-x-input weui-cell">
+                        <div class="weui-cell__hd"></div>
+                        <div class="weui-cell__bd weui-cell__primary">
+                            <input id="paypassword" maxlength="16" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" type="password" placeholder="请输入钱包密码" class="weui-input">
+                        </div>
+                    </div>
+                    <div data-v-2f9b2984="" class="vux-x-input weui-cell">
+                        <div class="weui-cell__hd"></div>
+                        <div class="weui-cell__bd weui-cell__primary">
+                            <input id="surepaypassword" maxlength="16" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" type="password" placeholder="再次输入钱包密码" class="weui-input">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="margin: 20px 10px;">
+                <button data-v-2f9b2984="" class="weui-btn weui-btn_primary" id="create" style="border-radius: 5px; height: 2.375rem; font-size: 0.875rem;">立即创建
+                </button>
+            </div>
+            {else /}
+            <div data-v-2f9b2984="" class="tip">
+                <div class="tip_ul special-div">
+                    收款码
+                </div>
+            </div>
+            <div class="mine-center">
+                <div class="rank-box">
+                    <div class="rank-block">
+                        <div class="rank-item flex-box">
+                            <div class="rank-power flex-1">
+                                <span class="spec-span">{$nowCoinAddress}</span>
+                            </div>
+                        </div>
+                        <div class="rank-item flex-box special-item">
+                            <div class="rank-power flex-1" >
+                                <!-- <img  src="/static/mobile/images/wx.jpg" /> -->
+                                <div class="qrcode" id="qrcode"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="for-copy">
+                <button class="weui-btn found-btn weui-btn_primary copy">
+                    复制地址
+                </button>
+            </div>
+            {/if}
+            <!--<div data-v-2f9b2984="" style="margin: 20px 10px; text-align: center;">
+                <a data-v-2f9b2984="" href="{:url('leadingin')}" class="">
+                    导入钱包
+                </a>
+            </div>-->
+        </div>
+    </div>
+</div>
+<script>
+    //复制
+    var clipboard = new ClipboardJS('.copy', {
+        // 通过target指定要复印的节点
+        target: function() {
+            return document.querySelector('.spec-span');
+        }
+    });
+
+    clipboard.on('success', function(e) {
+        layer.open({
+            content: '复制成功!'
+            ,skin: 'msg'
+            ,time: 2 //2秒后自动关闭
+        });
+    });
+
+    clipboard.on('error', function(e) {
+        layer.open({
+            content: '复制失败!'
+            ,skin: 'msg'
+            ,time: 2 //2秒后自动关闭
+        });
+    });
+
+    $(function(){
+        //返回上一页
+        $('.left-arrow').click(function(){
+            history.go(-1);
+        });
+    });
+</script>
+
+<!-- 钱包 -->
+<script type="text/javascript">
+
+    if (typeof web3 !== 'undefined') {
+        web3 = new Web3(web3.currentProvider);
+    } else {
+        // set the provider you want from Web3.providers
+        web3 = new Web3('http://47.74.33.78:8545');
+    }
+
+    $(function(){
+        $('#create').click(function(){
+            var package = $('#package').val();
+            var paypassword = $('#paypassword').val();
+            var surepaypassword = $('#surepaypassword').val();
+
+            if(package == '' || paypassword == '' || surepaypassword == '')
+            {
+                //提示
+                layer.open({
+                    content: '请填写钱包信息完整!'
+                    ,skin: 'msg'
+                    ,time: 2 //2秒后自动关闭
+                });
+                return false;
+            }
+
+            if(paypassword != surepaypassword)
+            {
+                //提示
+                layer.open({
+                    content: '两次密码不一致!'
+                    ,skin: 'msg'
+                    ,time: 2 //2秒后自动关闭
+                });
+                return false;
+            }
+
+            var account = web3.eth.accounts.create(surepaypassword);
+            private = account.privateKey;
+            address = account.address;
+
+            //传送数据
+            $.ajax({
+                type: 'POST',
+                url: '{:url("selfpackage")}',
+                data: {
+                    'package': package,
+                    'paypassword': paypassword,
+                    'surepaypassword': surepaypassword,
+                    'private' : private,
+                    'address' : address
+                },
+                dataType: 'json',
+                success: function(data){
+
+                    //提示
+                    layer.open({
+                        content: data.msg
+                        ,skin: 'msg'
+                        ,time: 2 //2秒后自动关闭
+                    });
+
+                    if(data.status == 200)
+                    {
+                        setTimeout(function(){
+                            location.href = "{:url('/Phone/Wallet/index')}";
+                        },1000);
+                    }
+                }
+            });
+
+        });
+    });
+</script>
+
+<!-- 二维码 -->
+<script type="text/javascript">
+    $("#qrcode").qrcode({
+        render: "table", //table方式
+        width: 150, //宽度
+        height: 150, //高度
+        text: "{$userInfo['etcads']}" //任意内容
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>{$sys.name}</title>
+    <meta name="description" content="{$sys.name}">
+    <meta name="keywords" content="{$sys.name}">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <meta http-equiv="X-Frame-Options" content="deny">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link type="text/css" href="/public/static/mobile/css/nc.css" rel="stylesheet" disabled="">
+    <link href="/public/static/mobile/css/app.css" rel="stylesheet">
+    <script src="/public/static/mobile/js/jquery-3.2.1.min.js"></script>
+    <script src="/public/static/mobile/js/layer.js"></script>
+    <style>
+        @font-face {
+            font-family: 'iconfont';
+            src: url('/public/static/mobile/fonts/iconfont.eot');
+            src: url('/public/static/mobile/fonts/iconfont.eot?#iefix') format('embedded-opentype'),
+            url('/public/static/mobile/fonts/iconfont.woff2') format('woff2'),
+            url('/public/static/mobile/fonts/iconfont.woff') format('woff'),
+            url('/public/static/mobile/fonts/iconfont.ttf') format('truetype'),
+            url('/public/static/mobile/fonts/iconfont.svg#iconfont') format('svg');
+        }
+        .iconfont {
+            font-family: "iconfont" !important;
+            font-size: 16px;
+            font-style: normal;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .app-body {
+            margin-bottom: 70px;
+        }
+        #app .app-body .vux-header, #app>.vux-header, body .vux-header {
+            background-color: #ed5356;
+        }
+    </style>
+    <script>
+        $(function(){
+            //栏目选中
+            var url = window.location.pathname;
+            $('.app_nav a').each(function(){
+                //选中赋予样式
+                if(url.toUpperCase().toUpperCase() == $(this).attr('href').toUpperCase())
+                {
+                    $(this).addClass('weui-bar__item_on');
+                }
+            });
+        })
+    </script>
+</head>
+<body>
