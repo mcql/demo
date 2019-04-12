@@ -16,8 +16,8 @@
         border: 1px solid #1d96e3;
     }
     #myChart {
-        background: -webkit-linear-gradient(left,#26cdcd,#5f5ece);
-        background: linear-gradient(90deg,#26cdcd,#5f5ece);
+        background: -webkit-linear-gradient(left,#ed5356,#fb8dc8);
+        background: linear-gradient(90deg,#ed5356,#fb8dc8);
         width: 100%;
         padding: .625rem .3125rem;
         color: #fff;
@@ -30,7 +30,8 @@
         width: 5.5rem;
     }
     .deals-index .deals-head {
-        height: 4.5rem;
+        padding: .3rem 0;
+        height: 6rem;
     }
     .assets-text {
         line-height: 4rem;
@@ -83,6 +84,37 @@
     .weui-btn_primary {
         background-color: #fc8c92;
     }
+    .zzcc{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .zzcc li{
+        width: 50%;
+        height: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .zzcc li:first-child{
+        border-right: 1px solid #8b8b8b;
+        box-sizing: border-box;
+    }
+    .zzcc div {
+        width: 2.7rem;
+        height: 2.7rem;
+        margin-bottom: .3rem;
+    }
+    .zzcc div img{
+        width: 100%;
+    }
+    .zzcc a {
+        color: #4d557a;
+    }
 </style>
 <div id="app"><!---->
     <div class="vux-header">
@@ -99,18 +131,22 @@
     <div class="app-body">
         <div class="deals-index">
             <div class="deals-head flex-box">
-                <div class="flex-box" style="margin: 0 auto;">
-                    <button class="weui-btn found-btn weui-btn_primary" style="border-radius: 5px;">
-                        <a href="{:url('trade')}?coin={$coiName}" style="color:#fff;">
-                            转账
-                        </a>
-                    </button>
-                    <button class="weui-btn import-btn weui-btn_primary" style="border-radius: 5px;">
-                        <a href="{:url('selfPackage')}?coin={$coiName}" style="color:#fff;">充值</a>
-                    </button>
-                </div>
+                <ul class="zzcc">
+                    <li>
+                        <div>
+                            <img src="/public/static/images/bi_ioc/zhuanzhang.png" alt="">
+                        </div>
+                        <a href="{:url('trade')}?coin={$coiName}">转账</a>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="/public/static/images/bi_ioc/chongzhi.png" alt="">
+                        </div>
+                        <a href="{:url('selfPackage')}?coin={$coiName}">充值</a>
+                    </li>
+                </ul>
             </div>
-            <div id="myChart" _echarts_instance_="ec_1531556588143" style="width: 100%; height: 150px;">
+            <div id="myChart" _echarts_instance_="ec_1531556588143">
                 <div class="head-text flex-1">
                     <div class="assets-text">剩余<?php echo strtoupper($coiName); ?>：</div>
                     <div class="assets-numb">0</div>
