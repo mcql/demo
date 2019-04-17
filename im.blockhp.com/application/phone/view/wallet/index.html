@@ -5,7 +5,8 @@
         background-color: #fff;
     }
     body .vux-header .vux-header-title{
-        color: #444;
+        font-size: 1rem;
+        color: #22232b;
     }
     .app-body {
         margin-bottom: 70px;
@@ -71,6 +72,9 @@
         margin: 1rem auto;
         padding: 1rem;
         border-radius: .3rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
     }
     .user-name{
         margin-top: .5rem;
@@ -89,11 +93,17 @@
     .coiName{
         width: 95%;
         margin: .5rem auto;
-        background-color: #fff;
+        background-color: #f4f4f4;
         border-radius: .4rem;
     }
     .weui-cells{
         background-color: transparent;
+    }
+    #app,#app>.app-body{
+        background-color: #fff;
+    }
+    .weui-cell:before{
+        border: 0;
     }
 </style>
 <div id="app"><!---->
@@ -134,12 +144,12 @@
                         <div class="user-portrait">
                             <img src="{$userInfo.avatar}" alt="">
                         </div>
-                        <div class="user-name">
-                            <div class="name">{$userInfo.username}</div>
-                            <div class="name">总资产：12345.00</div>
-                        </div>
                     </div>
                 </label>
+                <div class="user-name">
+                    <div class="name">{$userInfo.username}</div>
+                    <div class="name">总资产：12345.00</div>
+                </div>
             </div>
             <div class="user-list-box">
                 <div><!---->

@@ -4,7 +4,7 @@ layui.use('mobile', function(){
         ,layer = mobile.layer;
 
     layim.config({
-        title: '欢迎您：' + m_uname + '<a style="color: white;float: right;" href="javascript:void(0)" layim-event="newFriend"><i style="font-size: 25px;" class="layui-icon">&#xe61f;</i></a>'
+        title: '<span style="color:#22232b">'+ m_uname + '</span><a style="color: #fb3838;float: right;" href="javascript:void(0)" layim-event="newFriend"><i class="layui-icon iconfont icon-tianjiahaoyou"></i></a>'
 
         //上传图片接口
         ,uploadImage: {
@@ -24,43 +24,43 @@ layui.use('mobile', function(){
         ,moreList: [{
             alias: 'find'
             ,title: '好友通知'
-            ,iconUnicode: '&#xe667;' //图标字体的unicode，可不填
-            ,iconClass: '' //图标字体的class类名
+            ,iconUnicode: '' //图标字体的unicode，可不填
+            ,iconClass: 'iconfont icon-tongzhi' //图标字体的class类名
         }, {
                 alias: 'groupNotice'
                 ,title: '群组通知'
-                ,iconUnicode: '&#xe645;' //图标字体的unicode，可不填
-                ,iconClass: '' //图标字体的class类名
+                ,iconUnicode: '' //图标字体的unicode，可不填
+                ,iconClass: 'iconfont icon-gonggaotongzhi-tongzhi' //图标字体的class类名
         },{
             alias: 'addGroup'
             ,title: '创建群组'
-            ,iconUnicode: '&#xe608;' //图标字体的unicode，可不填
-            ,iconClass: '' //图标字体的class类名
+            ,iconUnicode: '' //图标字体的unicode，可不填
+            ,iconClass: 'iconfont icon-chuangjianketang' //图标字体的class类名
         },{
             alias: 'myGroup'
             ,title: '群组管理'
-            ,iconUnicode: '&#xe770;' //图标字体的unicode，可不填
-            ,iconClass: '' //图标字体的class类名
+            ,iconUnicode: '' //图标字体的unicode，可不填
+            ,iconClass: 'iconfont icon-qunzu' //图标字体的class类名
         },{
             alias: 'selfSetting'
             ,title: '个人设置'
-            ,iconUnicode: '&#xe716;' //图标字体的unicode，可不填
-            ,iconClass: '' //图标字体的class类名
+            ,iconUnicode: '' //图标字体的unicode，可不填
+            ,iconClass: 'iconfont icon-shezhi' //图标字体的class类名
         },{
             alias: 'about'
             ,title: '关于蜜聊'
-            ,iconUnicode: '&#xe702;' //图标字体的unicode，可不填
-            ,iconClass: '' //图标字体的class类名
+            ,iconUnicode: '' //图标字体的unicode，可不填
+            ,iconClass: 'iconfont icon-iconset0142' //图标字体的class类名
         },{
             alias: 'logout'
             ,title: '退出登录'
-            ,iconUnicode: '&#x1006;' //图标字体的unicode，可不填
-            ,iconClass: '' //图标字体的class类名
+            ,iconUnicode: '' //图标字体的unicode，可不填
+            ,iconClass: 'iconfont icon-Group-' //图标字体的class类名
         }]
 
         ,isNewFriend: true //是否开启“新的朋友”
         ,isgroup: true //是否开启“群聊”
-        //,chatTitleColor: '#c00' //顶部Bar颜色
+        // ,chatTitleColor: '#c00' //顶部Bar颜色
         //,title: 'LayIM' //应用名，默认：我的IM
         ,copyright: true
     });

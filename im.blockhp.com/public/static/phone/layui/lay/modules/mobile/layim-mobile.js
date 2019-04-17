@@ -184,7 +184,7 @@ layui.define(['laytpl', 'upload-mobile', 'layer-mobile', 'zepto'], function(expo
   //公共面板
   var comTpl = function(tpl, anim, back){
     return ['<div class="layim-panel'+ (anim ? ' layui-m-anim-left' : '') +'">'
-      ,'<div class="layim-title" style="background-color: {{d.base.chatTitleColor}};">'
+      ,'<div class="layim-title">'
         ,'<p>'
           ,(back ? '<i class="layui-icon layim-chat-back" layim-event="back">&#xe603;</i>' : '') 
           ,'{{ d.title || d.base.title }}<span class="layim-chat-status"></span>'
@@ -215,16 +215,16 @@ layui.define(['laytpl', 'upload-mobile', 'layer-mobile', 'zepto'], function(expo
     ,'<div class="layim-tab-content">'
       ,'<ul class="layim-list-top">'
         ,'{{# if(d.base.isNewFriend){ }}'
-        ,'<li layim-event="newFriend"><i style="margin-left: -4px;" class="layui-icon">&#xe608;</i>新的朋友<span style="position: absolute;right: 12px;font-size: 25px;color: #d7d7d7;"> ＞ </span><i class="layim-new" id="LAY_layimNewFriend"></i></li>'
-        ,'<li layim-event="newGroup"><i class="layui-icon layui-icon-tianjia1">&#xe608;</i>新的群组<span style="position: absolute;right: 12px;font-size: 25px;color: #d7d7d7;"> ＞ </span><i class="layim-new" id="LAY_layimNewGroup"></i></li>'
+        ,'<li layim-event="newFriend"><i style="margin-left: -4px;" class="layui-icon iconfont icon-tianjiahaoyou"></i>新的朋友<span class="iconfont icon-youjiantou" style="float:right"></span><i class="layim-new" id="LAY_layimNewFriend"></i></li>'
+        ,'<li layim-event="newGroup"><i class="layui-icon layui-icon-tianjia1 iconfont icon-qunzhu"></i>新的群组<span class="iconfont icon-youjiantou" style="float:right"></span><i class="layim-new" id="LAY_layimNewGroup"></i></li>'
         ,'{{# } if(d.base.isgroup){ }}'
-        ,'<li layim-event="group"><i class="layui-icon">&#xe770;</i>我的群聊<span style="position: absolute;right: 12px;font-size: 25px;color: #d7d7d7;"> ＞ </span><i class="layim-new" id="LAY_layimNewGroup"></i></li>'
+        ,'<li layim-event="group"><i class="layui-icon iconfont icon-character"></i>我的群聊<span class="iconfont icon-youjiantou" style="float:right"></span><i class="layim-new" id="LAY_layimNewGroup"></i></li>'
         ,'{{# } }}'
       ,'</ul>'
       ,'<ul class="layim-list-friend">'
         ,'{{# layui.each(d.friend, function(index, item){ var spread = d.local["spread"+index]; }}'
         ,'<li>'
-          ,'<h5 layim-event="spread" lay-type="{{ spread }}"><i class="layui-icon">{{# if(spread === "true"){ }}&#xe61a;{{# } else {  }}&#xe602;{{# } }}</i><span>{{ item.groupname||"未命名分组"+index }}</span><em>(<cite class="layim-count"> {{ (item.list||[]).length }}</cite>)</em></h5>'
+          ,'<h5 layim-event="spread" lay-type="{{ spread }}"><i class="layui-icon {{# if(spread === "true"){ }} iconfont icon-xiajiantou" >{{# } else {  }} iconfont icon-youjiantou" >{{# } }}</i><span>{{ item.groupname||"未命名分组"+index }}</span><em>(<cite class="layim-count"> {{ (item.list||[]).length }}</cite>)</em></h5>'
           ,'<ul class="layui-layim-list {{# if(spread === "true"){ }}'
           ,' layui-show'
           ,'{{# } }}">'
@@ -242,15 +242,15 @@ layui.define(['laytpl', 'upload-mobile', 'layer-mobile', 'zepto'], function(expo
     ,'</div>'
     ,'<div class="layim-tab-content">'
       ,'<ul class="layim-list-top">'
-      ,'<li layim-event="about"><a style="color: #999;width: 100%;display: block;" href="/Mobile/Index/index"><i class="layui-icon">&#xe698;</i>商城<span style="position: absolute;right: 12px;font-size: 25px;color: #d7d7d7;"> ＞ </span><i class="layim-new" id="LAY_layimNewAbout"></i></a></li>'
-      ,'<li layim-event="about"><a style="color: #999;width: 100%;display: block;" href="/Phone/Wallet/index"><i class="layui-icon">&#xe653;</i>钱包<span style="position: absolute;right: 12px;font-size: 25px;color: #d7d7d7;"> ＞ </span><i class="layim-new" id="LAY_layimNewAbout"></i></a></li>'
+      ,'<li layim-event="about"><a style="color: #999;width: 100%;display: block;" href="/Mobile/Index/index"><i class="layui-icon iconfont icon-shangcheng"></i>商城<span class="iconfont icon-youjiantou" style="float:right"></span><i class="layim-new" id="LAY_layimNewAbout"></i></a></li>'
+      ,'<li layim-event="about"><a style="color: #999;width: 100%;display: block;" href="/Phone/Wallet/index"><i class="layui-icon iconfont icon-qianbao"></i>钱包<span class="iconfont icon-youjiantou" style="float:right"></span><i class="layim-new" id="LAY_layimNewAbout"></i></a></li>'
       ,'</ul>'
     ,'</div>'
     ,'<div class="layim-tab-content">'
       ,'<ul class="layim-list-top">'
         ,'{{# layui.each(d.base.moreList, function(index, item){ }}'
         ,'<li layim-event="moreList" lay-filter="{{ item.alias }}">'
-          ,'<i class="layui-icon {{item.iconClass||\"\"}}">{{item.iconUnicode||""}}</i>{{item.title}}<span style="position: absolute;right: 12px;font-size: 25px;color: #d7d7d7;"> ＞ </span><i class="layim-new" id="LAY_layimNew{{ item.alias }}"></i>'
+          ,'<i class="layui-icon {{item.iconClass||\"\"}}">{{item.iconUnicode||""}}</i>{{item.title}}{{# if(item.title!="退出登录"){ }}<span class="iconfont icon-youjiantou" style="float:right"></span>{{#}}}<i class="layim-new" id="LAY_layimNew{{ item.alias }}"></i>'
         ,'</li>'
         ,'{{# }); if(!d.base.copyright){ }}'
         ,'<li layim-event="about"><i class="layui-icon">&#xe60b;</i>关于<i class="layim-new" id="LAY_layimNewAbout"></i></li>'
@@ -951,7 +951,8 @@ layui.define(['laytpl', 'upload-mobile', 'layer-mobile', 'zepto'], function(expo
         ,value: local
       });
       othis.attr('lay-type', spread);
-      othis.find('.layui-icon').html(spread === 'true' ? '&#xe61a;' : '&#xe602;');
+      // othis.find('.layui-icon').html(spread === 'true' ? '&#xe61a;' : '&#xe602;');
+      othis.find('.layui-icon').attr('class', spread === 'true' ? 'layui-icon iconfont icon-xiajiantou':'layui-icon iconfont icon-youjiantou')
     }
     
     //底部导航切换
@@ -980,7 +981,7 @@ layui.define(['laytpl', 'upload-mobile', 'layer-mobile', 'zepto'], function(expo
     
     //发送聊天内容
     ,send: function(){
-      sendMessage();
+      sendMessage()
     }
     
     //表情

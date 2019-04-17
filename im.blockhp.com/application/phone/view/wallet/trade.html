@@ -1,14 +1,14 @@
 {include file="common/header"}
 <style>
     .left-arrow {
-        color: #fff;
+        color: #444;
         position: relative;
         top: 4px;
         line-height: 30px;
         font-size: 1.9rem;
     }
     .backChat {
-        color: #fff;
+        color: #444;
         position: relative;
         font-size: 1.2rem;
     }
@@ -21,7 +21,7 @@
         background: #fb3838;
     }
     .weui-btn_primary {
-        background-color: #ed5356;
+        background-color: #f15473;
     }
     #wallet_create {
         margin-top: .5rem;
@@ -31,6 +31,48 @@
         font-size: 12px;
         color: #ff0000;
         line-height: 24px;
+    }
+    #app>.vux-header, body .vux-header{
+        background-color: #fff;
+    }
+    body .vux-header .vux-header-title{
+        font-size: 1rem;
+        color: #22232b;
+    }
+    .weui-cells{
+        background-color: transparent;
+    }
+    .weui-cell{
+        width: 95%;
+        margin: 0 auto;
+        background-color: #fff;
+        margin-bottom: .5rem;
+        border-bottom: 1px solid #e8e8e8;
+    }
+    .weui-cell:before{
+        border: 0;
+    }
+    .weui-input::placeholder{
+        color: #c5cbc9;
+    }
+    .weui-inpu{
+        color: #666666;
+    }
+    .wallet_message{
+        width: 95%;
+        margin: 0 auto;
+        background-color: #f4f4f4;
+        color:#666;
+        border-radius: .4rem;
+    }
+    #app>.app-body{
+        background-color: #fff;
+    }
+    .title{
+        font-size: .1rem;
+        margin-left: 2.5%;
+        color: #35353d;
+        font-weight: 700;
     }
 </style>
 <div id="app">
@@ -49,18 +91,21 @@
         <div data-v-2f9b2984="" id="wallet_create">
             <div>
                 <div class="weui-cells vux-no-group-title">
+                    <p class="title">数量</p>
                     <div data-v-2f9b2984="" class="vux-x-input weui-cell">
                         <div class="weui-cell__hd"></div>
                         <div class="weui-cell__bd weui-cell__primary">
                             <input id="swx" maxlength="42" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" type="number" placeholder="请输入数量" class="weui-input">
                         </div>
                     </div>
+                    <p class="title">提币地址</p>
                     <div data-v-2f9b2984="" class="vux-x-input weui-cell">
                         <div class="weui-cell__hd"></div>
                         <div class="weui-cell__bd weui-cell__primary">
                             <input id="address" maxlength="42"autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" type="text" placeholder="请输入提币地址" class="weui-input">
                         </div>
                     </div>
+                    <p class="title">支付密码</p>
                     <div data-v-2f9b2984="" class="vux-x-input weui-cell">
                         <div class="weui-cell__hd"></div>
                         <div class="weui-cell__bd weui-cell__primary">

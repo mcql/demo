@@ -15,13 +15,6 @@
         height: 1.5rem;
         border: 1px solid #1d96e3;
     }
-    #myChart {
-        background: -webkit-linear-gradient(left,#ed5356,#fb8dc8);
-        background: linear-gradient(90deg,#ed5356,#fb8dc8);
-        width: 100%;
-        padding: .625rem .3125rem;
-        color: #fff;
-    }
     .deals-index .deals-head .head-text .assets-numb {
         padding-left: 0;
     }
@@ -30,8 +23,8 @@
         width: 5.5rem;
     }
     .deals-index .deals-head {
-        padding: .3rem 0;
-        height: 6rem;
+        padding: 2rem 0;
+        background-color: #fff;
     }
     .assets-text {
         line-height: 4rem;
@@ -42,20 +35,29 @@
         font-size: 2rem;
     }
     #myChart {
-        padding: 1rem .6rem;
+        background-color: #f15473;
+        box-shadow: 0 0 3px rgba(0,0,0,.4);
+        width: 95%;
+        margin: 1rem auto;
+        padding: 1rem;
+        border-radius: .3rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        color: #fff;
     }
     .deals-index {
         padding-bottom: 1rem;
     }
     .left-arrow {
-        color: #fff;
+        color: #444;
         position: relative;
         top: 4px;
         line-height: 30px;
         font-size: 1.9rem;
     }
     .backChat {
-        color: #fff;
+        color: #444;
         position: relative;
         font-size: 1.2rem;
     }
@@ -70,6 +72,7 @@
     #app>.app-body {
         height: auto;
         margin-bottom: 0;
+        background-color: #fff;
     }
     .deals-index .item-item {
         overflow: visible;
@@ -84,36 +87,33 @@
     .weui-btn_primary {
         background-color: #fc8c92;
     }
-    .zzcc{
+    #app>.vux-header, body .vux-header{
+        background-color: #fff;
+    }
+    body .vux-header .vux-header-title{
+        font-size: 1rem;
+        color: #22232b;
+    }
+    .zzcc {
         width: 100%;
-        height: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
     }
-    .zzcc li{
-        width: 50%;
-        height: 100%;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    .zzcc li {
+        box-shadow: 0 0 .5rem #ff9db0;
+        background-color: #fff;
+        padding: .5rem 3rem;
+        border-radius: .4rem;
     }
-    .zzcc li:first-child{
-        border-right: 1px solid #8b8b8b;
-        box-sizing: border-box;
+    .zzcc li a {
+        color: #22232b;
     }
-    .zzcc div {
-        width: 2.7rem;
-        height: 2.7rem;
-        margin-bottom: .3rem;
+    .deals-index .item-head{
+        background-color: #f4f4f4;
     }
-    .zzcc div img{
-        width: 100%;
-    }
-    .zzcc a {
-        color: #4d557a;
+    .deals-index .item-head{
+        color: #666666;
     }
 </style>
 <div id="app"><!---->
@@ -129,28 +129,22 @@
         </div>
     </div>
     <div class="app-body">
+        <div id="myChart" _echarts_instance_="ec_1531556588143">
+            <div class="head-text flex-1">
+                <div class="assets-text">剩余<?php echo strtoupper($coiName); ?>：</div>
+                <div class="assets-numb">0</div>
+            </div>
+        </div>
         <div class="deals-index">
             <div class="deals-head flex-box">
                 <ul class="zzcc">
                     <li>
-                        <div>
-                            <img src="/public/static/images/bi_ioc/zhuanzhang.png" alt="">
-                        </div>
                         <a href="{:url('trade')}?coin={$coiName}">转账</a>
                     </li>
                     <li>
-                        <div>
-                            <img src="/public/static/images/bi_ioc/chongzhi.png" alt="">
-                        </div>
                         <a href="{:url('selfPackage')}?coin={$coiName}">充值</a>
                     </li>
                 </ul>
-            </div>
-            <div id="myChart" _echarts_instance_="ec_1531556588143">
-                <div class="head-text flex-1">
-                    <div class="assets-text">剩余<?php echo strtoupper($coiName); ?>：</div>
-                    <div class="assets-numb">0</div>
-                </div>
             </div>
             <div class="deals-content">
                 <div class="deals-title"><?php echo strtoupper($coiName); ?>历史转账记录

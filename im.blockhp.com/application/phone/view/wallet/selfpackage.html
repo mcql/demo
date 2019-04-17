@@ -23,6 +23,7 @@
         margin: 0 auto;
     }
     .spec-span {
+        width: 80%;
         display: block;
         margin: 0 auto;
     }
@@ -35,21 +36,22 @@
     .for-copy .copy {
         border-radius: 5px;
         font-size: 1rem;
-        width: 35%;
+        width: 95%;
         margin: 0 auto;
+        background-color: #f15473;
     }
     .copy {
         background: #666;
     }
     .left-arrow {
-        color: #fff;
+        color: #444;
         position: relative;
         top: 4px;
         line-height: 30px;
         font-size: 1.9rem;
     }
     .backChat {
-        color: #fff;
+        color: #444;
         position: relative;
         font-size: 1.2rem;
     }
@@ -67,6 +69,36 @@
     #app>.app-body {
         height: auto;
         margin-bottom: 0;
+    }
+    #app>.vux-header, body .vux-header{
+        background-color: #fff;
+    }
+    body .vux-header .vux-header-title{
+        font-size: 1rem;
+        color: #22232b;
+    }
+    #app,#app>.app-body{
+        background-color: #fff;
+    }
+    .special-div{
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: #1d415b;
+        text-align: left;
+        text-indent: 1rem;
+        padding-top: 1.5rem;
+    }
+    .mine-center .rank-box .rank-item{
+        padding: 0;
+        border-radius: .4rem;
+        width: 95%;
+        margin: 1rem auto 0;
+    }
+    .mine-center .rank-box .rank-item .rank-power{
+        background-color: #f7f6fb;
+        padding: 1rem 0;
+        box-sizing: border-box;
+        border-radius: .4rem;
     }
 </style>
 <div id="app">
@@ -117,7 +149,7 @@
                 </button>
             </div>
             {else /}
-            <div data-v-2f9b2984="" class="tip">
+            <div data-v-2f9b2984="" class="tip1">
                 <div class="tip_ul special-div">
                     收款码
                 </div>
@@ -144,7 +176,7 @@
                     复制地址
                 </button>
             </div>
-            {/if}
+            {/if} 
             <!--<div data-v-2f9b2984="" style="margin: 20px 10px; text-align: center;">
                 <a data-v-2f9b2984="" href="{:url('leadingin')}" class="">
                     导入钱包
