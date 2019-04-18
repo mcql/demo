@@ -139,12 +139,13 @@ layui.use('mobile', function(){
         var _html = [
             '<div class="layui-container" style="margin-top: 10px">',
             '<div class="layui-row">',
-            '<div class="layui-col-xs9 layui-col-sm9 layui-col-md9">',
+            '<div class="layui-col-xs12 layui-col-sm9 layui-col-md9 search_m">',
             '<input type="text" placeholder="请输入群名字" class="layui-input" id="search">',
+            '<span class="iconfont icon-iconfontsousuo" id="do-search"></span>',
             '</div>',
-            '<div class="layui-col-xs2 layui-col-sm2 layui-col-md2"  style="margin-left: 10px">',
-            '<button class="layui-btn" id="do-search">搜索</button>',
-            '</div>',
+            // '<div class="layui-col-xs2 layui-col-sm2 layui-col-md2"  style="margin-left: 10px">',
+            // '<button class="layui-btn" id="do-search">搜索</button>',
+            // '</div>',
             '</div>',
             '</div>',
             '<hr/>',
@@ -171,6 +172,7 @@ layui.use('mobile', function(){
                     return false;
                 }
 
+
                 $.post("/phone/finduser/search", {user_name: search}, function(res){
                     var _html = '';
                     if(1 == res.code){
@@ -178,9 +180,10 @@ layui.use('mobile', function(){
 
                             _html += '<li style="background: white;margin-top: 5px">';
                             _html += '<div><img src="' + v.avatar + '"></div>';
-                            _html += '<span>' + v.group_name + '</span>';
-                            _html += '<button class="layui-btn layui-btn-danger" style="float:right" data-uid="' +
-                                v.id + '" data-name="' + v.group_name + '" data-avatar="' + v.avatar + '" onclick="addGroup(this)">添加</button></li>';
+                            _html += '<div class="flex-m">'
+                            _html += '<span style="margin-top:0;">' + v.group_name + '</span>';
+                            _html += '<button class="layui-btn" style="float:right" data-uid="' +
+                                v.id + '" data-name="' + v.group_name + '" data-avatar="' + v.avatar + '" onclick="addGroup(this)">添加</button></div></li>';
                         });
 
                         $('#friends').html(_html);
@@ -199,11 +202,9 @@ layui.use('mobile', function(){
         var _html = [
             '<div class="layui-container" style="margin-top: 10px">',
                 '<div class="layui-row">',
-                    '<div class="layui-col-xs9 layui-col-sm9 layui-col-md9">',
-                        '<input type="text" placeholder="请输入用户名" class="layui-input" id="search">',
-                    '</div>',
-                    '<div class="layui-col-xs2 layui-col-sm2 layui-col-md2" style="margin-left: 10px">',
-                        '<button class="layui-btn" id="do-search">搜索</button>',
+                    '<div class="layui-col-xs12 layui-col-sm9 layui-col-md9 search_m">',
+                        '<input type="text" placeholder="请输入用户名" id="search">',
+                        '<span class="iconfont icon-iconfontsousuo" id="do-search"></span>',
                     '</div>',
                 '</div>',
             '</div>',
@@ -242,9 +243,10 @@ layui.use('mobile', function(){
 
                             _html = '<li style="background: white;margin-top: 5px">';
                                 _html += '<div><img src="' + v.avatar + '"></div>';
-                            _html += '<span>' + v.user_name + '</span>';
-                            _html += '<button class="layui-btn layui-btn-danger" style="float:right" data-uid="' +
-                                v.id + '" onclick="addFriend(this)">添加</button></li>';
+                                _html += '<div class="flex-m">'
+                            _html += '<span style="margin-top:0;">' + v.user_name + '</span>';
+                            _html += '<button class="layui-btn" data-uid="' +
+                                v.id + '" onclick="addFriend(this)">添加</button></div></li>';
                         });
                     }
                     $('#friends').html(_html);
@@ -294,11 +296,12 @@ layui.use('mobile', function(){
                 var _html = [
                     '<div class="layui-container" style="margin-top: 10px">',
                         '<div class="layui-row">',
-                            '<div class="layui-col-xs9 layui-col-sm9 layui-col-md9">',
+                            '<div class="layui-col-xs12 layui-col-sm9 layui-col-md9 search_m">',
                                 '<input type="text" placeholder="请输入群名" class="layui-input" id="search">',
+                                // '<span class="iconfont icon-xinjian" id="do-search"></span>',
                             '</div>',
-                            '<div class="layui-col-xs2 layui-col-sm2 layui-col-md2" style="margin-left: 10px">',
-                                '<button class="layui-btn" id="do-search">新建</button>',
+                            '<div class="layui-col-xs12 layui-col-sm9 layui-col-md9 search_m">',
+                                '<div class="create_qun" id="do-search">提交</div>',
                             '</div>',
                         '</div>',
                     '</div>'
@@ -524,25 +527,26 @@ function showMessage() {
                         if (0 == v.agree) {
 
                             _html += '<li style="background: white;margin-top: 5px"><div>';
-                                _html += '<img src="' + v.user.avatar + '"></div><span>' + v.user.username + '</span>';
+                                _html += '<img src="' + v.user.avatar + '"></div><div class="flex-m"><span style="margin-top:0;">' + v.user.username + '</span>';
+                                _html += '<div>'
                             _html += '<button class="layui-btn layui-btn-xs" style="float:right;margin-left: 5px" data-id="' +
                                 v.id + '" data-uid="' + v.user.id + '" data-sign="' + v.user.sign +
                                 '" data-avatar="' + v.user.avatar + '" data-username="' + v.user.username + '" onclick="pass(this, 1)">同意</button>';
                             _html += '<button class="layui-btn layui-btn-danger layui-btn-xs" style="float:right" data-id="' +
                                 v.id + '" data-uid="' + v.user.id + '" data-sign="' + v.user.sign +
-                                '" data-avatar="' + v.user.avatar + '" data-username="' + v.user.username + '" onclick="pass(this, 2)">拒绝</button></li>';
+                                '" data-avatar="' + v.user.avatar + '" data-username="' + v.user.username + '" onclick="pass(this, 2)">拒绝</button></div></div></li>';
 
                         } else if (1 == v.agree) {
                             _html += '<li style="background: white;margin-top: 5px"><div>';
-                                _html += '<img src="' + v.user.avatar + '"></div><span>' + v.user.username + '</span>';
-                            _html += '<span style="float:right;color:green">已同意</span>';
+                                _html += '<img src="' + v.user.avatar + '"></div><div class="flex-m"><span style="margin-top:0;font-size:14px;">' + v.user.username + '</span>';
+                            _html += '<span style="float:right;color:green;margin-top:0;font-size:14px;">已同意</span></div></li>';
                         } else {
                             _html += '<li style="background: white;margin-top: 5px"><div>';
-                                _html += '<img src="' + v.user.avatar + '"></div><span>' + v.user.username + '</span>';
-                            _html += '<span style="float:right;color:red">已拒绝</span>';
+                                _html += '<img src="' + v.user.avatar + '"></div><div class="flex-m"><span style="margin-top:0;font-size:14px;">' + v.user.username + '</span>';
+                            _html += '<span style="float:right;color:red;margin-top:0;font-size:14px;">已拒绝</span></div></li>';
                         }
                     } else {
-                        _html += '<li style="background: white;margin-top: 5px">' + v.content + '</li>';
+                        _html += '<li style="background: white;height: 32px;padding: 5px 10px;line-height: 32px;"><span class="iconfont icon-duanxin" style="margin: 0 15px 0 0;"></span>' + v.content + '</li>';
                     }
 
                 });
@@ -630,6 +634,33 @@ function showGroupMessage() {
             layer = mobile.layer,
             $ = layui.jquery;
 
+
+
+            // if (1 == v.type) {
+            //     if (0 == v.agree) {
+
+            //         _html += '<li style="background: white;margin-top: 5px"><div>';
+            //             _html += '<img src="' + v.user.avatar + '"></div><div class="flex-m"><span style="margin-top:0;">' + v.user.username + '</span>';
+            //             _html += '<div>'
+            //         _html += '<button class="layui-btn layui-btn-xs" style="float:right;margin-left: 5px" data-id="' +
+            //             v.id + '" data-uid="' + v.user.id + '" data-sign="' + v.user.sign +
+            //             '" data-avatar="' + v.user.avatar + '" data-username="' + v.user.username + '" onclick="pass(this, 1)">同意</button>';
+            //         _html += '<button class="layui-btn layui-btn-danger layui-btn-xs" style="float:right" data-id="' +
+            //             v.id + '" data-uid="' + v.user.id + '" data-sign="' + v.user.sign +
+            //             '" data-avatar="' + v.user.avatar + '" data-username="' + v.user.username + '" onclick="pass(this, 2)">拒绝</button></div></div></li>';
+
+            //     } else if (1 == v.agree) {
+            //         _html += '<li style="background: white;margin-top: 5px"><div>';
+            //             _html += '<img src="' + v.user.avatar + '"></div><div class="flex-m"><span style="margin-top:0;font-size:14px;">' + v.user.username + '</span>';
+            //         _html += '<span style="float:right;color:green;margin-top:0;font-size:14px;">已同意</span></div></li>';
+            //     } else {
+            //         _html += '<li style="background: white;margin-top: 5px"><div>';
+            //             _html += '<img src="' + v.user.avatar + '"></div><span style="margin-top:0;font-size:14px;">' + v.user.username + '</span>';
+            //         _html += '<span style="float:right;color:red;margin-top:0;font-size:14px;">已拒绝</span></div></li>';
+            //     }
+
+
+
         $.getJSON('/phone/msgbox/getGroupMsg', function(res){
             var _html = '';
             if(1 == res.code) {
@@ -637,26 +668,27 @@ function showGroupMessage() {
 
                     if (1 == v.is_system) {
                         if (1 == v.status) {
-                            _html += '<li style="background: white;margin-top: 5px;padding: 0;font-size:14px">';
-                            _html +=  '<p>'+ v.remark;
+                            _html += '<li class="flex-m" style="background: white;margin-top: 5px;padding: 5px 10px;font-size:14px">';
+                            _html +=  '<p style="height:100%;line-height:60px;"><span class="iconfont icon-duanxin" style="margin: 0 15px 0 0;"></span>'+ v.remark + '</p>';
+                            _html += '<div>'
                             _html += '<button class="layui-btn" style="float:right;margin-left: 5px;padding: 0 5px;font-size: 14px" data-id="' + v.id + '" data-gid="' + v.join_group_id
                                 + '" data-gname="' + v.join_group_name + '" data-gavatar="' + v.join_group_avatar + '" data-uid="' + v.from_id + '"  data-name="' + v.from_name + '" data-avatar="' + v.from_avatar
                                 + '" data-sign="' + v.from_sign + '" onclick="passGroup(this, 1)">同意</button>';
                             _html += '<button class="layui-btn layui-btn-danger" style="float:right;padding: 0 5px;font-size: 14px" data-id="' + v.id + '"  data-gid="' + v.join_group_id
                                 + '" data-gname="' + v.join_group_name + '" data-uid="' + v.from_id + '"  data-name="' + v.from_name + '" data-avatar="' + v.from_avatar
-                                + '" data-sign="' + v.from_sign + '" onclick="passGroup(this, 2)">拒绝</button></p></li>';
+                                + '" data-sign="' + v.from_sign + '" onclick="passGroup(this, 2)">拒绝</button><div></li>';
 
                         } else if (2 == v.status) {
-                            _html += '<li style="background: white;margin-top: 5px;">';
-                            _html += '<p>' + v.remark;
-                            _html += '<span style="float:right;color:green">已同意</span></p>';
+                            _html += '<li style="background: white;height: 32px;padding: 5px 10px;line-height: 32px;">';
+                            _html += '<p style="line-height: 32px;"><span class="iconfont icon-duanxin" style="margin: 0 15px 0 0;"></span>' + v.remark;
+                            _html += '<span style="float:right;color:green;margin-top:0;font-size:14px;">已同意</span></p>';
                         } else {
-                            _html += '<li style="background: white;margin-top: 5px;">';
-                                _html += '<p>' + v.remark;
-                            _html += '<span style="float:right;color:red">已拒绝</span></p>';
+                            _html += '<li style="background: white;height: 32px;padding: 5px 10px;line-height: 32px;">';
+                                _html += '<p style="line-height: 32px;"><span class="iconfont icon-duanxin" style="margin: 0 15px 0 0;"></span>' + v.remark;
+                            _html += '<span style="float:right;color:red;margin-top:0;font-size:14px;">已拒绝</span></p>';
                         }
                     } else {
-                        _html += '<li style="background: white;margin-top: 5px;"><p>' + v.remark + '</p></li>';
+                        _html += '<li style="background: white;height: 32px;padding: 5px 10px;line-height: 32px;"><span class="iconfont icon-duanxin" style="margin: 0 15px 0 0;"></span>' + v.remark + '</li>';
                     }
 
                 });
@@ -751,8 +783,10 @@ function showMyGroup() {
                 $.each(res.data, function(k, v) {
                     _html += '<li style="background: white;margin-top: 5px">';
                     _html += '<div><img src="' + v.avatar + '"></div>';
-                    _html += '<span>' + v.group_name + '</span>';
-                    _html += '<button class="layui-btn layui-btn-primary" style="float:right;padding: 0 5px;font-size: 14px" onclick="showDetail(' + v.id + ')">群成员</button>';
+                    _html += '<div class="flex-m">'
+                    _html += '<span style="margin-top:0">' + v.group_name + '</span>';
+                    _html += '<button class="layui-btn" style="float:right;padding: 0 5px;font-size: 14px" onclick="showDetail(' + v.id + ')">群成员</button>';
+                    _html += '</div>'
                     _html += '</li>';
                 });
 
@@ -775,7 +809,7 @@ function selfSetting() {
             var _html = '';
             if(res) {
                 _html += '<li style="background: white;margin-top: 5px"><form id="jvForm" method="post" enctype="multipart/form-data">';
-                _html += '<div style="position: relative;"><input onclick="uploadingImg()" type="file" name="image" id="file" class="inputfile" accept="image/*"><img class="person-img" style="width: 30%;margin: 0 auto;padding-top: 10px;display: block;" src="' + res.avatar + '"></div>';
+                _html += '<div style="position: relative;"><input onclick="uploadingImg()" type="file" name="image" id="file" class="inputfile" accept="image/*"><img class="person-img" style="width: 150px;height:150px;margin: 0 auto;padding-top: 10px;display: block;border-radius:50%" src="' + res.avatar + '"></div>';
                 _html += '<div style="width: 60%;margin: 20px auto 10px auto;" class="form-group"><input style="padding: 0 0 0 3px;" name="user_name" class="form-control" value="' + res.username + '" /></div>';
                 _html += '<div style="width: 60%;margin: 10px auto 10px auto;" class="form-group"><label for="sex" style="padding-left: 0;" class="layui-form-label sex">性别:</label><div class="layui-input-block sex-left">';
                 if(res.sex == 1)
@@ -848,12 +882,13 @@ function showDetail(id) {
                 $.each(res.data, function(k, v) {
                     _html += '<li style="background: white;margin-top: 5px">';
                     _html += '<div><img src="' + v.user_avatar + '"></div>';
-                    _html += '<span>' + v.user_name + '</span>';
+                    _html += '<div class="flex-m">'
+                    _html += '<span style="margin-top:0">' + v.user_name + '</span>';
                     if(v.user_id != res.msg) {
-                        _html += '<button class="layui-btn layui-btn-danger" style="float:right;padding: 0 5px;font-size: 14px" data-gid="'
+                        _html += '<button class="layui-btn" style="float:right;padding: 0 5px;font-size: 14px" data-gid="'
                             + v.group_id + '" data-uid="' + v.user_id + '" onclick="kick(this)">踢出</button>';
                     }
-
+                    _html += '</div>'
                     _html += '</li>';
                 });
 

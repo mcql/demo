@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:91:"C:\Users\Administrator\Desktop\demo\im.blockhp.com/application/phone\view\wallet\trade.html";i:1555471951;s:92:"C:\Users\Administrator\Desktop\demo\im.blockhp.com/application/phone\view\common\header.html";i:1555468160;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:91:"C:\Users\Administrator\Desktop\demo\im.blockhp.com/application/phone\view\wallet\trade.html";i:1555494520;s:92:"C:\Users\Administrator\Desktop\demo\im.blockhp.com/application/phone\view\common\header.html";i:1555468160;}*/ ?>
 <!doctype html>
 <html>
 <head>
@@ -92,7 +92,6 @@
     body .vux-header .vux-header-title{
         font-size: 1rem;
         color: #22232b;
-        font-weight: 700;
     }
     .weui-cells{
         background-color: transparent;

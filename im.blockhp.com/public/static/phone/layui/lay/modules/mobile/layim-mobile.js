@@ -184,9 +184,9 @@ layui.define(['laytpl', 'upload-mobile', 'layer-mobile', 'zepto'], function(expo
   //公共面板
   var comTpl = function(tpl, anim, back){
     return ['<div class="layim-panel'+ (anim ? ' layui-m-anim-left' : '') +'">'
-      ,'<div class="layim-title">'
-        ,'<p>'
-          ,(back ? '<i class="layui-icon layim-chat-back" layim-event="back">&#xe603;</i>' : '') 
+      ,'<div class="layim-title" style="background:#fff;box-sizing:border-box;border-bottom:1px solid #e8e8e8;">'
+        ,'<p style="text-align:center;font-size: 16px;color: #22232b;">'
+          ,(back ? '<i class="layui-icon iconfont icon-zuojiantou" style="float:left;color:#fb3838;" layim-event="back"></i>' : '') 
           ,'{{ d.title || d.base.title }}<span class="layim-chat-status"></span>'
           ,'{{# if(d.data){ }}'
             ,'{{# if(d.data.type === "group"){ }}'
@@ -259,10 +259,10 @@ layui.define(['laytpl', 'upload-mobile', 'layer-mobile', 'zepto'], function(expo
     ,'</div>'
   ,'</div>'
   ,'<ul class="layui-unselect layui-layim-tab">'
-    ,'<li title="消息" style="width: 25%;" layim-event="tab" lay-type="message" class="layim-this"><i class="layui-icon">&#xe606;</i><span>消息</span><i class="layim-new" id="LAY_layimNewMsg"></i></li>'
-    ,'<li title="好友" style="width: 25%;" layim-event="tab" lay-type="friend"><i class="layui-icon">&#xe770;</i><span>好友</span><i class="layim-new" id="LAY_layimNewList"></i></li>'
-    ,'<li title="发现" style="width: 25%;" layim-event="tab" lay-type="find"><i class="layui-icon">&#xe615;</i><span>发现</span><i class="layim-new" id="LAY_findMore"></i></li>'
-    ,'<li title="我的" style="width: 25%;" layim-event="tab" lay-type="my"><i style="font-size: 20px;position: relative;top: 7px;" class="layui-icon">&#xe66f;</i><span>我的</span><i class="layim-new" id="LAY_layimNewMore"></i></li>'
+    ,'<li title="消息" style="width: 25%;" layim-event="tab" lay-type="message" class="layim-this"><span class="layui-icon iconfont icon-xiaoxi"></span><span>消息</span><i class="layim-new" id="LAY_layimNewMsg"></i></li>'
+    ,'<li title="好友" style="width: 25%;" layim-event="tab" lay-type="friend"><span class="layui-icon iconfont icon-wodehaoyou"></span><span>好友</span><i class="layim-new" id="LAY_layimNewList"></i></li>'
+    ,'<li title="发现" style="width: 25%;" layim-event="tab" lay-type="find"><span class="layui-icon iconfont icon-faxianweixuanzhongxuanzhong"></span><span>发现</span><i class="layim-new" id="LAY_findMore"></i></li>'
+    ,'<li title="我的" style="width: 25%;" layim-event="tab" lay-type="my"><span class="layui-icon iconfont icon-wode"></span><span>我的</span><i class="layim-new" id="LAY_layimNewMore"></i></li>'
   ,'</ul>'].join('');
   
   //聊天主模板

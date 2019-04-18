@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:97:"C:\Users\Administrator\Desktop\demo\im.blockhp.com/application/phone\view\wallet\selfpackage.html";i:1555471963;s:92:"C:\Users\Administrator\Desktop\demo\im.blockhp.com/application/phone\view\common\header.html";i:1555468160;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:97:"C:\Users\Administrator\Desktop\demo\im.blockhp.com/application/phone\view\wallet\selfpackage.html";i:1555568284;s:92:"C:\Users\Administrator\Desktop\demo\im.blockhp.com/application/phone\view\common\header.html";i:1555468160;}*/ ?>
 <!doctype html>
 <html>
 <head>
@@ -118,7 +118,7 @@
         background: #fb3838;
     }
     .weui-btn_primary {
-        background-color: #ed5356;
+        background-color: #f15473;
     }
     #app>.app-body {
         height: auto;
@@ -130,7 +130,6 @@
     body .vux-header .vux-header-title{
         font-size: 1rem;
         color: #22232b;
-        font-weight: 700;
     }
     #app,#app>.app-body{
         background-color: #fff;
@@ -155,6 +154,39 @@
         box-sizing: border-box;
         border-radius: .4rem;
     }
+    .title{
+        font-size: .1rem;
+        margin-left: 2.5%;
+        color: #35353d;
+        font-weight: 700;
+    }
+    .wallet_message{
+        padding: 10px 15px;
+        font-size: 12px;
+        color: #ff0000;
+        line-height: 24px;
+        width: 95%;
+        margin: 0 auto;
+        background-color: #f4f4f4;
+        color:#666;
+        border-radius: .4rem;
+    }
+    .weui-cell{
+        width: 95%;
+        margin: 0 auto;
+        background-color: #fff;
+        margin-bottom: .5rem;
+        border-bottom: 1px solid #e8e8e8;
+    }
+    .weui-cell:before{
+        border: 0;
+    }
+    .weui-input::placeholder{
+        color: #c5cbc9;
+    }
+    .weui-inpu{
+        color: #666666;
+    }
 </style>
 <div id="app">
     <div class="vux-header">
@@ -171,26 +203,23 @@
     <div class="app-body">
         <div data-v-2f9b2984="" id="wallet_create">
             <?php if($openStatus == 0): ?>
-            <div data-v-2f9b2984="" class="tip">
-                <ul data-v-2f9b2984="" class="tip_ul">
-                    <li data-v-2f9b2984="">密码用于保护私钥和交易授权，强度非常重要</li>
-                    <li data-v-2f9b2984="">钱包不存储密码，也无法帮您找回，请务必牢记</li>
-                </ul>
-            </div>
             <div>
                 <div class="weui-cells vux-no-group-title">
+                    <p class="title">钱包名称</p>
                     <div data-v-2f9b2984="" class="vux-x-input weui-cell">
                         <div class="weui-cell__hd"></div>
                         <div class="weui-cell__bd weui-cell__primary">
                             <input id="package" maxlength="16" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" type="text" placeholder="请输入钱包名称" class="weui-input">
                         </div>
                     </div>
+                    <p class="title">钱包密码</p>
                     <div data-v-2f9b2984="" class="vux-x-input weui-cell">
                         <div class="weui-cell__hd"></div>
                         <div class="weui-cell__bd weui-cell__primary">
                             <input id="paypassword" maxlength="16" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" type="password" placeholder="请输入钱包密码" class="weui-input">
                         </div>
                     </div>
+                    <p class="title">再次输入钱包密码</p>
                     <div data-v-2f9b2984="" class="vux-x-input weui-cell">
                         <div class="weui-cell__hd"></div>
                         <div class="weui-cell__bd weui-cell__primary">
@@ -198,6 +227,12 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div data-v-2f9b2984="" class="wallet_message">
+                <ul data-v-2f9b2984="" class="">
+                    <li>密码用于保护私钥和交易授权，强度非常重要</li>
+                    <li>钱包不存储密码，也无法帮您找回，请务必牢记</li>
+                </ul>
             </div>
             <div style="margin: 20px 10px;">
                 <button data-v-2f9b2984="" class="weui-btn weui-btn_primary" id="create" style="border-radius: 5px; height: 2.375rem; font-size: 0.875rem;">立即创建
