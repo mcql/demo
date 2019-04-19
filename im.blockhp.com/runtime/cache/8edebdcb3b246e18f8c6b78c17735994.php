@@ -1,0 +1,3 @@
+<?php
+//000031104000a:2:{i:0;a:11:{s:8:"store_id";i:8;s:11:"store_phone";s:11:"15251137100";s:10:"store_logo";N;s:10:"store_name";s:9:"MIT店铺";s:16:"store_desccredit";s:4:"0.00";s:19:"store_servicecredit";s:4:"0.00";s:20:"store_deliverycredit";s:4:"0.00";s:13:"province_name";s:9:"河北省";s:9:"city_name";s:9:"唐山市";s:13:"district_name";N;s:11:"goods_array";i:0;}i:1;a:11:{s:8:"store_id";i:9;s:11:"store_phone";s:11:"15251137100";s:10:"store_logo";N;s:10:"store_name";s:13:"MIT 好商铺";s:16:"store_desccredit";s:4:"0.00";s:19:"store_servicecredit";s:4:"0.00";s:20:"store_deliverycredit";s:4:"0.00";s:13:"province_name";s:9:"河北省";s:9:"city_name";s:9:"唐山市";s:13:"district_name";N;s:11:"goods_array";i:0;}}
+?>

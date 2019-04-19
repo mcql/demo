@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:94:"C:\Users\Administrator\Desktop\demo\im.blockhp.com/application/phone\view\login\forgetpwd.html";i:1554529484;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:94:"C:\Users\Administrator\Desktop\demo\im.blockhp.com/application/phone\view\login\forgetpwd.html";i:1555662911;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -25,6 +25,23 @@
         }
         .emailCode {
             text-align: left;
+        }
+        .loginscreen.middle-box{
+            width:calc(100% - 30px);
+        }
+        .m-b{
+            width:100%;
+            line-height: 32px;
+            padding:0;
+            background-color: #fb3838b0;
+            color: #fff;
+            border-radius: 8rem;
+            text-align: center;
+            margin: 20px auto 0;
+        }
+        .gray-bg{
+            background: url(/public/static/phone/images/login_bg.jpg) no-repeat center center;
+            background-size: cover;
         }
     </style>
 </head>

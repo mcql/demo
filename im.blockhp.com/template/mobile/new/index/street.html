@@ -29,10 +29,16 @@
                 z-index: 9999999
             }
         }
+        *{
+            overflow: scroll;
+        }
+        .footer .linkss li{
+            overflow: hidden;
+        }
     </style>
 </head>
 <body style=" background:#F5F5F5">
-<span class="sanjiao"></span>
+<!-- <span class="sanjiao"></span> -->
 <header>
     <div class="tab_nav">
         <div class="header">
@@ -49,7 +55,7 @@
 </header>
 <include file="public/menu"/>
 
-<div class="Packages">
+<div class="Packages" style="display:felx;">
     <div class="all"><a class="sele" target="_self" href="{:U('Mobile/index/street')}" style="color:#FFF"><span>全部</span></a></div>
     <div class="page_guide_slider">
         <div class="page_guide_balloon" style=" display:none">
@@ -62,10 +68,8 @@
         <div class="page_guide_container" onMouseDown="pageGuideMousedown(this,event)"
              onMouseMove="pageGuideMousemove(this,event)" onMouseUp="pageGuideMouseup(this,event)"
              onMouseOut="pageGuideMouseout(this,event)" ontouchstart="pageGuideTouchstart(this,event)"
-             ontouchmove="pageGuideTouchmove(this,event)" ontouchend="pageGuideTouchend(this,event)">
-
+             ontouchmove="pageGuideTouchmove(this,event)" ontouchend="pageGuideTouchend(this,event)" style="overflow:hidden;">
             <div class="page_guide_items" style=" position:relative">
-
                 <div class="page_guide_item">
                     <div class="page_guide_item_text">
                         <a class="" target="_self" href="javascript:setCat_id(0)">精选</a></div>

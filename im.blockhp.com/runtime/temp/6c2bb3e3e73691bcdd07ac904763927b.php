@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:44:"./template/mobile/new/user\address_list.html";i:1491382656;s:38:"./template/mobile/new/public\menu.html";i:1491382656;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:44:"./template/mobile/new/user\address_list.html";i:1555643619;s:38:"./template/mobile/new/public\menu.html";i:1491382656;}*/ ?>
 <!DOCTYPE html >
 <html>
 <head>
@@ -72,7 +72,11 @@
 <div class="list_footer">
 	<a href="<?php echo U('/Mobile/User/add_address',array('source'=>$_GET['source'])); ?>">添加新地址</a>
 </div>
-
+<style>
+.Default{
+  background-color: rgba(39, 53, 54, 0.466);
+}
+</style>
 <script>
 function goTop(){
 	$('html,body').animate({'scrollTop':0},600);

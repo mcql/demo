@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:90:"C:\Users\Administrator\Desktop\demo\im.blockhp.com/application/phone\view\index\index.html";i:1555566150;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:90:"C:\Users\Administrator\Desktop\demo\im.blockhp.com/application/phone\view\index\index.html";i:1555663075;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -241,6 +241,10 @@
     }
     .layui-layim-tab li span{
         margin-top: 3px;
+    }
+    .layim-chat-main{
+        background: url(/public/static/phone/images/login_bg.jpg) no-repeat center center;
+        background-size: cover;
     }
 </style>
 </body>

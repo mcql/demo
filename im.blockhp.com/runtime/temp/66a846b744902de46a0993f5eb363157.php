@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:36:"./template/mobile/new/cart\cart.html";i:1491382656;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:36:"./template/mobile/new/cart\cart.html";i:1555652695;}*/ ?>
 <!DOCTYPE html >
 <html>
 <head>
@@ -41,6 +41,20 @@
   <p class="f_title"><span>选择自提点</span><a class="c_close" href="javascript:void(0)" onClick="close_pop()"></a></p>
   <div id="pickcontent"></div>
 </div>
+<style>
+.qb_tac{
+    font-size: 14px;
+}
+.page-shopping .item-list .delete .icon-shanchu{
+    width: 1.5em;
+    height: 1.5em;
+}
+.page-shopping .item-list .delete{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+</style>
 <script type="text/javascript">
 
 function showCheckoutOther(obj)

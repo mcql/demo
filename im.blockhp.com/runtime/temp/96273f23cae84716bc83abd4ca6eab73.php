@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:39:"./template/mobile/new/user\account.html";i:1554047430;s:40:"./template/mobile/new/public\header.html";i:1491382656;s:38:"./template/mobile/new/public\menu.html";i:1491382656;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:39:"./template/mobile/new/user\account.html";i:1555643539;s:40:"./template/mobile/new/public\header.html";i:1491382656;s:38:"./template/mobile/new/public\menu.html";i:1491382656;}*/ ?>
 <!DOCTYPE html >
 <html>
 <head>
@@ -27,6 +27,9 @@
 <style>
     .user_login_title h2 span {
         font-size: 27px;
+    }
+    .font12{
+      font-size: 14px;
     }
 </style>
 <body>

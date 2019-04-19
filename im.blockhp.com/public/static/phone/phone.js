@@ -526,7 +526,7 @@ function showMessage() {
                     if (1 == v.type) {
                         if (0 == v.agree) {
 
-                            _html += '<li style="background: white;margin-top: 5px"><div>';
+                            _html += '<li style="background: white;"><div>';
                                 _html += '<img src="' + v.user.avatar + '"></div><div class="flex-m"><span style="margin-top:0;">' + v.user.username + '</span>';
                                 _html += '<div>'
                             _html += '<button class="layui-btn layui-btn-xs" style="float:right;margin-left: 5px" data-id="' +
@@ -537,13 +537,13 @@ function showMessage() {
                                 '" data-avatar="' + v.user.avatar + '" data-username="' + v.user.username + '" onclick="pass(this, 2)">拒绝</button></div></div></li>';
 
                         } else if (1 == v.agree) {
-                            _html += '<li style="background: white;margin-top: 5px"><div>';
-                                _html += '<img src="' + v.user.avatar + '"></div><div class="flex-m"><span style="margin-top:0;font-size:14px;">' + v.user.username + '</span>';
-                            _html += '<span style="float:right;color:green;margin-top:0;font-size:14px;">已同意</span></div></li>';
+                            _html += '<li style="background: white;height: 32px;padding: 5px 10px;line-height: 32px;">';
+                                _html += '<span class="iconfont icon-duanxin" style="margin: 0 15px 0 0;"></span><span style="margin-top:0;font-size:14px;">' + v.user.username + '</span>';
+                            _html += '<span style="float:right;color:green;margin-top:0;font-size:14px;margin-right:30px;">已同意</span></li>';
                         } else {
-                            _html += '<li style="background: white;margin-top: 5px"><div>';
-                                _html += '<img src="' + v.user.avatar + '"></div><div class="flex-m"><span style="margin-top:0;font-size:14px;">' + v.user.username + '</span>';
-                            _html += '<span style="float:right;color:red;margin-top:0;font-size:14px;">已拒绝</span></div></li>';
+                            _html += '<li style="background: white;height: 32px;padding: 5px 10px;line-height: 32px;">';
+                                _html += '<span class="iconfont icon-duanxin" style="margin: 0 15px 0 0;"></span><span style="margin-top:0;font-size:14px;">' + v.user.username + '</span>';
+                            _html += '<span style="float:right;color:red;margin-top:0;font-size:14px;margin-right:30px;">已拒绝</span></li>';
                         }
                     } else {
                         _html += '<li style="background: white;height: 32px;padding: 5px 10px;line-height: 32px;"><span class="iconfont icon-duanxin" style="margin: 0 15px 0 0;"></span>' + v.content + '</li>';
@@ -808,10 +808,10 @@ function selfSetting() {
         $.getJSON('/phone/index/selfSetting', function(res){
             var _html = '';
             if(res) {
-                _html += '<li style="background: white;margin-top: 5px"><form id="jvForm" method="post" enctype="multipart/form-data">';
+                _html += '<li style="background: white;margin-top: 5px;padding-bottom:40px;"><form id="jvForm" method="post" enctype="multipart/form-data">';
                 _html += '<div style="position: relative;"><input onclick="uploadingImg()" type="file" name="image" id="file" class="inputfile" accept="image/*"><img class="person-img" style="width: 150px;height:150px;margin: 0 auto;padding-top: 10px;display: block;border-radius:50%" src="' + res.avatar + '"></div>';
-                _html += '<div style="width: 60%;margin: 20px auto 10px auto;" class="form-group"><input style="padding: 0 0 0 3px;" name="user_name" class="form-control" value="' + res.username + '" /></div>';
-                _html += '<div style="width: 60%;margin: 10px auto 10px auto;" class="form-group"><label for="sex" style="padding-left: 0;" class="layui-form-label sex">性别:</label><div class="layui-input-block sex-left">';
+                _html += '<div style="width:calc(100% - 30px);margin: 20px auto 10px auto;" class="form-group"><input style="padding: 0 0 0 3px;text-indent: 10px;" name="user_name" class="form-control" value="' + res.username + '" /></div>';
+                _html += '<div style="width:calc(100% - 30px);margin: 10px auto 10px auto;" class="form-group"><label for="sex" style="padding-left: 0;" class="layui-form-label sex">性别:</label><div class="layui-input-block sex-left">';
                 if(res.sex == 1)
                 {
                     _html += '<input class="choose" name="sex" value="1" title="男" checked="checked" type="radio"><span class="chooseOne">男</span>';
@@ -820,9 +820,9 @@ function selfSetting() {
                     _html += '<input class="choose" name="sex" value="1" title="男" type="radio"><span class="chooseOne">男</span>';
                     _html += '<input class="choose" name="sex" value="-1" title="女" checked="checked" type="radio"><span class="chooseOne">女</span></div></div>';
                 }
-                _html += '<div style="width: 60%;margin: 10px auto 20px auto;" class="form-group"><input type="password" style="padding: 0 0 0 3px;" name="pwd" placeholder="登录密码修改(无需修改则不填)" class="form-control" value="" /></div>';
-                _html += '<div style="width: 60%;margin: 20px auto 20px auto;" class="form-group"><input style="padding: 0 0 0 3px;" name="truename" class="form-control" placeholder="邮箱修改(无需修改则不填)" value="" /></div>';
-                _html += '<div style="width: 60%;margin: 10px auto 10px auto;padding-bottom: 30px;text-align: center;" class="form-group"><button style="width: 60%;background-color: #ed5356;border-color: #ed5356;" type="button" class="btn btn-primary block full-width m-b" onclick="changeUserInfo()" >修 改</button></div>';
+                _html += '<div style="width:calc(100% - 30px);margin: 10px auto 20px auto;" class="form-group"><input type="password" style="padding: 0 0 0 3px;text-indent: 10px;" name="pwd" placeholder="登录密码修改(无需修改则不填)" class="form-control" value="" /></div>';
+                _html += '<div style="width:calc(100% - 30px);margin: 20px auto 20px auto;" class="form-group"><input style="padding: 0 0 0 3px;text-indent: 10px;" name="truename" class="form-control" placeholder="邮箱修改(无需修改则不填)" value="" /></div>';
+                _html += '<div class="create_qun" onclick="changeUserInfo()" style="width:calc(100% - 30px);">修改 </div>';
                 _html += '</form></li>';
 
                 $("#selfSetting").html(_html);

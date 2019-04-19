@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:45:"./template/mobile/new/goods\categorylist.html";i:1491382656;s:44:"./template/mobile/new/public\footer_nav.html";i:1491382656;s:42:"./template/mobile/new/public\wx_share.html";i:1491382656;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:45:"./template/mobile/new/goods\categorylist.html";i:1555642561;s:44:"./template/mobile/new/public\footer_nav.html";i:1491382656;s:42:"./template/mobile/new/public\wx_share.html";i:1491382656;}*/ ?>
 <!DOCTYPE html >
 <html>
 <head>
@@ -31,7 +31,7 @@
     <?php $j = '0'; if(is_array($goods_category_tree) || $goods_category_tree instanceof \think\Collection): if( count($goods_category_tree)==0 ) : echo "" ;else: foreach($goods_category_tree as $kk=>$vo): ?>      
       <dl style="margin-top:46px;padding-bottom:50px;<?php if($j == 0): ?>display:block;<?php else: ?>display:none;<?php endif; ?>" data-id="<?php echo $j++; ?>"> 
         <span>            
-          <?php $pid =400;$ad_position = M("ad_position")->cache(true,TPSHOP_CACHE_TIME)->column("position_id,position_name,ad_width,ad_height","position_id");$result = M("ad")->where("pid=$pid  and enabled = 1 and start_time < 1555484400 and end_time > 1555484400 ")->order("orderby desc")->cache(true,TPSHOP_CACHE_TIME)->limit("1")->select();
+          <?php $pid =400;$ad_position = M("ad_position")->cache(true,TPSHOP_CACHE_TIME)->column("position_id,position_name,ad_width,ad_height","position_id");$result = M("ad")->where("pid=$pid  and enabled = 1 and start_time < 1555639200 and end_time > 1555639200 ")->order("orderby desc")->cache(true,TPSHOP_CACHE_TIME)->limit("1")->select();
 if(!in_array($pid,array_keys($ad_position)) && $pid)
 {
   M("ad_position")->insert(array(
@@ -252,6 +252,15 @@ function follow_wx()
 <?php endif; ?>
 <!--微信关注提醒  end-->
 <!-- 微信浏览器 调用微信 分享js  end-->
+<style>
+.container,.category2 dt a,.category1 li{
+  font-size: 14px;
+}
+.category2{
+  border-left: 1px solid #cfcfcf;
+  box-sizing: border-box;
+}
+</style>
 <script>
 
 $(function () {

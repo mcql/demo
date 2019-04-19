@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:43:"./template/mobile/new/user\add_address.html";i:1491382656;s:38:"./template/mobile/new/public\menu.html";i:1491382656;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:43:"./template/mobile/new/user\add_address.html";i:1555644001;s:38:"./template/mobile/new/public\menu.html";i:1491382656;}*/ ?>
 <!DOCTYPE html >
 <html>
 <head>
@@ -53,7 +53,7 @@
         <input name="consignee" id="consignee" type="text" value="<?php echo $address['consignee']; ?>" maxlength="12" placeholder="收货人姓名"/>
 		</li>          
        <li>
-          <span>地区</span>       
+          <p style="    font-size: 14px;line-height: 45px;color: #666;">地区</p>       
           <input name='country' value='1' type="hidden">
 	             <select class="province_select"  name="province" id="province" onChange="get_city(this,0)">
                       <option value="0">请选择</option>
@@ -104,6 +104,26 @@
                 </div>		 
     </form>
 </div>        </div>
+<style>
+.addressmone ul li select{
+    width: 80px;
+    font-size: 12px;
+    color: #666;
+    outline: none;
+}
+.dotm_btn1{
+    width: calc(100% - 30px);
+    display: inline-block;
+    margin: 20px auto;
+    line-height: 32px;
+    padding: 0;
+    background-color: #fb3838b0;
+    color: #fff;
+    border-radius: 8rem;
+    text-align: center;
+    float: none;
+}
+</style>
 <script>
     function checkForm(){
         var consignee = $('input[name="consignee"]').val();
