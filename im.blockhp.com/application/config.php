@@ -16,6 +16,14 @@ return [
     'socket_server' => '47.91.17.219',
     'socket_port' => 8282,
 
+    //比特币连接参数
+    'btcConfig' => [
+      'ip' => '127.0.0.1',
+      'port' => 8332,
+      'username' => 'bitcoinrpc',
+      'password' => 'bitcoinrpc',
+    ],
+
     //群组状态
     'group_status' => [
         '1' => '通过审核',

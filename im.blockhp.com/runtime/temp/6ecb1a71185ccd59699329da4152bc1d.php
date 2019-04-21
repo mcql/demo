@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:67:"/www/wwwroot/im.blockhp.com/application/phone/view/index/index.html";i:1554643810;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:67:"/www/wwwroot/im.blockhp.com/application/phone/view/index/index.html";i:1555759657;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,6 +8,7 @@
     <link href="__COMMON__/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/public/static/phone/layui/css/layui.css">
     <link rel="stylesheet" href="/public/static/phone/layui/css/layui.mobile.css">
+    <link rel="stylesheet" href="/public/static/phone/mine/iconfont.css">
     <style>
         .ad {
             display:none!important;display:none
@@ -60,6 +61,8 @@
     var m_sign = "<?php echo $uinfo['sign']; ?>";
     var socket = '';
     var socket_server = "ws://<?php echo $socket_server; ?>";
+
+    var showGroups = JSON.parse('<?php echo $allGroups; ?>');
 </script>
 <script src="/public/static/phone/phone.js"></script>
 <script>
@@ -158,5 +161,89 @@
 
     });
 </script>
+<style>
+    .layim-list-top li .layui-icon,.layim-list-top li[layim-event="about"] .layui-icon{
+        font-size: 18px;
+    }
+    .layim-list-top{
+        font-size: 14px;
+    }
+    .layim-tab-content li h5 *{
+        font-size: 14px;
+    }
+    .showOnline > span {
+        color: #22232b;
+        font-size: 16px;
+        font-weight: 700;
+    }
+    .layui-layim-list li{
+        height: 60px;
+    }
+    .layui-layim-list li img{
+        top: 20px;
+        border-radius: 50%;
+        box-sizing: border-box;
+        box-shadow: 1px 1px 5px #c5c5c5;
+    }
+    .layui-layim-list li span{
+        margin-top: 15px;
+    }
+    .layim-title{
+        height: 40px;
+        line-height: 40px;
+    }
+    .layim-content,.layui-layim{
+        top: 40px;
+    }
+    .search_m {
+        position: relative;
+    }
+    .search_m input{
+        width: 100%;
+        height: 32px;
+        border-radius: 20px;
+        border: 1px solid #e9e9e9;
+        padding-left: 20px;
+        box-sizing: border-box;
+    }
+    .search_m span {
+        line-height: 32px;
+        position: absolute;
+        right: 20px;
+        top: 0;
+    }
+    .layui-elem-quote{
+        font-size: 14px;
+        font-weight: 700;
+        color: #22232b;
+    }
+    .layui-elem-quote{
+        padding: 9px;
+        background-color: #fff;
+    }
+    .flex-m{
+        display: flex!important;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: -3px;
+    }
+    .flex-m .layui-btn{
+        font-size: 14px;
+        line-height: 28px;
+        height: 28px;
+    }
+    .create_qun{
+        width: 100%;
+        line-height: 32px;
+        background-color: #fb3838;
+        color: #fff;
+        border-radius: 8rem;
+        text-align: center;
+        margin: 20px auto 0;
+    }
+    .layui-layim-tab li span{
+        margin-top: 3px;
+    }
+</style>
 </body>
 </html>

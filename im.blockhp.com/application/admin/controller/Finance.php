@@ -285,6 +285,33 @@ class Finance extends Base {
         C('TOKEN_ON',false);
         return $this->fetch();
     }
+
+    /**
+     *  会员充值列表
+     */
+    public function userecharge(){
+        $store_id = I('store_id');
+        $create_date = I('create_date');
+        $create_date = str_replace("+"," ",$create_date);
+        $create_date2 = $create_date  ? $create_date  : date('Y-m-d',strtotime('-1 month')).' - '.date('Y-m-d',strtotime('+1 month'));
+        $create_date3 = explode(' - ',$create_date2);
+        /*$where = " create_date >= '".strtotime($create_date3[0])."' and create_date <= '".strtotime($create_date3[1])."' ";*/
+        $this->assign('start_time',$create_date3[0]);
+        $this->assign('end_time',$create_date3[1]);
+        $where['desc'] = '钱包转商城';
+
+        $count = Db::name('account_log')->where($where)->count();
+        $Page  = new Page($count,16);
+        $list = Db::name('account_log')->alias('os')->join('__USERS__ u','u.user_id = os.user_id')->where($where)->field('os.*,u.email')->limit($Page->firstRow.','.$Page->listRows)->select();
+
+        $this->assign('create_date',$create_date2);
+        $show  = $Page->show();
+        $this->assign('pager',$Page);
+        $this->assign('show',$show);
+        $this->assign('list',$list);
+        C('TOKEN_ON',false);
+        return $this->fetch();
+    }
     
     public function withdrawals_update(){
     	$id = I('selected/a');

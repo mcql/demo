@@ -66,7 +66,9 @@ echo $bitcoin->status;
 */
 namespace app\phone\controller;
 
-class Bitcoin
+use think\Controller;
+
+class Bitcoin extends Base
 {
     // Configuration options
     private $username;

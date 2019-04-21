@@ -1,0 +1,1585 @@
+[ 2019-04-20T23:56:19+08:00 ] 172.24.149.137 58.219.160.144 GET /phone/msgbox/getApplyNoRead
+[ log ] im.blockhp.com/phone/msgbox/getApplyNoRead [运行时间：0.034879s][吞吐率：28.67req/s] [内存消耗：2,635.25kb] [文件加载：53]
+[ info ] [ LANG ] /www/wwwroot/im.blockhp.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'phone',
+    1 => 'msgbox',
+    2 => 'getApplyNoRead',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=8la1mutkt6flghh45q75v36abb; is_distribut=1; uname=lili; phone_user_name=ppp; phone_user_id=64; phone_user_sign=%E6%9A%82%E6%97%A0; phone_user_avatar=%2Fpublic%2Fuploads%2F20190407%2Faeff301c247d006053491f0efcbc7b85.png; user_id=63',
+  'connection' => 'keep-alive',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://im.blockhp.com/phone/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'im.blockhp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\phone\controller\Msgbox->getApplyNoRead[ /www/wwwroot/im.blockhp.com/application/phone/controller/Msgbox.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000191s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_group_apply` [ RunTime:0.000526s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_group_apply` WHERE  `to_id` = 64  AND `is_read` = 1 LIMIT 1 [ RunTime:0.000172s ]
+
+---------------------------------------------------------------
+[ 2019-04-20T23:56:46+08:00 ] 172.24.149.137 58.219.160.144 GET /phone/msgbox/getApplyNoRead
+[ log ] im.blockhp.com/phone/msgbox/getApplyNoRead [运行时间：0.028339s][吞吐率：35.29req/s] [内存消耗：2,635.30kb] [文件加载：53]
+[ info ] [ LANG ] /www/wwwroot/im.blockhp.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'phone',
+    1 => 'msgbox',
+    2 => 'getApplyNoRead',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'phone_user_name=222; phone_user_id=75; phone_user_sign=%E6%9A%82%E6%97%A0; phone_user_avatar=%2Fpublic%2Fstatic%2Fcommon%2Fimages%2Fcommon.jpg; PHPSESSID=04v6iorvs5nas1514ng3n90rd7; user_id=75; is_distribut=1; uname=222',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://im.blockhp.com/phone/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 SE 2.X MetaSr 1.0',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'im.blockhp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\phone\controller\Msgbox->getApplyNoRead[ /www/wwwroot/im.blockhp.com/application/phone/controller/Msgbox.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000232s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_group_apply` [ RunTime:0.000549s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_group_apply` WHERE  `to_id` = 75  AND `is_read` = 1 LIMIT 1 [ RunTime:0.000195s ]
+
+---------------------------------------------------------------
+[ 2019-04-20T23:56:46+08:00 ] 172.24.149.137 58.219.160.144 GET /phone/msgbox/getNoRead
+[ log ] im.blockhp.com/phone/msgbox/getNoRead [运行时间：0.029764s][吞吐率：33.60req/s] [内存消耗：2,634.96kb] [文件加载：53]
+[ info ] [ LANG ] /www/wwwroot/im.blockhp.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'phone',
+    1 => 'msgbox',
+    2 => 'getNoRead',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'phone_user_name=222; phone_user_id=75; phone_user_sign=%E6%9A%82%E6%97%A0; phone_user_avatar=%2Fpublic%2Fstatic%2Fcommon%2Fimages%2Fcommon.jpg; PHPSESSID=04v6iorvs5nas1514ng3n90rd7; user_id=75; is_distribut=1; uname=222',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://im.blockhp.com/phone/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 SE 2.X MetaSr 1.0',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'im.blockhp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\phone\controller\Msgbox->getNoRead[ /www/wwwroot/im.blockhp.com/application/phone/controller/Msgbox.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000321s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_message` [ RunTime:0.001095s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_message` WHERE  `uid` = 75  AND `read` = 1 LIMIT 1 [ RunTime:0.000211s ]
+
+---------------------------------------------------------------
+[ 2019-04-20T23:56:49+08:00 ] 172.24.149.137 58.219.160.144 GET /phone/msgbox/getNoRead
+[ log ] im.blockhp.com/phone/msgbox/getNoRead [运行时间：0.025033s][吞吐率：39.95req/s] [内存消耗：2,634.96kb] [文件加载：53]
+[ info ] [ LANG ] /www/wwwroot/im.blockhp.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'phone',
+    1 => 'msgbox',
+    2 => 'getNoRead',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=8la1mutkt6flghh45q75v36abb; is_distribut=1; uname=lili; phone_user_name=ppp; phone_user_id=64; phone_user_sign=%E6%9A%82%E6%97%A0; phone_user_avatar=%2Fpublic%2Fuploads%2F20190407%2Faeff301c247d006053491f0efcbc7b85.png; user_id=63',
+  'connection' => 'keep-alive',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://im.blockhp.com/phone/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'im.blockhp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\phone\controller\Msgbox->getNoRead[ /www/wwwroot/im.blockhp.com/application/phone/controller/Msgbox.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000277s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_message` [ RunTime:0.000647s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_message` WHERE  `uid` = 64  AND `read` = 1 LIMIT 1 [ RunTime:0.000201s ]
+
+---------------------------------------------------------------
+[ 2019-04-20T23:56:49+08:00 ] 172.24.149.137 58.219.160.144 GET /phone/msgbox/getApplyNoRead
+[ log ] im.blockhp.com/phone/msgbox/getApplyNoRead [运行时间：0.025433s][吞吐率：39.32req/s] [内存消耗：2,635.30kb] [文件加载：53]
+[ info ] [ LANG ] /www/wwwroot/im.blockhp.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'phone',
+    1 => 'msgbox',
+    2 => 'getApplyNoRead',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=8la1mutkt6flghh45q75v36abb; is_distribut=1; uname=lili; phone_user_name=ppp; phone_user_id=64; phone_user_sign=%E6%9A%82%E6%97%A0; phone_user_avatar=%2Fpublic%2Fuploads%2F20190407%2Faeff301c247d006053491f0efcbc7b85.png; user_id=63',
+  'connection' => 'keep-alive',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://im.blockhp.com/phone/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'im.blockhp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\phone\controller\Msgbox->getApplyNoRead[ /www/wwwroot/im.blockhp.com/application/phone/controller/Msgbox.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000211s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_group_apply` [ RunTime:0.000499s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_group_apply` WHERE  `to_id` = 64  AND `is_read` = 1 LIMIT 1 [ RunTime:0.000178s ]
+
+---------------------------------------------------------------
+[ 2019-04-20T23:57:03+08:00 ] 172.24.149.137 58.219.160.144 GET /phone/wallet/coinshow.html?coin=bhp&page=1
+[ log ] im.blockhp.com/phone/wallet/coinshow.html?coin=bhp&page=1 [运行时间：0.032690s][吞吐率：30.59req/s] [内存消耗：2,993.09kb] [文件加载：61]
+[ info ] [ LANG ] /www/wwwroot/im.blockhp.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'phone',
+    1 => 'wallet',
+    2 => 'coinshow',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'phone_user_name=xixi; phone_user_id=59; phone_user_sign=%E6%9A%82%E6%97%A0; phone_user_avatar=%2Fpublic%2Fuploads%2F20190419%2F3fc37503c72f915ef880a8fd5fa35e11.jpg; PHPSESSID=6bjbj64rip9s66r2apcv2ml4sr; user_id=59; is_distribut=1; uname=xixi; admin_type=1; workspaceParam=index%7CSystem; is_mobile=1; cn=0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://im.blockhp.com/phone/wallet/coinshow.html?coin=bhp&page=2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'im.blockhp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'coin' => 'bhp',
+  'page' => '1',
+)
+[ info ] [ RUN ] app\phone\controller\Wallet->CoinShow[ /www/wwwroot/im.blockhp.com/application/phone/controller/Wallet.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/im.blockhp.com/application/phone/view/wallet/coinshow.html [ array (
+  0 => 'action',
+  1 => 'socket_server',
+  2 => 'coiName',
+  3 => 'coinAddress',
+  4 => 'list',
+  5 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000240s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_chatuser` [ RunTime:0.000579s ]
+[ sql ] [ SQL ] SELECT `bhp_public_key` FROM `tp_chatuser` WHERE  `id` = 59 LIMIT 1 [ RunTime:0.000176s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000174s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_turn_out_log` [ RunTime:0.000468s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_turn_out_log` WHERE  `out_u_id` = 59  AND `coin_type` = 'bhp' LIMIT 1 [ RunTime:0.000169s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_turn_out_log` WHERE  `out_u_id` = 59  AND `coin_type` = 'bhp' ORDER BY create_time desc LIMIT 0,6 [ RunTime:0.000181s ]
+[ error ] [8]未定义变量: sys[/www/wwwroot/im.blockhp.com/runtime/temp/a7be7fc05b90230f23f6418c6496a457.php:6]
+[ error ] [8]未定义变量: sys[/www/wwwroot/im.blockhp.com/runtime/temp/a7be7fc05b90230f23f6418c6496a457.php:7]
+[ error ] [8]未定义变量: sys[/www/wwwroot/im.blockhp.com/runtime/temp/a7be7fc05b90230f23f6418c6496a457.php:8]
+
+---------------------------------------------------------------
+[ 2019-04-20T23:57:10+08:00 ] 172.24.149.137 58.219.160.144 GET /Mobile/user/account.html
+[ log ] im.blockhp.com/Mobile/user/account.html [运行时间：0.037342s][吞吐率：26.78req/s] [内存消耗：3,515.34kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/im.blockhp.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Mobile',
+    1 => 'user',
+    2 => 'account',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'phone_user_name=xixi; phone_user_id=59; phone_user_sign=%E6%9A%82%E6%97%A0; phone_user_avatar=%2Fpublic%2Fuploads%2F20190419%2F3fc37503c72f915ef880a8fd5fa35e11.jpg; PHPSESSID=6bjbj64rip9s66r2apcv2ml4sr; user_id=59; is_distribut=1; uname=xixi; admin_type=1; workspaceParam=index%7CSystem; is_mobile=1; cn=0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://im.blockhp.com/mobile/user/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'im.blockhp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\mobile\controller\User->account[ /www/wwwroot/im.blockhp.com/application/mobile/controller/User.php ]
+[ info ] [ VIEW ] ./template/mobile/new/user/account.html [ array (
+  0 => 'action',
+  1 => 'goods_category_tree',
+  2 => 'brand_list',
+  3 => 'tpshop_config',
+  4 => 'user',
+  5 => 'order_status_coment',
+  6 => 'account_log',
+  7 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000318s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_users` [ RunTime:0.000763s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_users` WHERE  `user_id` = 59 LIMIT 1 [ RunTime:0.000269s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_account_log` [ RunTime:0.000480s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_account_log` WHERE  `user_id` = 59  AND `order_id` <> 0 LIMIT 1 [ RunTime:0.000152s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_account_log` WHERE  `user_id` = 59  AND `order_id` <> 0 ORDER BY change_time desc LIMIT 0,16 [ RunTime:0.000173s ]
+[ error ] [8]未定义数组索引: is_ajax[/www/wwwroot/im.blockhp.com/application/mobile/controller/User.php:128]
+
+---------------------------------------------------------------
+[ 2019-04-20T23:57:11+08:00 ] 172.24.149.137 58.219.160.144 GET /Mobile/user/account.html
+[ log ] im.blockhp.com/Mobile/user/account.html [运行时间：0.037143s][吞吐率：26.92req/s] [内存消耗：3,515.34kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/im.blockhp.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Mobile',
+    1 => 'user',
+    2 => 'account',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'phone_user_name=xixi; phone_user_id=59; phone_user_sign=%E6%9A%82%E6%97%A0; phone_user_avatar=%2Fpublic%2Fuploads%2F20190419%2F3fc37503c72f915ef880a8fd5fa35e11.jpg; PHPSESSID=6bjbj64rip9s66r2apcv2ml4sr; user_id=59; is_distribut=1; uname=xixi; admin_type=1; workspaceParam=index%7CSystem; is_mobile=1; cn=0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://im.blockhp.com/mobile/user/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'im.blockhp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\mobile\controller\User->account[ /www/wwwroot/im.blockhp.com/application/mobile/controller/User.php ]
+[ info ] [ VIEW ] ./template/mobile/new/user/account.html [ array (
+  0 => 'action',
+  1 => 'goods_category_tree',
+  2 => 'brand_list',
+  3 => 'tpshop_config',
+  4 => 'user',
+  5 => 'order_status_coment',
+  6 => 'account_log',
+  7 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000297s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_users` [ RunTime:0.000758s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_users` WHERE  `user_id` = 59 LIMIT 1 [ RunTime:0.000267s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_account_log` [ RunTime:0.000507s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_account_log` WHERE  `user_id` = 59  AND `order_id` <> 0 LIMIT 1 [ RunTime:0.000151s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_account_log` WHERE  `user_id` = 59  AND `order_id` <> 0 ORDER BY change_time desc LIMIT 0,16 [ RunTime:0.000183s ]
+[ error ] [8]未定义数组索引: is_ajax[/www/wwwroot/im.blockhp.com/application/mobile/controller/User.php:128]
+
+---------------------------------------------------------------
+[ 2019-04-20T23:57:16+08:00 ] 172.24.149.137 58.219.160.144 GET /phone/msgbox/getNoRead
+[ log ] im.blockhp.com/phone/msgbox/getNoRead [运行时间：0.029612s][吞吐率：33.77req/s] [内存消耗：2,634.96kb] [文件加载：53]
+[ info ] [ LANG ] /www/wwwroot/im.blockhp.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'phone',
+    1 => 'msgbox',
+    2 => 'getNoRead',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'phone_user_name=222; phone_user_id=75; phone_user_sign=%E6%9A%82%E6%97%A0; phone_user_avatar=%2Fpublic%2Fstatic%2Fcommon%2Fimages%2Fcommon.jpg; PHPSESSID=04v6iorvs5nas1514ng3n90rd7; user_id=75; is_distribut=1; uname=222',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://im.blockhp.com/phone/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 SE 2.X MetaSr 1.0',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'im.blockhp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\phone\controller\Msgbox->getNoRead[ /www/wwwroot/im.blockhp.com/application/phone/controller/Msgbox.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000281s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_message` [ RunTime:0.002275s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_message` WHERE  `uid` = 75  AND `read` = 1 LIMIT 1 [ RunTime:0.000214s ]
+
+---------------------------------------------------------------
+[ 2019-04-20T23:57:16+08:00 ] 172.24.149.137 58.219.160.144 GET /phone/msgbox/getApplyNoRead
+[ log ] im.blockhp.com/phone/msgbox/getApplyNoRead [运行时间：0.028020s][吞吐率：35.69req/s] [内存消耗：2,635.30kb] [文件加载：53]
+[ info ] [ LANG ] /www/wwwroot/im.blockhp.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'phone',
+    1 => 'msgbox',
+    2 => 'getApplyNoRead',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'phone_user_name=222; phone_user_id=75; phone_user_sign=%E6%9A%82%E6%97%A0; phone_user_avatar=%2Fpublic%2Fstatic%2Fcommon%2Fimages%2Fcommon.jpg; PHPSESSID=04v6iorvs5nas1514ng3n90rd7; user_id=75; is_distribut=1; uname=222',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://im.blockhp.com/phone/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 SE 2.X MetaSr 1.0',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'im.blockhp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\phone\controller\Msgbox->getApplyNoRead[ /www/wwwroot/im.blockhp.com/application/phone/controller/Msgbox.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000210s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_group_apply` [ RunTime:0.000493s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_group_apply` WHERE  `to_id` = 75  AND `is_read` = 1 LIMIT 1 [ RunTime:0.000169s ]
+
+---------------------------------------------------------------
+[ 2019-04-20T23:57:18+08:00 ] 172.24.149.137 58.219.160.144 GET /public/static/mobile/js/web3.js.map
+[ log ] im.blockhp.com/public/static/mobile/js/web3.js.map [运行时间：0.018678s][吞吐率：53.54req/s] [内存消耗：1,797.84kb] [文件加载：40]
+[ info ] [ LANG ] /www/wwwroot/im.blockhp.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'static',
+    2 => 'mobile',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'phone_user_name=xixi; phone_user_id=59; phone_user_sign=%E6%9A%82%E6%97%A0; phone_user_avatar=%2Fpublic%2Fuploads%2F20190419%2F3fc37503c72f915ef880a8fd5fa35e11.jpg; PHPSESSID=6bjbj64rip9s66r2apcv2ml4sr; user_id=59; is_distribut=1; uname=xixi; admin_type=1; workspaceParam=index%7CSystem; is_mobile=1; cn=0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1',
+  'connection' => 'keep-alive',
+  'host' => 'im.blockhp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'js' => 'web3.js.map',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-04-20T23:57:19+08:00 ] 172.24.149.137 58.219.160.144 GET /phone/msgbox/getNoRead
+[ log ] im.blockhp.com/phone/msgbox/getNoRead [运行时间：0.029030s][吞吐率：34.45req/s] [内存消耗：2,634.96kb] [文件加载：53]
+[ info ] [ LANG ] /www/wwwroot/im.blockhp.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'phone',
+    1 => 'msgbox',
+    2 => 'getNoRead',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=8la1mutkt6flghh45q75v36abb; is_distribut=1; uname=lili; phone_user_name=ppp; phone_user_id=64; phone_user_sign=%E6%9A%82%E6%97%A0; phone_user_avatar=%2Fpublic%2Fuploads%2F20190407%2Faeff301c247d006053491f0efcbc7b85.png; user_id=63',
+  'connection' => 'keep-alive',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://im.blockhp.com/phone/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'im.blockhp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\phone\controller\Msgbox->getNoRead[ /www/wwwroot/im.blockhp.com/application/phone/controller/Msgbox.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000280s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_message` [ RunTime:0.000706s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_message` WHERE  `uid` = 64  AND `read` = 1 LIMIT 1 [ RunTime:0.000195s ]
+
+---------------------------------------------------------------
+[ 2019-04-20T23:57:19+08:00 ] 172.24.149.137 58.219.160.144 GET /phone/msgbox/getApplyNoRead
+[ log ] im.blockhp.com/phone/msgbox/getApplyNoRead [运行时间：0.027687s][吞吐率：36.12req/s] [内存消耗：2,635.30kb] [文件加载：53]
+[ info ] [ LANG ] /www/wwwroot/im.blockhp.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'phone',
+    1 => 'msgbox',
+    2 => 'getApplyNoRead',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=8la1mutkt6flghh45q75v36abb; is_distribut=1; uname=lili; phone_user_name=ppp; phone_user_id=64; phone_user_sign=%E6%9A%82%E6%97%A0; phone_user_avatar=%2Fpublic%2Fuploads%2F20190407%2Faeff301c247d006053491f0efcbc7b85.png; user_id=63',
+  'connection' => 'keep-alive',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://im.blockhp.com/phone/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'im.blockhp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\phone\controller\Msgbox->getApplyNoRead[ /www/wwwroot/im.blockhp.com/application/phone/controller/Msgbox.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000239s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_group_apply` [ RunTime:0.000572s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_group_apply` WHERE  `to_id` = 64  AND `is_read` = 1 LIMIT 1 [ RunTime:0.000173s ]
+
+---------------------------------------------------------------
+[ 2019-04-20T23:57:35+08:00 ] 172.24.149.137 58.219.160.144 GET /phone/wallet/coinshow.html?coin=bhp&page=1
+[ log ] im.blockhp.com/phone/wallet/coinshow.html?coin=bhp&page=1 [运行时间：0.034199s][吞吐率：29.24req/s] [内存消耗：3,214.95kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/im.blockhp.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'phone',
+    1 => 'wallet',
+    2 => 'coinshow',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'phone_user_name=xixi; phone_user_id=59; phone_user_sign=%E6%9A%82%E6%97%A0; phone_user_avatar=%2Fpublic%2Fuploads%2F20190419%2F3fc37503c72f915ef880a8fd5fa35e11.jpg; PHPSESSID=6bjbj64rip9s66r2apcv2ml4sr; user_id=59; is_distribut=1; uname=xixi; admin_type=1; workspaceParam=index%7CSystem; is_mobile=1; cn=0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://im.blockhp.com/phone/wallet/coinshow.html?coin=bhp&page=2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'im.blockhp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'coin' => 'bhp',
+  'page' => '1',
+)
+[ info ] [ RUN ] app\phone\controller\Wallet->CoinShow[ /www/wwwroot/im.blockhp.com/application/phone/controller/Wallet.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/im.blockhp.com/application/phone/view/wallet/coinshow.html [ array (
+  0 => 'action',
+  1 => 'socket_server',
+  2 => 'coiName',
+  3 => 'coinAddress',
+  4 => 'list',
+  5 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000319s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_chatuser` [ RunTime:0.000765s ]
+[ sql ] [ SQL ] SELECT `bhp_public_key` FROM `tp_chatuser` WHERE  `id` = 59 LIMIT 1 [ RunTime:0.000190s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000205s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_turn_out_log` [ RunTime:0.000494s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_turn_out_log` WHERE  `out_u_id` = 59  AND `coin_type` = 'bhp' LIMIT 1 [ RunTime:0.000168s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_turn_out_log` WHERE  `out_u_id` = 59  AND `coin_type` = 'bhp' ORDER BY create_time desc LIMIT 0,6 [ RunTime:0.000170s ]
+[ error ] [8]未定义变量: sys[/www/wwwroot/im.blockhp.com/runtime/temp/a7be7fc05b90230f23f6418c6496a457.php:6]
+[ error ] [8]未定义变量: sys[/www/wwwroot/im.blockhp.com/runtime/temp/a7be7fc05b90230f23f6418c6496a457.php:7]
+[ error ] [8]未定义变量: sys[/www/wwwroot/im.blockhp.com/runtime/temp/a7be7fc05b90230f23f6418c6496a457.php:8]
+
+---------------------------------------------------------------
+[ 2019-04-20T23:57:35+08:00 ] 172.24.149.137 58.219.160.144 GET /public/static/mobile/js/web3.js.map
+[ log ] im.blockhp.com/public/static/mobile/js/web3.js.map [运行时间：0.020870s][吞吐率：47.92req/s] [内存消耗：1,797.84kb] [文件加载：40]
+[ info ] [ LANG ] /www/wwwroot/im.blockhp.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'static',
+    2 => 'mobile',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'phone_user_name=xixi; phone_user_id=59; phone_user_sign=%E6%9A%82%E6%97%A0; phone_user_avatar=%2Fpublic%2Fuploads%2F20190419%2F3fc37503c72f915ef880a8fd5fa35e11.jpg; PHPSESSID=6bjbj64rip9s66r2apcv2ml4sr; user_id=59; is_distribut=1; uname=xixi; admin_type=1; workspaceParam=index%7CSystem; is_mobile=1; cn=0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1',
+  'connection' => 'keep-alive',
+  'host' => 'im.blockhp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'js' => 'web3.js.map',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-04-20T23:57:38+08:00 ] 172.24.149.137 58.219.160.144 GET /phone/wallet/coinshow.html?coin=bhp&page=1
+[ log ] im.blockhp.com/phone/wallet/coinshow.html?coin=bhp&page=1 [运行时间：0.029864s][吞吐率：33.49req/s] [内存消耗：2,993.15kb] [文件加载：61]
+[ info ] [ LANG ] /www/wwwroot/im.blockhp.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'phone',
+    1 => 'wallet',
+    2 => 'coinshow',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'phone_user_name=xixi; phone_user_id=59; phone_user_sign=%E6%9A%82%E6%97%A0; phone_user_avatar=%2Fpublic%2Fuploads%2F20190419%2F3fc37503c72f915ef880a8fd5fa35e11.jpg; PHPSESSID=6bjbj64rip9s66r2apcv2ml4sr; user_id=59; is_distribut=1; uname=xixi; admin_type=1; workspaceParam=index%7CSystem; is_mobile=1; cn=0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://im.blockhp.com/phone/wallet/coinshow.html?coin=bhp&page=2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'im.blockhp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'coin' => 'bhp',
+  'page' => '1',
+)
+[ info ] [ RUN ] app\phone\controller\Wallet->CoinShow[ /www/wwwroot/im.blockhp.com/application/phone/controller/Wallet.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/im.blockhp.com/application/phone/view/wallet/coinshow.html [ array (
+  0 => 'action',
+  1 => 'socket_server',
+  2 => 'coiName',
+  3 => 'coinAddress',
+  4 => 'list',
+  5 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000249s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_chatuser` [ RunTime:0.000732s ]
+[ sql ] [ SQL ] SELECT `bhp_public_key` FROM `tp_chatuser` WHERE  `id` = 59 LIMIT 1 [ RunTime:0.000167s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000173s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_turn_out_log` [ RunTime:0.000530s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_turn_out_log` WHERE  `out_u_id` = 59  AND `coin_type` = 'bhp' LIMIT 1 [ RunTime:0.000176s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_turn_out_log` WHERE  `out_u_id` = 59  AND `coin_type` = 'bhp' ORDER BY create_time desc LIMIT 0,6 [ RunTime:0.000165s ]
+[ error ] [8]未定义变量: sys[/www/wwwroot/im.blockhp.com/runtime/temp/a7be7fc05b90230f23f6418c6496a457.php:6]
+[ error ] [8]未定义变量: sys[/www/wwwroot/im.blockhp.com/runtime/temp/a7be7fc05b90230f23f6418c6496a457.php:7]
+[ error ] [8]未定义变量: sys[/www/wwwroot/im.blockhp.com/runtime/temp/a7be7fc05b90230f23f6418c6496a457.php:8]
+
+---------------------------------------------------------------
+[ 2019-04-20T23:57:39+08:00 ] 172.24.149.137 58.219.160.144 GET /public/static/mobile/js/web3.js.map
+[ log ] im.blockhp.com/public/static/mobile/js/web3.js.map [运行时间：0.020042s][吞吐率：49.89req/s] [内存消耗：1,797.84kb] [文件加载：40]
+[ info ] [ LANG ] /www/wwwroot/im.blockhp.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'static',
+    2 => 'mobile',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'phone_user_name=xixi; phone_user_id=59; phone_user_sign=%E6%9A%82%E6%97%A0; phone_user_avatar=%2Fpublic%2Fuploads%2F20190419%2F3fc37503c72f915ef880a8fd5fa35e11.jpg; PHPSESSID=6bjbj64rip9s66r2apcv2ml4sr; user_id=59; is_distribut=1; uname=xixi; admin_type=1; workspaceParam=index%7CSystem; is_mobile=1; cn=0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1',
+  'connection' => 'keep-alive',
+  'host' => 'im.blockhp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'js' => 'web3.js.map',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-04-20T23:57:42+08:00 ] 172.24.149.137 58.219.160.144 GET /phone/wallet/coinshow.html?coin=bhp&page=1
+[ log ] im.blockhp.com/phone/wallet/coinshow.html?coin=bhp&page=1 [运行时间：0.031126s][吞吐率：32.13req/s] [内存消耗：2,993.18kb] [文件加载：61]
+[ info ] [ LANG ] /www/wwwroot/im.blockhp.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'phone',
+    1 => 'wallet',
+    2 => 'coinshow',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'phone_user_name=xixi; phone_user_id=59; phone_user_sign=%E6%9A%82%E6%97%A0; phone_user_avatar=%2Fpublic%2Fuploads%2F20190419%2F3fc37503c72f915ef880a8fd5fa35e11.jpg; PHPSESSID=6bjbj64rip9s66r2apcv2ml4sr; user_id=59; is_distribut=1; uname=xixi; admin_type=1; workspaceParam=index%7CSystem; is_mobile=1; cn=0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://im.blockhp.com/phone/wallet/coinshow.html?coin=bhp&page=2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'im.blockhp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'coin' => 'bhp',
+  'page' => '1',
+)
+[ info ] [ RUN ] app\phone\controller\Wallet->CoinShow[ /www/wwwroot/im.blockhp.com/application/phone/controller/Wallet.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/im.blockhp.com/application/phone/view/wallet/coinshow.html [ array (
+  0 => 'action',
+  1 => 'socket_server',
+  2 => 'coiName',
+  3 => 'coinAddress',
+  4 => 'list',
+  5 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000289s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_chatuser` [ RunTime:0.000681s ]
+[ sql ] [ SQL ] SELECT `bhp_public_key` FROM `tp_chatuser` WHERE  `id` = 59 LIMIT 1 [ RunTime:0.000162s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000172s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_turn_out_log` [ RunTime:0.000483s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_turn_out_log` WHERE  `out_u_id` = 59  AND `coin_type` = 'bhp' LIMIT 1 [ RunTime:0.000206s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_turn_out_log` WHERE  `out_u_id` = 59  AND `coin_type` = 'bhp' ORDER BY create_time desc LIMIT 0,6 [ RunTime:0.000172s ]
+[ error ] [8]未定义变量: sys[/www/wwwroot/im.blockhp.com/runtime/temp/a7be7fc05b90230f23f6418c6496a457.php:6]
+[ error ] [8]未定义变量: sys[/www/wwwroot/im.blockhp.com/runtime/temp/a7be7fc05b90230f23f6418c6496a457.php:7]
+[ error ] [8]未定义变量: sys[/www/wwwroot/im.blockhp.com/runtime/temp/a7be7fc05b90230f23f6418c6496a457.php:8]
+
+---------------------------------------------------------------
+[ 2019-04-20T23:57:46+08:00 ] 172.24.149.137 58.219.160.144 GET /phone/msgbox/getNoRead
+[ log ] im.blockhp.com/phone/msgbox/getNoRead [运行时间：0.029015s][吞吐率：34.46req/s] [内存消耗：2,634.96kb] [文件加载：53]
+[ info ] [ LANG ] /www/wwwroot/im.blockhp.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'phone',
+    1 => 'msgbox',
+    2 => 'getNoRead',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'phone_user_name=222; phone_user_id=75; phone_user_sign=%E6%9A%82%E6%97%A0; phone_user_avatar=%2Fpublic%2Fstatic%2Fcommon%2Fimages%2Fcommon.jpg; PHPSESSID=04v6iorvs5nas1514ng3n90rd7; user_id=75; is_distribut=1; uname=222',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://im.blockhp.com/phone/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 SE 2.X MetaSr 1.0',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'im.blockhp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\phone\controller\Msgbox->getNoRead[ /www/wwwroot/im.blockhp.com/application/phone/controller/Msgbox.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000205s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_message` [ RunTime:0.000719s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_message` WHERE  `uid` = 75  AND `read` = 1 LIMIT 1 [ RunTime:0.000200s ]
+
+---------------------------------------------------------------
+[ 2019-04-20T23:57:46+08:00 ] 172.24.149.137 58.219.160.144 GET /phone/msgbox/getApplyNoRead
+[ log ] im.blockhp.com/phone/msgbox/getApplyNoRead [运行时间：0.028661s][吞吐率：34.89req/s] [内存消耗：2,635.30kb] [文件加载：53]
+[ info ] [ LANG ] /www/wwwroot/im.blockhp.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'phone',
+    1 => 'msgbox',
+    2 => 'getApplyNoRead',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'phone_user_name=222; phone_user_id=75; phone_user_sign=%E6%9A%82%E6%97%A0; phone_user_avatar=%2Fpublic%2Fstatic%2Fcommon%2Fimages%2Fcommon.jpg; PHPSESSID=04v6iorvs5nas1514ng3n90rd7; user_id=75; is_distribut=1; uname=222',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://im.blockhp.com/phone/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 SE 2.X MetaSr 1.0',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'im.blockhp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\phone\controller\Msgbox->getApplyNoRead[ /www/wwwroot/im.blockhp.com/application/phone/controller/Msgbox.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000356s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_group_apply` [ RunTime:0.000892s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_group_apply` WHERE  `to_id` = 75  AND `is_read` = 1 LIMIT 1 [ RunTime:0.000130s ]
+
+---------------------------------------------------------------
+[ 2019-04-20T23:57:49+08:00 ] 172.24.149.137 58.219.160.144 GET /phone/msgbox/getNoRead
+[ log ] im.blockhp.com/phone/msgbox/getNoRead [运行时间：0.028899s][吞吐率：34.60req/s] [内存消耗：2,634.96kb] [文件加载：53]
+[ info ] [ LANG ] /www/wwwroot/im.blockhp.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'phone',
+    1 => 'msgbox',
+    2 => 'getNoRead',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=8la1mutkt6flghh45q75v36abb; is_distribut=1; uname=lili; phone_user_name=ppp; phone_user_id=64; phone_user_sign=%E6%9A%82%E6%97%A0; phone_user_avatar=%2Fpublic%2Fuploads%2F20190407%2Faeff301c247d006053491f0efcbc7b85.png; user_id=63',
+  'connection' => 'keep-alive',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://im.blockhp.com/phone/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'im.blockhp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\phone\controller\Msgbox->getNoRead[ /www/wwwroot/im.blockhp.com/application/phone/controller/Msgbox.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000397s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_message` [ RunTime:0.000642s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_message` WHERE  `uid` = 64  AND `read` = 1 LIMIT 1 [ RunTime:0.000198s ]
+
+---------------------------------------------------------------
+[ 2019-04-20T23:57:49+08:00 ] 172.24.149.137 58.219.160.144 GET /phone/msgbox/getApplyNoRead
+[ log ] im.blockhp.com/phone/msgbox/getApplyNoRead [运行时间：0.027940s][吞吐率：35.79req/s] [内存消耗：2,635.30kb] [文件加载：53]
+[ info ] [ LANG ] /www/wwwroot/im.blockhp.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'phone',
+    1 => 'msgbox',
+    2 => 'getApplyNoRead',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=8la1mutkt6flghh45q75v36abb; is_distribut=1; uname=lili; phone_user_name=ppp; phone_user_id=64; phone_user_sign=%E6%9A%82%E6%97%A0; phone_user_avatar=%2Fpublic%2Fuploads%2F20190407%2Faeff301c247d006053491f0efcbc7b85.png; user_id=63',
+  'connection' => 'keep-alive',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://im.blockhp.com/phone/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'im.blockhp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\phone\controller\Msgbox->getApplyNoRead[ /www/wwwroot/im.blockhp.com/application/phone/controller/Msgbox.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000208s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_group_apply` [ RunTime:0.000538s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_group_apply` WHERE  `to_id` = 64  AND `is_read` = 1 LIMIT 1 [ RunTime:0.000184s ]
+
+---------------------------------------------------------------
+[ 2019-04-20T23:58:02+08:00 ] 172.24.149.137 58.219.160.144 GET /public/static/mobile/js/web3.js.map
+[ log ] im.blockhp.com/public/static/mobile/js/web3.js.map [运行时间：0.020667s][吞吐率：48.39req/s] [内存消耗：1,797.84kb] [文件加载：40]
+[ info ] [ LANG ] /www/wwwroot/im.blockhp.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'static',
+    2 => 'mobile',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'phone_user_name=xixi; phone_user_id=59; phone_user_sign=%E6%9A%82%E6%97%A0; phone_user_avatar=%2Fpublic%2Fuploads%2F20190419%2F3fc37503c72f915ef880a8fd5fa35e11.jpg; PHPSESSID=6bjbj64rip9s66r2apcv2ml4sr; user_id=59; is_distribut=1; uname=xixi; admin_type=1; workspaceParam=index%7CSystem; is_mobile=1; cn=0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1',
+  'connection' => 'keep-alive',
+  'host' => 'im.blockhp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'js' => 'web3.js.map',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-04-20T23:58:16+08:00 ] 172.24.149.137 58.219.160.144 GET /phone/msgbox/getApplyNoRead
+[ log ] im.blockhp.com/phone/msgbox/getApplyNoRead [运行时间：0.027681s][吞吐率：36.13req/s] [内存消耗：2,635.30kb] [文件加载：53]
+[ info ] [ LANG ] /www/wwwroot/im.blockhp.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'phone',
+    1 => 'msgbox',
+    2 => 'getApplyNoRead',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'phone_user_name=222; phone_user_id=75; phone_user_sign=%E6%9A%82%E6%97%A0; phone_user_avatar=%2Fpublic%2Fstatic%2Fcommon%2Fimages%2Fcommon.jpg; PHPSESSID=04v6iorvs5nas1514ng3n90rd7; user_id=75; is_distribut=1; uname=222',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://im.blockhp.com/phone/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 SE 2.X MetaSr 1.0',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'im.blockhp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\phone\controller\Msgbox->getApplyNoRead[ /www/wwwroot/im.blockhp.com/application/phone/controller/Msgbox.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000390s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_group_apply` [ RunTime:0.002100s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_group_apply` WHERE  `to_id` = 75  AND `is_read` = 1 LIMIT 1 [ RunTime:0.000175s ]
+
+---------------------------------------------------------------
+[ 2019-04-20T23:58:16+08:00 ] 172.24.149.137 58.219.160.144 GET /phone/msgbox/getNoRead
+[ log ] im.blockhp.com/phone/msgbox/getNoRead [运行时间：0.027970s][吞吐率：35.75req/s] [内存消耗：2,634.96kb] [文件加载：53]
+[ info ] [ LANG ] /www/wwwroot/im.blockhp.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'phone',
+    1 => 'msgbox',
+    2 => 'getNoRead',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'phone_user_name=222; phone_user_id=75; phone_user_sign=%E6%9A%82%E6%97%A0; phone_user_avatar=%2Fpublic%2Fstatic%2Fcommon%2Fimages%2Fcommon.jpg; PHPSESSID=04v6iorvs5nas1514ng3n90rd7; user_id=75; is_distribut=1; uname=222',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://im.blockhp.com/phone/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 SE 2.X MetaSr 1.0',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'im.blockhp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\phone\controller\Msgbox->getNoRead[ /www/wwwroot/im.blockhp.com/application/phone/controller/Msgbox.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000472s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_message` [ RunTime:0.001485s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_message` WHERE  `uid` = 75  AND `read` = 1 LIMIT 1 [ RunTime:0.000169s ]
+
+---------------------------------------------------------------
+[ 2019-04-20T23:58:19+08:00 ] 172.24.149.137 58.219.160.144 GET /phone/msgbox/getNoRead
+[ log ] im.blockhp.com/phone/msgbox/getNoRead [运行时间：0.028544s][吞吐率：35.03req/s] [内存消耗：2,634.96kb] [文件加载：53]
+[ info ] [ LANG ] /www/wwwroot/im.blockhp.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'phone',
+    1 => 'msgbox',
+    2 => 'getNoRead',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=8la1mutkt6flghh45q75v36abb; is_distribut=1; uname=lili; phone_user_name=ppp; phone_user_id=64; phone_user_sign=%E6%9A%82%E6%97%A0; phone_user_avatar=%2Fpublic%2Fuploads%2F20190407%2Faeff301c247d006053491f0efcbc7b85.png; user_id=63',
+  'connection' => 'keep-alive',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://im.blockhp.com/phone/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'im.blockhp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\phone\controller\Msgbox->getNoRead[ /www/wwwroot/im.blockhp.com/application/phone/controller/Msgbox.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000267s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_message` [ RunTime:0.000803s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_message` WHERE  `uid` = 64  AND `read` = 1 LIMIT 1 [ RunTime:0.000230s ]
+
+---------------------------------------------------------------
+[ 2019-04-20T23:58:19+08:00 ] 172.24.149.137 58.219.160.144 GET /phone/msgbox/getApplyNoRead
+[ log ] im.blockhp.com/phone/msgbox/getApplyNoRead [运行时间：0.027245s][吞吐率：36.70req/s] [内存消耗：2,635.30kb] [文件加载：53]
+[ info ] [ LANG ] /www/wwwroot/im.blockhp.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'phone',
+    1 => 'msgbox',
+    2 => 'getApplyNoRead',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=8la1mutkt6flghh45q75v36abb; is_distribut=1; uname=lili; phone_user_name=ppp; phone_user_id=64; phone_user_sign=%E6%9A%82%E6%97%A0; phone_user_avatar=%2Fpublic%2Fuploads%2F20190407%2Faeff301c247d006053491f0efcbc7b85.png; user_id=63',
+  'connection' => 'keep-alive',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://im.blockhp.com/phone/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'im.blockhp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\phone\controller\Msgbox->getApplyNoRead[ /www/wwwroot/im.blockhp.com/application/phone/controller/Msgbox.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000234s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_group_apply` [ RunTime:0.000526s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_group_apply` WHERE  `to_id` = 64  AND `is_read` = 1 LIMIT 1 [ RunTime:0.000185s ]
+
+---------------------------------------------------------------
+[ 2019-04-20T23:58:46+08:00 ] 172.24.149.137 58.219.160.144 GET /phone/msgbox/getApplyNoRead
+[ log ] im.blockhp.com/phone/msgbox/getApplyNoRead [运行时间：0.028594s][吞吐率：34.97req/s] [内存消耗：2,635.30kb] [文件加载：53]
+[ info ] [ LANG ] /www/wwwroot/im.blockhp.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'phone',
+    1 => 'msgbox',
+    2 => 'getApplyNoRead',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'phone_user_name=222; phone_user_id=75; phone_user_sign=%E6%9A%82%E6%97%A0; phone_user_avatar=%2Fpublic%2Fstatic%2Fcommon%2Fimages%2Fcommon.jpg; PHPSESSID=04v6iorvs5nas1514ng3n90rd7; user_id=75; is_distribut=1; uname=222',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://im.blockhp.com/phone/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 SE 2.X MetaSr 1.0',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'im.blockhp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\phone\controller\Msgbox->getApplyNoRead[ /www/wwwroot/im.blockhp.com/application/phone/controller/Msgbox.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000245s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_group_apply` [ RunTime:0.000798s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_group_apply` WHERE  `to_id` = 75  AND `is_read` = 1 LIMIT 1 [ RunTime:0.000235s ]
+
+---------------------------------------------------------------
+[ 2019-04-20T23:58:46+08:00 ] 172.24.149.137 58.219.160.144 GET /phone/msgbox/getNoRead
+[ log ] im.blockhp.com/phone/msgbox/getNoRead [运行时间：0.028168s][吞吐率：35.50req/s] [内存消耗：2,634.96kb] [文件加载：53]
+[ info ] [ LANG ] /www/wwwroot/im.blockhp.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'phone',
+    1 => 'msgbox',
+    2 => 'getNoRead',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'phone_user_name=222; phone_user_id=75; phone_user_sign=%E6%9A%82%E6%97%A0; phone_user_avatar=%2Fpublic%2Fstatic%2Fcommon%2Fimages%2Fcommon.jpg; PHPSESSID=04v6iorvs5nas1514ng3n90rd7; user_id=75; is_distribut=1; uname=222',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://im.blockhp.com/phone/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 SE 2.X MetaSr 1.0',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'im.blockhp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\phone\controller\Msgbox->getNoRead[ /www/wwwroot/im.blockhp.com/application/phone/controller/Msgbox.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000195s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_message` [ RunTime:0.000529s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_message` WHERE  `uid` = 75  AND `read` = 1 LIMIT 1 [ RunTime:0.000174s ]
+
+---------------------------------------------------------------
+[ 2019-04-20T23:58:49+08:00 ] 172.24.149.137 58.219.160.144 GET /phone/msgbox/getNoRead
+[ log ] im.blockhp.com/phone/msgbox/getNoRead [运行时间：0.025089s][吞吐率：39.86req/s] [内存消耗：2,634.96kb] [文件加载：53]
+[ info ] [ LANG ] /www/wwwroot/im.blockhp.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'phone',
+    1 => 'msgbox',
+    2 => 'getNoRead',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=8la1mutkt6flghh45q75v36abb; is_distribut=1; uname=lili; phone_user_name=ppp; phone_user_id=64; phone_user_sign=%E6%9A%82%E6%97%A0; phone_user_avatar=%2Fpublic%2Fuploads%2F20190407%2Faeff301c247d006053491f0efcbc7b85.png; user_id=63',
+  'connection' => 'keep-alive',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://im.blockhp.com/phone/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'im.blockhp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\phone\controller\Msgbox->getNoRead[ /www/wwwroot/im.blockhp.com/application/phone/controller/Msgbox.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000313s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_message` [ RunTime:0.000651s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_message` WHERE  `uid` = 64  AND `read` = 1 LIMIT 1 [ RunTime:0.000196s ]
+
+---------------------------------------------------------------
+[ 2019-04-20T23:58:49+08:00 ] 172.24.149.137 58.219.160.144 GET /phone/msgbox/getApplyNoRead
+[ log ] im.blockhp.com/phone/msgbox/getApplyNoRead [运行时间：0.026123s][吞吐率：38.28req/s] [内存消耗：2,635.30kb] [文件加载：53]
+[ info ] [ LANG ] /www/wwwroot/im.blockhp.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'phone',
+    1 => 'msgbox',
+    2 => 'getApplyNoRead',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=8la1mutkt6flghh45q75v36abb; is_distribut=1; uname=lili; phone_user_name=ppp; phone_user_id=64; phone_user_sign=%E6%9A%82%E6%97%A0; phone_user_avatar=%2Fpublic%2Fuploads%2F20190407%2Faeff301c247d006053491f0efcbc7b85.png; user_id=63',
+  'connection' => 'keep-alive',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://im.blockhp.com/phone/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'im.blockhp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\phone\controller\Msgbox->getApplyNoRead[ /www/wwwroot/im.blockhp.com/application/phone/controller/Msgbox.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000207s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_group_apply` [ RunTime:0.000536s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_group_apply` WHERE  `to_id` = 64  AND `is_read` = 1 LIMIT 1 [ RunTime:0.000172s ]
+
+---------------------------------------------------------------
+[ 2019-04-20T23:58:54+08:00 ] 172.24.149.137 58.219.160.144 GET /phone/wallet/coinshow.html?coin=bhp&page=1
+[ log ] im.blockhp.com/phone/wallet/coinshow.html?coin=bhp&page=1 [运行时间：0.036285s][吞吐率：27.56req/s] [内存消耗：3,218.88kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/im.blockhp.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'phone',
+    1 => 'wallet',
+    2 => 'coinshow',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'phone_user_name=xixi; phone_user_id=59; phone_user_sign=%E6%9A%82%E6%97%A0; phone_user_avatar=%2Fpublic%2Fuploads%2F20190419%2F3fc37503c72f915ef880a8fd5fa35e11.jpg; PHPSESSID=6bjbj64rip9s66r2apcv2ml4sr; user_id=59; is_distribut=1; uname=xixi; admin_type=1; workspaceParam=index%7CSystem; is_mobile=1; cn=0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://im.blockhp.com/phone/wallet/coinshow.html?coin=bhp&page=2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'im.blockhp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'coin' => 'bhp',
+  'page' => '1',
+)
+[ info ] [ RUN ] app\phone\controller\Wallet->CoinShow[ /www/wwwroot/im.blockhp.com/application/phone/controller/Wallet.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/im.blockhp.com/application/phone/view/wallet/coinshow.html [ array (
+  0 => 'action',
+  1 => 'socket_server',
+  2 => 'coiName',
+  3 => 'coinAddress',
+  4 => 'list',
+  5 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000198s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_chatuser` [ RunTime:0.000718s ]
+[ sql ] [ SQL ] SELECT `bhp_public_key` FROM `tp_chatuser` WHERE  `id` = 59 LIMIT 1 [ RunTime:0.000183s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000208s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_turn_out_log` [ RunTime:0.000462s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_turn_out_log` WHERE  `out_u_id` = 59  AND `coin_type` = 'bhp' LIMIT 1 [ RunTime:0.000168s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_turn_out_log` WHERE  `out_u_id` = 59  AND `coin_type` = 'bhp' ORDER BY create_time desc LIMIT 0,6 [ RunTime:0.000165s ]
+[ error ] [8]未定义变量: sys[/www/wwwroot/im.blockhp.com/runtime/temp/a7be7fc05b90230f23f6418c6496a457.php:6]
+[ error ] [8]未定义变量: sys[/www/wwwroot/im.blockhp.com/runtime/temp/a7be7fc05b90230f23f6418c6496a457.php:7]
+[ error ] [8]未定义变量: sys[/www/wwwroot/im.blockhp.com/runtime/temp/a7be7fc05b90230f23f6418c6496a457.php:8]
+
+---------------------------------------------------------------
+[ 2019-04-20T23:59:13+08:00 ] 172.24.149.137 58.219.160.144 GET /public/static/mobile/js/web3.js.map
+[ log ] im.blockhp.com/public/static/mobile/js/web3.js.map [运行时间：0.019169s][吞吐率：52.17req/s] [内存消耗：1,797.84kb] [文件加载：40]
+[ info ] [ LANG ] /www/wwwroot/im.blockhp.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'static',
+    2 => 'mobile',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'phone_user_name=xixi; phone_user_id=59; phone_user_sign=%E6%9A%82%E6%97%A0; phone_user_avatar=%2Fpublic%2Fuploads%2F20190419%2F3fc37503c72f915ef880a8fd5fa35e11.jpg; PHPSESSID=6bjbj64rip9s66r2apcv2ml4sr; user_id=59; is_distribut=1; uname=xixi; admin_type=1; workspaceParam=index%7CSystem; is_mobile=1; cn=0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1',
+  'connection' => 'keep-alive',
+  'host' => 'im.blockhp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'js' => 'web3.js.map',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-04-20T23:59:16+08:00 ] 172.24.149.137 58.219.160.144 GET /phone/msgbox/getApplyNoRead
+[ log ] im.blockhp.com/phone/msgbox/getApplyNoRead [运行时间：0.037650s][吞吐率：26.56req/s] [内存消耗：2,635.30kb] [文件加载：53]
+[ info ] [ LANG ] /www/wwwroot/im.blockhp.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'phone',
+    1 => 'msgbox',
+    2 => 'getApplyNoRead',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'phone_user_name=222; phone_user_id=75; phone_user_sign=%E6%9A%82%E6%97%A0; phone_user_avatar=%2Fpublic%2Fstatic%2Fcommon%2Fimages%2Fcommon.jpg; PHPSESSID=04v6iorvs5nas1514ng3n90rd7; user_id=75; is_distribut=1; uname=222',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://im.blockhp.com/phone/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 SE 2.X MetaSr 1.0',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'im.blockhp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\phone\controller\Msgbox->getApplyNoRead[ /www/wwwroot/im.blockhp.com/application/phone/controller/Msgbox.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000440s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_group_apply` [ RunTime:0.000839s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_group_apply` WHERE  `to_id` = 75  AND `is_read` = 1 LIMIT 1 [ RunTime:0.000173s ]
+
+---------------------------------------------------------------
+[ 2019-04-20T23:59:16+08:00 ] 172.24.149.137 58.219.160.144 GET /phone/msgbox/getNoRead
+[ log ] im.blockhp.com/phone/msgbox/getNoRead [运行时间：0.037511s][吞吐率：26.66req/s] [内存消耗：2,634.96kb] [文件加载：53]
+[ info ] [ LANG ] /www/wwwroot/im.blockhp.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'phone',
+    1 => 'msgbox',
+    2 => 'getNoRead',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'phone_user_name=222; phone_user_id=75; phone_user_sign=%E6%9A%82%E6%97%A0; phone_user_avatar=%2Fpublic%2Fstatic%2Fcommon%2Fimages%2Fcommon.jpg; PHPSESSID=04v6iorvs5nas1514ng3n90rd7; user_id=75; is_distribut=1; uname=222',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://im.blockhp.com/phone/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 SE 2.X MetaSr 1.0',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'im.blockhp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\phone\controller\Msgbox->getNoRead[ /www/wwwroot/im.blockhp.com/application/phone/controller/Msgbox.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000440s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_message` [ RunTime:0.000860s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_message` WHERE  `uid` = 75  AND `read` = 1 LIMIT 1 [ RunTime:0.000159s ]
+
+---------------------------------------------------------------
+[ 2019-04-20T23:59:19+08:00 ] 172.24.149.137 58.219.160.144 GET /phone/msgbox/getNoRead
+[ log ] im.blockhp.com/phone/msgbox/getNoRead [运行时间：0.029056s][吞吐率：34.42req/s] [内存消耗：2,634.96kb] [文件加载：53]
+[ info ] [ LANG ] /www/wwwroot/im.blockhp.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'phone',
+    1 => 'msgbox',
+    2 => 'getNoRead',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=8la1mutkt6flghh45q75v36abb; is_distribut=1; uname=lili; phone_user_name=ppp; phone_user_id=64; phone_user_sign=%E6%9A%82%E6%97%A0; phone_user_avatar=%2Fpublic%2Fuploads%2F20190407%2Faeff301c247d006053491f0efcbc7b85.png; user_id=63',
+  'connection' => 'keep-alive',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://im.blockhp.com/phone/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'im.blockhp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\phone\controller\Msgbox->getNoRead[ /www/wwwroot/im.blockhp.com/application/phone/controller/Msgbox.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000343s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_message` [ RunTime:0.000645s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_message` WHERE  `uid` = 64  AND `read` = 1 LIMIT 1 [ RunTime:0.000194s ]
+
+---------------------------------------------------------------
+[ 2019-04-20T23:59:19+08:00 ] 172.24.149.137 58.219.160.144 GET /phone/msgbox/getApplyNoRead
+[ log ] im.blockhp.com/phone/msgbox/getApplyNoRead [运行时间：0.028317s][吞吐率：35.31req/s] [内存消耗：2,635.30kb] [文件加载：53]
+[ info ] [ LANG ] /www/wwwroot/im.blockhp.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'phone',
+    1 => 'msgbox',
+    2 => 'getApplyNoRead',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=8la1mutkt6flghh45q75v36abb; is_distribut=1; uname=lili; phone_user_name=ppp; phone_user_id=64; phone_user_sign=%E6%9A%82%E6%97%A0; phone_user_avatar=%2Fpublic%2Fuploads%2F20190407%2Faeff301c247d006053491f0efcbc7b85.png; user_id=63',
+  'connection' => 'keep-alive',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://im.blockhp.com/phone/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'im.blockhp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\phone\controller\Msgbox->getApplyNoRead[ /www/wwwroot/im.blockhp.com/application/phone/controller/Msgbox.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000203s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_group_apply` [ RunTime:0.000570s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_group_apply` WHERE  `to_id` = 64  AND `is_read` = 1 LIMIT 1 [ RunTime:0.000185s ]
+
+---------------------------------------------------------------
+[ 2019-04-20T23:59:46+08:00 ] 172.24.149.137 58.219.160.144 GET /phone/msgbox/getApplyNoRead
+[ log ] im.blockhp.com/phone/msgbox/getApplyNoRead [运行时间：0.027800s][吞吐率：35.97req/s] [内存消耗：2,635.30kb] [文件加载：53]
+[ info ] [ LANG ] /www/wwwroot/im.blockhp.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'phone',
+    1 => 'msgbox',
+    2 => 'getApplyNoRead',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'phone_user_name=222; phone_user_id=75; phone_user_sign=%E6%9A%82%E6%97%A0; phone_user_avatar=%2Fpublic%2Fstatic%2Fcommon%2Fimages%2Fcommon.jpg; PHPSESSID=04v6iorvs5nas1514ng3n90rd7; user_id=75; is_distribut=1; uname=222',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://im.blockhp.com/phone/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 SE 2.X MetaSr 1.0',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'im.blockhp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\phone\controller\Msgbox->getApplyNoRead[ /www/wwwroot/im.blockhp.com/application/phone/controller/Msgbox.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000304s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_group_apply` [ RunTime:0.000702s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_group_apply` WHERE  `to_id` = 75  AND `is_read` = 1 LIMIT 1 [ RunTime:0.000225s ]
+
+---------------------------------------------------------------
+[ 2019-04-20T23:59:46+08:00 ] 172.24.149.137 58.219.160.144 GET /phone/msgbox/getNoRead
+[ log ] im.blockhp.com/phone/msgbox/getNoRead [运行时间：0.029108s][吞吐率：34.35req/s] [内存消耗：2,634.96kb] [文件加载：53]
+[ info ] [ LANG ] /www/wwwroot/im.blockhp.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'phone',
+    1 => 'msgbox',
+    2 => 'getNoRead',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'phone_user_name=222; phone_user_id=75; phone_user_sign=%E6%9A%82%E6%97%A0; phone_user_avatar=%2Fpublic%2Fstatic%2Fcommon%2Fimages%2Fcommon.jpg; PHPSESSID=04v6iorvs5nas1514ng3n90rd7; user_id=75; is_distribut=1; uname=222',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://im.blockhp.com/phone/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 SE 2.X MetaSr 1.0',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'im.blockhp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\phone\controller\Msgbox->getNoRead[ /www/wwwroot/im.blockhp.com/application/phone/controller/Msgbox.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000217s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_message` [ RunTime:0.000621s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_message` WHERE  `uid` = 75  AND `read` = 1 LIMIT 1 [ RunTime:0.000237s ]
+
+---------------------------------------------------------------
+[ 2019-04-20T23:59:49+08:00 ] 172.24.149.137 58.219.160.144 GET /phone/msgbox/getNoRead
+[ log ] im.blockhp.com/phone/msgbox/getNoRead [运行时间：0.027544s][吞吐率：36.31req/s] [内存消耗：2,634.96kb] [文件加载：53]
+[ info ] [ LANG ] /www/wwwroot/im.blockhp.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'phone',
+    1 => 'msgbox',
+    2 => 'getNoRead',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=8la1mutkt6flghh45q75v36abb; is_distribut=1; uname=lili; phone_user_name=ppp; phone_user_id=64; phone_user_sign=%E6%9A%82%E6%97%A0; phone_user_avatar=%2Fpublic%2Fuploads%2F20190407%2Faeff301c247d006053491f0efcbc7b85.png; user_id=63',
+  'connection' => 'keep-alive',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://im.blockhp.com/phone/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'im.blockhp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\phone\controller\Msgbox->getNoRead[ /www/wwwroot/im.blockhp.com/application/phone/controller/Msgbox.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000279s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_message` [ RunTime:0.000649s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_message` WHERE  `uid` = 64  AND `read` = 1 LIMIT 1 [ RunTime:0.000214s ]
+
+---------------------------------------------------------------
+[ 2019-04-20T23:59:49+08:00 ] 172.24.149.137 58.219.160.144 GET /phone/msgbox/getApplyNoRead
+[ log ] im.blockhp.com/phone/msgbox/getApplyNoRead [运行时间：0.026038s][吞吐率：38.41req/s] [内存消耗：2,635.30kb] [文件加载：53]
+[ info ] [ LANG ] /www/wwwroot/im.blockhp.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'phone',
+    1 => 'msgbox',
+    2 => 'getApplyNoRead',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=8la1mutkt6flghh45q75v36abb; is_distribut=1; uname=lili; phone_user_name=ppp; phone_user_id=64; phone_user_sign=%E6%9A%82%E6%97%A0; phone_user_avatar=%2Fpublic%2Fuploads%2F20190407%2Faeff301c247d006053491f0efcbc7b85.png; user_id=63',
+  'connection' => 'keep-alive',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://im.blockhp.com/phone/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'im.blockhp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\phone\controller\Msgbox->getApplyNoRead[ /www/wwwroot/im.blockhp.com/application/phone/controller/Msgbox.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000267s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_group_apply` [ RunTime:0.000498s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_group_apply` WHERE  `to_id` = 64  AND `is_read` = 1 LIMIT 1 [ RunTime:0.000183s ]
+
+---------------------------------------------------------------
+[ 2019-04-20T23:59:51+08:00 ] 172.24.149.137 58.219.160.144 GET /phone/wallet/coinshow.html?coin=bhp&page=1
+[ log ] im.blockhp.com/phone/wallet/coinshow.html?coin=bhp&page=1 [运行时间：0.032808s][吞吐率：30.48req/s] [内存消耗：3,218.88kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/im.blockhp.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'phone',
+    1 => 'wallet',
+    2 => 'coinshow',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'phone_user_name=xixi; phone_user_id=59; phone_user_sign=%E6%9A%82%E6%97%A0; phone_user_avatar=%2Fpublic%2Fuploads%2F20190419%2F3fc37503c72f915ef880a8fd5fa35e11.jpg; PHPSESSID=6bjbj64rip9s66r2apcv2ml4sr; user_id=59; is_distribut=1; uname=xixi; admin_type=1; workspaceParam=index%7CSystem; is_mobile=1; cn=0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://im.blockhp.com/phone/wallet/coinshow.html?coin=bhp&page=2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'im.blockhp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'coin' => 'bhp',
+  'page' => '1',
+)
+[ info ] [ RUN ] app\phone\controller\Wallet->CoinShow[ /www/wwwroot/im.blockhp.com/application/phone/controller/Wallet.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/im.blockhp.com/application/phone/view/wallet/coinshow.html [ array (
+  0 => 'action',
+  1 => 'socket_server',
+  2 => 'coiName',
+  3 => 'coinAddress',
+  4 => 'list',
+  5 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000205s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_chatuser` [ RunTime:0.000616s ]
+[ sql ] [ SQL ] SELECT `bhp_public_key` FROM `tp_chatuser` WHERE  `id` = 59 LIMIT 1 [ RunTime:0.000161s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000194s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_turn_out_log` [ RunTime:0.000479s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_turn_out_log` WHERE  `out_u_id` = 59  AND `coin_type` = 'bhp' LIMIT 1 [ RunTime:0.000165s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_turn_out_log` WHERE  `out_u_id` = 59  AND `coin_type` = 'bhp' ORDER BY create_time desc LIMIT 0,6 [ RunTime:0.000172s ]
+[ error ] [8]未定义变量: sys[/www/wwwroot/im.blockhp.com/runtime/temp/a7be7fc05b90230f23f6418c6496a457.php:6]
+[ error ] [8]未定义变量: sys[/www/wwwroot/im.blockhp.com/runtime/temp/a7be7fc05b90230f23f6418c6496a457.php:7]
+[ error ] [8]未定义变量: sys[/www/wwwroot/im.blockhp.com/runtime/temp/a7be7fc05b90230f23f6418c6496a457.php:8]
+
+---------------------------------------------------------------

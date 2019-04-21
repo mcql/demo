@@ -324,7 +324,7 @@ class UsersLogic extends Model
         if ($desc) {
             $where['desc'] = array('like', '%' . $desc . '%');
         }
-        $where['order_id'] = array('neq',0);
+        //$where['order_id'] = array('neq',0);
         $count = M('account_log')->where($where)->count();
         $Page = new Page($count, 16);
         $logs = M('account_log')->where($where)->order('change_time desc')->limit($Page->firstRow . ',' . $Page->listRows)->select();

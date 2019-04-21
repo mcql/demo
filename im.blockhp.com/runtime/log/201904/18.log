@@ -24865,3 +24865,1176 @@
 [ error ] [8]未定义数组索引: ticket[C:\Users\Administrator\Desktop\demo\im.blockhp.com\application\mobile\logic\Jssdk.php:86]
 
 ---------------------------------------------------------------
+[ 2019-04-18T22:45:50+08:00 ] 127.0.0.1 127.0.0.1 GET /phone/login/index.html
+[ log ] www.ming.cc/phone/login/index.html [运行时间：0.045414s][吞吐率：22.02req/s] [内存消耗：1,479.70kb] [文件加载：38]
+[ info ] [ LANG ] E:\web\demo\im.blockhp.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'phone',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.ming.cc',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\phone\controller\Login->index[ E:\web\demo\im.blockhp.com\application\phone\controller\Login.php ]
+[ info ] [ VIEW ] E:\web\demo\im.blockhp.com/application/phone\view\login\index.html [ array (
+  0 => 'action',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-04-18T22:45:53+08:00 ] 127.0.0.1 127.0.0.1 GET /public/static/common/css/bootstrap.min.css.map
+[ log ] www.ming.cc/public/static/common/css/bootstrap.min.css.map [运行时间：0.084544s][吞吐率：11.83req/s] [内存消耗：1,146.93kb] [文件加载：31]
+[ info ] [ LANG ] E:\web\demo\im.blockhp.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'static',
+    2 => 'common',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.ming.cc',
+)
+[ info ] [ PARAM ] array (
+  'css' => 'bootstrap.min.css.map',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-04-18T22:45:55+08:00 ] 127.0.0.1 127.0.0.1 GET /phone/login/index.html
+[ log ] www.ming.cc/phone/login/index.html [运行时间：0.037182s][吞吐率：26.89req/s] [内存消耗：1,351.36kb] [文件加载：36]
+[ info ] [ LANG ] E:\web\demo\im.blockhp.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'phone',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.ming.cc',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\phone\controller\Login->index[ E:\web\demo\im.blockhp.com\application\phone\controller\Login.php ]
+[ info ] [ VIEW ] E:\web\demo\im.blockhp.com/application/phone\view\login\index.html [ array (
+  0 => 'action',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-04-18T22:45:56+08:00 ] 127.0.0.1 127.0.0.1 GET /public/static/common/css/bootstrap.min.css.map
+[ log ] www.ming.cc/public/static/common/css/bootstrap.min.css.map [运行时间：0.034146s][吞吐率：29.29req/s] [内存消耗：1,146.96kb] [文件加载：31]
+[ info ] [ LANG ] E:\web\demo\im.blockhp.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'static',
+    2 => 'common',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'connection' => 'close',
+  'host' => 'www.ming.cc',
+)
+[ info ] [ PARAM ] array (
+  'css' => 'bootstrap.min.css.map',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-04-18T22:46:12+08:00 ] 127.0.0.1 127.0.0.1 POST /phone/login/dologin.html
+[ log ] www.ming.cc/phone/login/dologin.html [运行时间：3.237309s][吞吐率：0.31req/s] [内存消耗：2,814.28kb] [文件加载：55]
+[ info ] [ LANG ] E:\web\demo\im.blockhp.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'phone',
+    1 => 'login',
+    2 => 'dologin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.ming.cc/phone/login/index.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.ming.cc',
+  'accept' => '*/*',
+  'content-length' => '40',
+  'connection' => 'close',
+  'host' => 'www.ming.cc',
+)
+[ info ] [ PARAM ] array (
+  'user_name' => '1662673658@qq.com',
+  'pwd' => '123123',
+)
+[ info ] [ RUN ] app\phone\controller\Login->doLogin[ E:\web\demo\im.blockhp.com\application\phone\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.016259s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_chatuser` [ RunTime:0.015381s ]
+[ sql ] [ SQL ] SELECT `id`,`user_name`,`pwd`,`sign`,`avatar` FROM `tp_chatuser` WHERE  `truename` = '1662673658@qq.com' LIMIT 1 [ RunTime:0.001286s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.014146s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] UPDATE `tp_chatuser`  SET `status`=1  WHERE  `id` = 66 [ RunTime:0.000916s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.033839s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_config` [ RunTime:0.012587s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_config` [ RunTime:0.000860s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_goods_category` [ RunTime:0.012435s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods_category` WHERE  `is_show` = 1 ORDER BY sort_order [ RunTime:0.000841s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_brand` [ RunTime:0.011654s ]
+[ sql ] [ SQL ] SELECT `id`,`cat_id1`,`logo`,`is_hot` FROM `tp_brand` WHERE  (  cat_id1>0 ) [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_users` [ RunTime:0.013067s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_users` WHERE  (  mobile='1662673658@qq.com' OR email='1662673658@qq.com' ) LIMIT 1 [ RunTime:0.000787s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user_level` [ RunTime:0.010922s ]
+[ sql ] [ SQL ] SELECT `level_name` FROM `tp_user_level` WHERE  (  level_id = 1 ) LIMIT 1 [ RunTime:0.000384s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cart` [ RunTime:0.011979s ]
+[ sql ] [ SQL ] UPDATE `tp_cart`  SET `user_id`=66  WHERE  (  session_id = 'e2dn0r8sv5r0t27opt5qnbc7r6' ) [ RunTime:0.000409s ]
+[ sql ] [ SQL ] select id from `tp_cart` where user_id = 66 group by  goods_id,spec_key having count(goods_id) > 1 [ RunTime:0.000608s ]
+[ error ] [8]Constant IS_AJAX already defined[E:\web\demo\im.blockhp.com\thinkphp\library\think\Controller.php:56]
+[ error ] [8]Constant IS_GET already defined[E:\web\demo\im.blockhp.com\thinkphp\library\think\Controller.php:57]
+[ error ] [8]Constant IS_POST already defined[E:\web\demo\im.blockhp.com\thinkphp\library\think\Controller.php:58]
+[ error ] [8]Constant MODULE_NAME already defined[E:\web\demo\im.blockhp.com\thinkphp\library\think\Controller.php:60]
+[ error ] [8]Constant CONTROLLER_NAME already defined[E:\web\demo\im.blockhp.com\thinkphp\library\think\Controller.php:61]
+[ error ] [8]Constant ACTION_NAME already defined[E:\web\demo\im.blockhp.com\thinkphp\library\think\Controller.php:62]
+[ error ] [8]Constant PREFIX already defined[E:\web\demo\im.blockhp.com\thinkphp\library\think\Controller.php:63]
+[ error ] [8]unserialize(): Error at offset 0 of 12563 bytes[E:\web\demo\im.blockhp.com\thinkphp\library\think\cache\driver\File.php:122]
+[ error ] [8]unserialize(): Error at offset 0 of 7110 bytes[E:\web\demo\im.blockhp.com\thinkphp\library\think\cache\driver\File.php:122]
+[ error ] [8]unserialize(): Error at offset 0 of 588 bytes[E:\web\demo\im.blockhp.com\thinkphp\library\think\cache\driver\File.php:122]
+
+---------------------------------------------------------------
+[ 2019-04-18T22:46:16+08:00 ] 127.0.0.1 127.0.0.1 GET /phone/index/index.html
+[ log ] www.ming.cc/phone/index/index.html [运行时间：3.107232s][吞吐率：0.32req/s] [内存消耗：2,058.27kb] [文件加载：46]
+[ info ] [ LANG ] E:\web\demo\im.blockhp.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'phone',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'phone_user_name=ming; phone_user_id=66; phone_user_sign=%C3%A6%C5%A1%E2%80%9A%C3%A6%E2%80%94%C2%A0; phone_user_avatar=%2Fpublic%2Fstatic%2Fcommon%2Fimages%2Fcommon.jpg; PHPSESSID=e2dn0r8sv5r0t27opt5qnbc7r6; is_mobile=1; user_id=66; is_distribut=1; uname=ming',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.ming.cc/phone/login/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.ming.cc',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\phone\controller\Index->index[ E:\web\demo\im.blockhp.com\application\phone\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\web\demo\im.blockhp.com/application/phone\view\index\index.html [ array (
+  0 => 'action',
+  1 => 'socket_server',
+  2 => 'userlist',
+  3 => 'uinfo',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.004413s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_chatuser` [ RunTime:0.009725s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_chatuser` WHERE  `id` = 66 LIMIT 1 [ RunTime:0.000757s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.003939s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_friends` [ RunTime:0.012877s ]
+[ sql ] [ SQL ] SELECT `c`.`user_name`,`c`.`id`,`c`.`avatar`,`c`.`sign`,`c`.`status`,`f`.`group_id` FROM `tp_friends` `f` INNER JOIN `tp_chatuser` `c` ON `c`.`id`=`f`.`friend_id` WHERE  `f`.`user_id` = '66' [ RunTime:0.000566s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.014313s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_groupdetail` [ RunTime:0.012796s ]
+[ sql ] [ SQL ] SELECT c.group_name groupname,`c`.`id`,`c`.`avatar` FROM `tp_groupdetail` `j` INNER JOIN `tp_chatgroup` `c` ON `j`.`group_id`=`c`.`id` WHERE  `j`.`user_id` = '66' GROUP BY j.group_id [ RunTime:0.003801s ]
+
+---------------------------------------------------------------
+[ 2019-04-18T22:46:16+08:00 ] 127.0.0.1 127.0.0.1 GET /public/static/common/css/bootstrap.min.css.map
+[ log ] www.ming.cc/public/static/common/css/bootstrap.min.css.map [运行时间：0.040779s][吞吐率：24.52req/s] [内存消耗：1,147.73kb] [文件加载：31]
+[ info ] [ LANG ] E:\web\demo\im.blockhp.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'static',
+    2 => 'common',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'phone_user_name=ming; phone_user_id=66; phone_user_sign=%C3%A6%C5%A1%E2%80%9A%C3%A6%E2%80%94%C2%A0; phone_user_avatar=%2Fpublic%2Fstatic%2Fcommon%2Fimages%2Fcommon.jpg; PHPSESSID=e2dn0r8sv5r0t27opt5qnbc7r6; is_mobile=1; user_id=66; is_distribut=1; uname=ming',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'connection' => 'close',
+  'host' => 'www.ming.cc',
+)
+[ info ] [ PARAM ] array (
+  'css' => 'bootstrap.min.css.map',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-04-18T22:46:34+08:00 ] 127.0.0.1 127.0.0.1 GET /phone/index/myGroup
+[ log ] www.ming.cc/phone/index/myGroup [运行时间：1.066210s][吞吐率：0.94req/s] [内存消耗：1,869.75kb] [文件加载：44]
+[ info ] [ LANG ] E:\web\demo\im.blockhp.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'phone',
+    1 => 'index',
+    2 => 'myGroup',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'phone_user_name=ming; phone_user_id=66; phone_user_sign=%C3%A6%C5%A1%E2%80%9A%C3%A6%E2%80%94%C2%A0; phone_user_avatar=%2Fpublic%2Fstatic%2Fcommon%2Fimages%2Fcommon.jpg; PHPSESSID=e2dn0r8sv5r0t27opt5qnbc7r6; is_mobile=1; user_id=66; is_distribut=1; uname=ming',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.ming.cc/phone/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'www.ming.cc',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\phone\controller\Index->myGroup[ E:\web\demo\im.blockhp.com\application\phone\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.014155s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_chatgroup` [ RunTime:0.010094s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_chatgroup` WHERE  `owner_id` = 66 [ RunTime:0.001209s ]
+
+---------------------------------------------------------------
+[ 2019-04-18T22:46:47+08:00 ] 127.0.0.1 127.0.0.1 GET /phone/msgbox/getNoRead
+[ log ] www.ming.cc/phone/msgbox/getNoRead [运行时间：1.068090s][吞吐率：0.94req/s] [内存消耗：1,887.37kb] [文件加载：44]
+[ info ] [ LANG ] E:\web\demo\im.blockhp.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'phone',
+    1 => 'msgbox',
+    2 => 'getNoRead',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'phone_user_name=ming; phone_user_id=66; phone_user_sign=%C3%A6%C5%A1%E2%80%9A%C3%A6%E2%80%94%C2%A0; phone_user_avatar=%2Fpublic%2Fstatic%2Fcommon%2Fimages%2Fcommon.jpg; PHPSESSID=e2dn0r8sv5r0t27opt5qnbc7r6; is_mobile=1; user_id=66; is_distribut=1; uname=ming',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.ming.cc/phone/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'www.ming.cc',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\phone\controller\Msgbox->getNoRead[ E:\web\demo\im.blockhp.com\application\phone\controller\Msgbox.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.015261s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_message` [ RunTime:0.014356s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_message` WHERE  `uid` = 66  AND `read` = 1 LIMIT 1 [ RunTime:0.000576s ]
+
+---------------------------------------------------------------
+[ 2019-04-18T22:46:50+08:00 ] 127.0.0.1 127.0.0.1 GET /phone/msgbox/getApplyNoRead
+[ log ] www.ming.cc/phone/msgbox/getApplyNoRead [运行时间：1.068050s][吞吐率：0.94req/s] [内存消耗：1,888.45kb] [文件加载：44]
+[ info ] [ LANG ] E:\web\demo\im.blockhp.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'phone',
+    1 => 'msgbox',
+    2 => 'getApplyNoRead',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'phone_user_name=ming; phone_user_id=66; phone_user_sign=%C3%A6%C5%A1%E2%80%9A%C3%A6%E2%80%94%C2%A0; phone_user_avatar=%2Fpublic%2Fstatic%2Fcommon%2Fimages%2Fcommon.jpg; PHPSESSID=e2dn0r8sv5r0t27opt5qnbc7r6; is_mobile=1; user_id=66; is_distribut=1; uname=ming',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.ming.cc/phone/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'www.ming.cc',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\phone\controller\Msgbox->getApplyNoRead[ E:\web\demo\im.blockhp.com\application\phone\controller\Msgbox.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.015477s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_group_apply` [ RunTime:0.013791s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_group_apply` WHERE  `to_id` = 66  AND `is_read` = 1 LIMIT 1 [ RunTime:0.001188s ]
+
+---------------------------------------------------------------
+[ 2019-04-18T22:47:17+08:00 ] 127.0.0.1 127.0.0.1 POST /phone/msgbox/addGroup
+[ log ] www.ming.cc/phone/msgbox/addGroup [运行时间：3.089158s][吞吐率：0.32req/s] [内存消耗：1,927.85kb] [文件加载：44]
+[ info ] [ LANG ] E:\web\demo\im.blockhp.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'phone',
+    1 => 'msgbox',
+    2 => 'addGroup',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'phone_user_name=ming; phone_user_id=66; phone_user_sign=%C3%A6%C5%A1%E2%80%9A%C3%A6%E2%80%94%C2%A0; phone_user_avatar=%2Fpublic%2Fstatic%2Fcommon%2Fimages%2Fcommon.jpg; PHPSESSID=e2dn0r8sv5r0t27opt5qnbc7r6; is_mobile=1; user_id=66; is_distribut=1; uname=ming',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.ming.cc/phone/index/index.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.ming.cc',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '15',
+  'connection' => 'close',
+  'host' => 'www.ming.cc',
+)
+[ info ] [ PARAM ] array (
+  'group_name' => 'ming',
+)
+[ info ] [ RUN ] app\phone\controller\Msgbox->addGroup[ E:\web\demo\im.blockhp.com\application\phone\controller\Msgbox.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.003236s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_chatgroup` [ RunTime:0.010325s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_chatgroup` WHERE  `group_name` = 'ming' LIMIT 1 [ RunTime:0.000648s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.010036s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] INSERT INTO `tp_chatgroup` (`group_name` , `owner_name` , `owner_id` , `owner_avatar` , `owner_sign` , `addtime` , `status` , `avatar`) VALUES ('ming' , 'ming' , 66 , '/public/static/common/images/common.jpg' , 'æš‚æ— ' , 1555598835 , 1 , '/public/static/phone/images/group_avatar.jpg') [ RunTime:0.000812s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.018879s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_groupdetail` [ RunTime:0.009604s ]
+[ sql ] [ SQL ] INSERT INTO `tp_groupdetail` (`user_id` , `user_name` , `user_avatar` , `user_sign` , `group_id`) VALUES (66 , 'ming' , '/public/static/common/images/common.jpg' , 'æš‚æ— ' , 37) [ RunTime:0.000598s ]
+
+---------------------------------------------------------------
+[ 2019-04-18T22:47:17+08:00 ] 127.0.0.1 127.0.0.1 GET /phone/msgbox/getNoRead
+[ log ] www.ming.cc/phone/msgbox/getNoRead [运行时间：1.054429s][吞吐率：0.95req/s] [内存消耗：1,887.37kb] [文件加载：44]
+[ info ] [ LANG ] E:\web\demo\im.blockhp.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'phone',
+    1 => 'msgbox',
+    2 => 'getNoRead',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'phone_user_name=ming; phone_user_id=66; phone_user_sign=%C3%A6%C5%A1%E2%80%9A%C3%A6%E2%80%94%C2%A0; phone_user_avatar=%2Fpublic%2Fstatic%2Fcommon%2Fimages%2Fcommon.jpg; PHPSESSID=e2dn0r8sv5r0t27opt5qnbc7r6; is_mobile=1; user_id=66; is_distribut=1; uname=ming',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.ming.cc/phone/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'www.ming.cc',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\phone\controller\Msgbox->getNoRead[ E:\web\demo\im.blockhp.com\application\phone\controller\Msgbox.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.013063s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_message` [ RunTime:0.009595s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_message` WHERE  `uid` = 66  AND `read` = 1 LIMIT 1 [ RunTime:0.000551s ]
+
+---------------------------------------------------------------
+[ 2019-04-18T22:47:18+08:00 ] 127.0.0.1 127.0.0.1 GET /phone/msgbox/getApplyNoRead
+[ log ] www.ming.cc/phone/msgbox/getApplyNoRead [运行时间：1.069952s][吞吐率：0.93req/s] [内存消耗：1,888.45kb] [文件加载：44]
+[ info ] [ LANG ] E:\web\demo\im.blockhp.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'phone',
+    1 => 'msgbox',
+    2 => 'getApplyNoRead',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'phone_user_name=ming; phone_user_id=66; phone_user_sign=%C3%A6%C5%A1%E2%80%9A%C3%A6%E2%80%94%C2%A0; phone_user_avatar=%2Fpublic%2Fstatic%2Fcommon%2Fimages%2Fcommon.jpg; PHPSESSID=e2dn0r8sv5r0t27opt5qnbc7r6; is_mobile=1; user_id=66; is_distribut=1; uname=ming',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.ming.cc/phone/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'www.ming.cc',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\phone\controller\Msgbox->getApplyNoRead[ E:\web\demo\im.blockhp.com\application\phone\controller\Msgbox.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.028918s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_group_apply` [ RunTime:0.009697s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_group_apply` WHERE  `to_id` = 66  AND `is_read` = 1 LIMIT 1 [ RunTime:0.000580s ]
+
+---------------------------------------------------------------
+[ 2019-04-18T22:47:22+08:00 ] 127.0.0.1 127.0.0.1 GET /phone/index/index.html
+[ log ] www.ming.cc/phone/index/index.html [运行时间：3.097721s][吞吐率：0.32req/s] [内存消耗：1,921.76kb] [文件加载：44]
+[ info ] [ LANG ] E:\web\demo\im.blockhp.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'phone',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'phone_user_name=ming; phone_user_id=66; phone_user_sign=%C3%A6%C5%A1%E2%80%9A%C3%A6%E2%80%94%C2%A0; phone_user_avatar=%2Fpublic%2Fstatic%2Fcommon%2Fimages%2Fcommon.jpg; PHPSESSID=e2dn0r8sv5r0t27opt5qnbc7r6; is_mobile=1; user_id=66; is_distribut=1; uname=ming',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.ming.cc/phone/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.ming.cc',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\phone\controller\Index->index[ E:\web\demo\im.blockhp.com\application\phone\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\web\demo\im.blockhp.com/application/phone\view\index\index.html [ array (
+  0 => 'action',
+  1 => 'socket_server',
+  2 => 'userlist',
+  3 => 'uinfo',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.005195s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_chatuser` [ RunTime:0.012532s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_chatuser` WHERE  `id` = 66 LIMIT 1 [ RunTime:0.000840s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.014658s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_friends` [ RunTime:0.009134s ]
+[ sql ] [ SQL ] SELECT `c`.`user_name`,`c`.`id`,`c`.`avatar`,`c`.`sign`,`c`.`status`,`f`.`group_id` FROM `tp_friends` `f` INNER JOIN `tp_chatuser` `c` ON `c`.`id`=`f`.`friend_id` WHERE  `f`.`user_id` = '66' [ RunTime:0.000594s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.004145s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_groupdetail` [ RunTime:0.010066s ]
+[ sql ] [ SQL ] SELECT c.group_name groupname,`c`.`id`,`c`.`avatar` FROM `tp_groupdetail` `j` INNER JOIN `tp_chatgroup` `c` ON `j`.`group_id`=`c`.`id` WHERE  `j`.`user_id` = '66' GROUP BY j.group_id [ RunTime:0.000788s ]
+
+---------------------------------------------------------------
+[ 2019-04-18T22:47:22+08:00 ] 127.0.0.1 127.0.0.1 GET /public/static/common/css/bootstrap.min.css.map
+[ log ] www.ming.cc/public/static/common/css/bootstrap.min.css.map [运行时间：0.043654s][吞吐率：22.91req/s] [内存消耗：1,147.73kb] [文件加载：31]
+[ info ] [ LANG ] E:\web\demo\im.blockhp.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'static',
+    2 => 'common',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'phone_user_name=ming; phone_user_id=66; phone_user_sign=%C3%A6%C5%A1%E2%80%9A%C3%A6%E2%80%94%C2%A0; phone_user_avatar=%2Fpublic%2Fstatic%2Fcommon%2Fimages%2Fcommon.jpg; PHPSESSID=e2dn0r8sv5r0t27opt5qnbc7r6; is_mobile=1; user_id=66; is_distribut=1; uname=ming',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'connection' => 'close',
+  'host' => 'www.ming.cc',
+)
+[ info ] [ PARAM ] array (
+  'css' => 'bootstrap.min.css.map',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-04-18T22:47:32+08:00 ] 127.0.0.1 127.0.0.1 GET /phone/index/groupDetail?gid=37
+[ log ] www.ming.cc/phone/index/groupDetail?gid=37 [运行时间：2.090848s][吞吐率：0.48req/s] [内存消耗：1,892.77kb] [文件加载：44]
+[ info ] [ LANG ] E:\web\demo\im.blockhp.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'phone',
+    1 => 'index',
+    2 => 'groupDetail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'phone_user_name=ming; phone_user_id=66; phone_user_sign=%C3%A6%C5%A1%E2%80%9A%C3%A6%E2%80%94%C2%A0; phone_user_avatar=%2Fpublic%2Fstatic%2Fcommon%2Fimages%2Fcommon.jpg; PHPSESSID=e2dn0r8sv5r0t27opt5qnbc7r6; is_mobile=1; user_id=66; is_distribut=1; uname=ming',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.ming.cc/phone/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'www.ming.cc',
+)
+[ info ] [ PARAM ] array (
+  'gid' => '37',
+)
+[ info ] [ RUN ] app\phone\controller\Index->groupDetail[ E:\web\demo\im.blockhp.com\application\phone\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.014586s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_chatgroup` [ RunTime:0.010118s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_chatgroup` WHERE  `id` = 37  AND `owner_id` = 66 LIMIT 1 [ RunTime:0.000611s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.015260s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_groupdetail` [ RunTime:0.009143s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_groupdetail` WHERE  `group_id` = 37 [ RunTime:0.000584s ]
+
+---------------------------------------------------------------
+[ 2019-04-18T22:47:53+08:00 ] 127.0.0.1 127.0.0.1 GET /phone/msgbox/getApplyNoRead
+[ log ] www.ming.cc/phone/msgbox/getApplyNoRead [运行时间：1.066440s][吞吐率：0.94req/s] [内存消耗：1,888.45kb] [文件加载：44]
+[ info ] [ LANG ] E:\web\demo\im.blockhp.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'phone',
+    1 => 'msgbox',
+    2 => 'getApplyNoRead',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'phone_user_name=ming; phone_user_id=66; phone_user_sign=%C3%A6%C5%A1%E2%80%9A%C3%A6%E2%80%94%C2%A0; phone_user_avatar=%2Fpublic%2Fstatic%2Fcommon%2Fimages%2Fcommon.jpg; PHPSESSID=e2dn0r8sv5r0t27opt5qnbc7r6; is_mobile=1; user_id=66; is_distribut=1; uname=ming',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.ming.cc/phone/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'www.ming.cc',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\phone\controller\Msgbox->getApplyNoRead[ E:\web\demo\im.blockhp.com\application\phone\controller\Msgbox.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.020614s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_group_apply` [ RunTime:0.009645s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_group_apply` WHERE  `to_id` = 66  AND `is_read` = 1 LIMIT 1 [ RunTime:0.000509s ]
+
+---------------------------------------------------------------
+[ 2019-04-18T22:47:53+08:00 ] 127.0.0.1 127.0.0.1 GET /phone/msgbox/getNoRead
+[ log ] www.ming.cc/phone/msgbox/getNoRead [运行时间：1.083519s][吞吐率：0.92req/s] [内存消耗：1,887.37kb] [文件加载：44]
+[ info ] [ LANG ] E:\web\demo\im.blockhp.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'phone',
+    1 => 'msgbox',
+    2 => 'getNoRead',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'phone_user_name=ming; phone_user_id=66; phone_user_sign=%C3%A6%C5%A1%E2%80%9A%C3%A6%E2%80%94%C2%A0; phone_user_avatar=%2Fpublic%2Fstatic%2Fcommon%2Fimages%2Fcommon.jpg; PHPSESSID=e2dn0r8sv5r0t27opt5qnbc7r6; is_mobile=1; user_id=66; is_distribut=1; uname=ming',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.ming.cc/phone/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'www.ming.cc',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\phone\controller\Msgbox->getNoRead[ E:\web\demo\im.blockhp.com\application\phone\controller\Msgbox.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.036252s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_message` [ RunTime:0.012435s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_message` WHERE  `uid` = 66  AND `read` = 1 LIMIT 1 [ RunTime:0.000675s ]
+
+---------------------------------------------------------------
+[ 2019-04-18T22:48:23+08:00 ] 127.0.0.1 127.0.0.1 GET /phone/msgbox/getNoRead
+[ log ] www.ming.cc/phone/msgbox/getNoRead [运行时间：1.070242s][吞吐率：0.93req/s] [内存消耗：1,887.37kb] [文件加载：44]
+[ info ] [ LANG ] E:\web\demo\im.blockhp.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'phone',
+    1 => 'msgbox',
+    2 => 'getNoRead',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'phone_user_name=ming; phone_user_id=66; phone_user_sign=%C3%A6%C5%A1%E2%80%9A%C3%A6%E2%80%94%C2%A0; phone_user_avatar=%2Fpublic%2Fstatic%2Fcommon%2Fimages%2Fcommon.jpg; PHPSESSID=e2dn0r8sv5r0t27opt5qnbc7r6; is_mobile=1; user_id=66; is_distribut=1; uname=ming',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.ming.cc/phone/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'www.ming.cc',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\phone\controller\Msgbox->getNoRead[ E:\web\demo\im.blockhp.com\application\phone\controller\Msgbox.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.013522s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_message` [ RunTime:0.015701s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_message` WHERE  `uid` = 66  AND `read` = 1 LIMIT 1 [ RunTime:0.000393s ]
+
+---------------------------------------------------------------
+-------------------------------
+[ 2019-04-18T22:48:53+08:00 ] 127.0.0.1 127.0.0.1 GET /phone/msgbox/getNoRead
+[ log ] www.ming.cc/phone/msgbox/getNoRead [运行时间：1.077790s][吞吐率：0.93req/s] [内存消耗：1,887.37kb] [文件加载：44]
+[ info ] [ LANG ] E:\web\demo\im.blockhp.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'phone',
+    1 => 'msgbox',
+    2 => 'getNoRead',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'phone_user_name=ming; phone_user_id=66; phone_user_sign=%C3%A6%C5%A1%E2%80%9A%C3%A6%E2%80%94%C2%A0; phone_user_avatar=%2Fpublic%2Fstatic%2Fcommon%2Fimages%2Fcommon.jpg; PHPSESSID=e2dn0r8sv5r0t27opt5qnbc7r6; is_mobile=1; user_id=66; is_distribut=1; uname=ming',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.ming.cc/phone/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'www.ming.cc',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\phone\controller\Msgbox->getNoRead[ E:\web\demo\im.blockhp.com\application\phone\controller\Msgbox.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.028686s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_message` [ RunTime:0.015961s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_message` WHERE  `uid` = 66  AND `read` = 1 LIMIT 1 [ RunTime:0.000503s ]
+
+---------------------------------------------------------------
+[ 2019-04-18T22:48:53+08:00 ] 127.0.0.1 127.0.0.1 GET /phone/msgbox/getApplyNoRead
+[ log ] www.ming.cc/phone/msgbox/getApplyNoRead [运行时间：1.075600s][吞吐率：0.93req/s] [内存消耗：1,888.45kb] [文件加载：44]
+[ info ] [ LANG ] E:\web\demo\im.blockhp.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'phone',
+    1 => 'msgbox',
+    2 => 'getApplyNoRead',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'phone_user_name=ming; phone_user_id=66; phone_user_sign=%C3%A6%C5%A1%E2%80%9A%C3%A6%E2%80%94%C2%A0; phone_user_avatar=%2Fpublic%2Fstatic%2Fcommon%2Fimages%2Fcommon.jpg; PHPSESSID=e2dn0r8sv5r0t27opt5qnbc7r6; is_mobile=1; user_id=66; is_distribut=1; uname=ming',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.ming.cc/phone/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'www.ming.cc',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\phone\controller\Msgbox->getApplyNoRead[ E:\web\demo\im.blockhp.com\application\phone\controller\Msgbox.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.013965s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_group_apply` [ RunTime:0.015782s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_group_apply` WHERE  `to_id` = 66  AND `is_read` = 1 LIMIT 1 [ RunTime:0.000599s ]
+
+---------------------------------------------------------------
+[ 2019-04-18T22:49:23+08:00 ] 127.0.0.1 127.0.0.1 GET /phone/msgbox/getNoRead
+[ log ] www.ming.cc/phone/msgbox/getNoRead [运行时间：1.081341s][吞吐率：0.92req/s] [内存消耗：1,887.37kb] [文件加载：44]
+[ info ] [ LANG ] E:\web\demo\im.blockhp.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'phone',
+    1 => 'msgbox',
+    2 => 'getNoRead',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'phone_user_name=ming; phone_user_id=66; phone_user_sign=%C3%A6%C5%A1%E2%80%9A%C3%A6%E2%80%94%C2%A0; phone_user_avatar=%2Fpublic%2Fstatic%2Fcommon%2Fimages%2Fcommon.jpg; PHPSESSID=e2dn0r8sv5r0t27opt5qnbc7r6; is_mobile=1; user_id=66; is_distribut=1; uname=ming',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.ming.cc/phone/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'www.ming.cc',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\phone\controller\Msgbox->getNoRead[ E:\web\demo\im.blockhp.com\application\phone\controller\Msgbox.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.031275s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_message` [ RunTime:0.009405s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_message` WHERE  `uid` = 66  AND `read` = 1 LIMIT 1 [ RunTime:0.000492s ]
+
+---------------------------------------------------------------
+[ 2019-04-18T22:49:23+08:00 ] 127.0.0.1 127.0.0.1 GET /phone/msgbox/getApplyNoRead
+[ log ] www.ming.cc/phone/msgbox/getApplyNoRead [运行时间：1.093462s][吞吐率：0.91req/s] [内存消耗：1,888.45kb] [文件加载：44]
+[ info ] [ LANG ] E:\web\demo\im.blockhp.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'phone',
+    1 => 'msgbox',
+    2 => 'getApplyNoRead',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'phone_user_name=ming; phone_user_id=66; phone_user_sign=%C3%A6%C5%A1%E2%80%9A%C3%A6%E2%80%94%C2%A0; phone_user_avatar=%2Fpublic%2Fstatic%2Fcommon%2Fimages%2Fcommon.jpg; PHPSESSID=e2dn0r8sv5r0t27opt5qnbc7r6; is_mobile=1; user_id=66; is_distribut=1; uname=ming',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.ming.cc/phone/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'www.ming.cc',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\phone\controller\Msgbox->getApplyNoRead[ E:\web\demo\im.blockhp.com\application\phone\controller\Msgbox.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.032672s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_group_apply` [ RunTime:0.012862s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_group_apply` WHERE  `to_id` = 66  AND `is_read` = 1 LIMIT 1 [ RunTime:0.000729s ]
+
+---------------------------------------------------------------
+[ 2019-04-18T22:49:36+08:00 ] 127.0.0.1 127.0.0.1 GET /phone/msgbox/getMsg
+[ log ] www.ming.cc/phone/msgbox/getMsg [运行时间：1.078494s][吞吐率：0.93req/s] [内存消耗：1,890.95kb] [文件加载：44]
+[ info ] [ LANG ] E:\web\demo\im.blockhp.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'phone',
+    1 => 'msgbox',
+    2 => 'getMsg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'phone_user_name=ming; phone_user_id=66; phone_user_sign=%C3%A6%C5%A1%E2%80%9A%C3%A6%E2%80%94%C2%A0; phone_user_avatar=%2Fpublic%2Fstatic%2Fcommon%2Fimages%2Fcommon.jpg; PHPSESSID=e2dn0r8sv5r0t27opt5qnbc7r6; is_mobile=1; user_id=66; is_distribut=1; uname=ming',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.ming.cc/phone/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'www.ming.cc',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\phone\controller\Msgbox->getMsg[ E:\web\demo\im.blockhp.com\application\phone\controller\Msgbox.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.027263s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_message` [ RunTime:0.013391s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_message` WHERE  `uid` = 66 ORDER BY time desc LIMIT 20 [ RunTime:0.000719s ]
+
+---------------------------------------------------------------
+[ 2019-04-18T22:49:53+08:00 ] 127.0.0.1 127.0.0.1 GET /phone/msgbox/getNoRead
+[ log ] www.ming.cc/phone/msgbox/getNoRead [运行时间：1.056152s][吞吐率：0.95req/s] [内存消耗：1,887.37kb] [文件加载：44]
+[ info ] [ LANG ] E:\web\demo\im.blockhp.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'phone',
+    1 => 'msgbox',
+    2 => 'getNoRead',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'phone_user_name=ming; phone_user_id=66; phone_user_sign=%C3%A6%C5%A1%E2%80%9A%C3%A6%E2%80%94%C2%A0; phone_user_avatar=%2Fpublic%2Fstatic%2Fcommon%2Fimages%2Fcommon.jpg; PHPSESSID=e2dn0r8sv5r0t27opt5qnbc7r6; is_mobile=1; user_id=66; is_distribut=1; uname=ming',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.ming.cc/phone/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'www.ming.cc',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\phone\controller\Msgbox->getNoRead[ E:\web\demo\im.blockhp.com\application\phone\controller\Msgbox.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.011386s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_message` [ RunTime:0.010726s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_message` WHERE  `uid` = 66  AND `read` = 1 LIMIT 1 [ RunTime:0.000522s ]
+
+---------------------------------------------------------------
+[ 2019-04-18T22:49:53+08:00 ] 127.0.0.1 127.0.0.1 GET /phone/msgbox/getApplyNoRead
+[ log ] www.ming.cc/phone/msgbox/getApplyNoRead [运行时间：1.075643s][吞吐率：0.93req/s] [内存消耗：1,888.45kb] [文件加载：44]
+[ info ] [ LANG ] E:\web\demo\im.blockhp.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'phone',
+    1 => 'msgbox',
+    2 => 'getApplyNoRead',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'phone_user_name=ming; phone_user_id=66; phone_user_sign=%C3%A6%C5%A1%E2%80%9A%C3%A6%E2%80%94%C2%A0; phone_user_avatar=%2Fpublic%2Fstatic%2Fcommon%2Fimages%2Fcommon.jpg; PHPSESSID=e2dn0r8sv5r0t27opt5qnbc7r6; is_mobile=1; user_id=66; is_distribut=1; uname=ming',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.ming.cc/phone/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'www.ming.cc',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\phone\controller\Msgbox->getApplyNoRead[ E:\web\demo\im.blockhp.com\application\phone\controller\Msgbox.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.013717s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_group_apply` [ RunTime:0.021453s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_group_apply` WHERE  `to_id` = 66  AND `is_read` = 1 LIMIT 1 [ RunTime:0.000529s ]
+
+---------------------------------------------------------------
+[ 2019-04-18T22:50:23+08:00 ] 127.0.0.1 127.0.0.1 GET /phone/msgbox/getApplyNoRead
+[ log ] www.ming.cc/phone/msgbox/getApplyNoRead [运行时间：1.068555s][吞吐率：0.94req/s] [内存消耗：1,888.45kb] [文件加载：44]
+[ info ] [ LANG ] E:\web\demo\im.blockhp.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'phone',
+    1 => 'msgbox',
+    2 => 'getApplyNoRead',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'phone_user_name=ming; phone_user_id=66; phone_user_sign=%C3%A6%C5%A1%E2%80%9A%C3%A6%E2%80%94%C2%A0; phone_user_avatar=%2Fpublic%2Fstatic%2Fcommon%2Fimages%2Fcommon.jpg; PHPSESSID=e2dn0r8sv5r0t27opt5qnbc7r6; is_mobile=1; user_id=66; is_distribut=1; uname=ming',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.ming.cc/phone/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'www.ming.cc',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\phone\controller\Msgbox->getApplyNoRead[ E:\web\demo\im.blockhp.com\application\phone\controller\Msgbox.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.020373s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_group_apply` [ RunTime:0.015436s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_group_apply` WHERE  `to_id` = 66  AND `is_read` = 1 LIMIT 1 [ RunTime:0.000630s ]
+
+---------------------------------------------------------------
+[ 2019-04-18T22:50:23+08:00 ] 127.0.0.1 127.0.0.1 GET /phone/msgbox/getNoRead
+[ log ] www.ming.cc/phone/msgbox/getNoRead [运行时间：1.070152s][吞吐率：0.93req/s] [内存消耗：1,887.37kb] [文件加载：44]
+[ info ] [ LANG ] E:\web\demo\im.blockhp.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'phone',
+    1 => 'msgbox',
+    2 => 'getNoRead',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'phone_user_name=ming; phone_user_id=66; phone_user_sign=%C3%A6%C5%A1%E2%80%9A%C3%A6%E2%80%94%C2%A0; phone_user_avatar=%2Fpublic%2Fstatic%2Fcommon%2Fimages%2Fcommon.jpg; PHPSESSID=e2dn0r8sv5r0t27opt5qnbc7r6; is_mobile=1; user_id=66; is_distribut=1; uname=ming',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.ming.cc/phone/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'www.ming.cc',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\phone\controller\Msgbox->getNoRead[ E:\web\demo\im.blockhp.com\application\phone\controller\Msgbox.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.009169s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_message` [ RunTime:0.015336s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_message` WHERE  `uid` = 66  AND `read` = 1 LIMIT 1 [ RunTime:0.000406s ]
+
+---------------------------------------------------------------
+[ 2019-04-18T22:50:49+08:00 ] 127.0.0.1 127.0.0.1 GET /Phone/Wallet/index
+[ log ] www.ming.cc/Phone/Wallet/index [运行时间：6.272280s][吞吐率：0.16req/s] [内存消耗：2,202.39kb] [文件加载：50]
+[ info ] [ LANG ] E:\web\demo\im.blockhp.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Phone',
+    1 => 'Wallet',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'phone_user_name=ming; phone_user_id=66; phone_user_sign=%C3%A6%C5%A1%E2%80%9A%C3%A6%E2%80%94%C2%A0; phone_user_avatar=%2Fpublic%2Fstatic%2Fcommon%2Fimages%2Fcommon.jpg; PHPSESSID=e2dn0r8sv5r0t27opt5qnbc7r6; is_mobile=1; user_id=66; is_distribut=1; uname=ming',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.ming.cc/phone/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Mobile Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.ming.cc',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\phone\controller\Wallet->index[ E:\web\demo\im.blockhp.com\application\phone\controller\Wallet.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\web\demo\im.blockhp.com/application/phone\view\wallet\index.html [ array (
+  0 => 'action',
+  1 => 'socket_server',
+  2 => 'userInfo',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.015820s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_chatuser` [ RunTime:0.010024s ]
+[ sql ] [ SQL ] SELECT `eth_lst`,`bhp_lst`,`usdt_lst`,`eth_public_key`,`bhp_public_key`,`usdt_public_key` FROM `tp_chatuser` WHERE  `id` = 66 LIMIT 1 [ RunTime:0.000621s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.013775s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT `eth_public_key` FROM `tp_chatuser` WHERE  `id` = 66 LIMIT 1 [ RunTime:0.000480s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.004274s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT `bhp_public_key` FROM `tp_chatuser` WHERE  `id` = 66 LIMIT 1 [ RunTime:0.000463s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.014853s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT `usdt_public_key` FROM `tp_chatuser` WHERE  `id` = 66 LIMIT 1 [ RunTime:0.000469s ]
+[ error ] [8]未定义变量: sys[E:\web\demo\im.blockhp.com\runtime\temp\c8d65a793ccbb1f7be6edfcc872bb8a7.php:6]
+[ error ] [8]未定义变量: sys[E:\web\demo\im.blockhp.com\runtime\temp\c8d65a793ccbb1f7be6edfcc872bb8a7.php:7]
+[ error ] [8]未定义变量: sys[E:\web\demo\im.blockhp.com\runtime\temp\c8d65a793ccbb1f7be6edfcc872bb8a7.php:8]
+
+---------------------------------------------------------------
+[ 2019-04-18T22:50:50+08:00 ] 127.0.0.1 127.0.0.1 GET /public/static/mobile/js/web3.js.map
+[ log ] www.ming.cc/public/static/mobile/js/web3.js.map [运行时间：0.035735s][吞吐率：27.98req/s] [内存消耗：1,147.65kb] [文件加载：31]
+[ info ] [ LANG ] E:\web\demo\im.blockhp.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'static',
+    2 => 'mobile',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'phone_user_name=ming; phone_user_id=66; phone_user_sign=%C3%A6%C5%A1%E2%80%9A%C3%A6%E2%80%94%C2%A0; phone_user_avatar=%2Fpublic%2Fstatic%2Fcommon%2Fimages%2Fcommon.jpg; PHPSESSID=e2dn0r8sv5r0t27opt5qnbc7r6; is_mobile=1; user_id=66; is_distribut=1; uname=ming',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Mobile Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.ming.cc',
+)
+[ info ] [ PARAM ] array (
+  'js' => 'web3.js.map',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-04-18T22:51:00+08:00 ] 127.0.0.1 127.0.0.1 GET /phone/wallet/coinshow.html?coin=bhp
+[ log ] www.ming.cc/phone/wallet/coinshow.html?coin=bhp [运行时间：2.104354s][吞吐率：0.48req/s] [内存消耗：2,264.37kb] [文件加载：54]
+[ info ] [ LANG ] E:\web\demo\im.blockhp.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'phone',
+    1 => 'wallet',
+    2 => 'coinshow',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'phone_user_name=ming; phone_user_id=66; phone_user_sign=%C3%A6%C5%A1%E2%80%9A%C3%A6%E2%80%94%C2%A0; phone_user_avatar=%2Fpublic%2Fstatic%2Fcommon%2Fimages%2Fcommon.jpg; PHPSESSID=e2dn0r8sv5r0t27opt5qnbc7r6; is_mobile=1; user_id=66; is_distribut=1; uname=ming',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.ming.cc/Phone/Wallet/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Mobile Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.ming.cc',
+)
+[ info ] [ PARAM ] array (
+  'coin' => 'bhp',
+)
+[ info ] [ RUN ] app\phone\controller\Wallet->CoinShow[ E:\web\demo\im.blockhp.com\application\phone\controller\Wallet.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\web\demo\im.blockhp.com/application/phone\view\wallet\coinshow.html [ array (
+  0 => 'action',
+  1 => 'socket_server',
+  2 => 'coiName',
+  3 => 'coinAddress',
+  4 => 'list',
+  5 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.004158s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_chatuser` [ RunTime:0.011149s ]
+[ sql ] [ SQL ] SELECT `bhp_public_key` FROM `tp_chatuser` WHERE  `id` = 66 LIMIT 1 [ RunTime:0.000427s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.004726s ] mysql:dbname=ichat_pro;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_turn_out_log` [ RunTime:0.013007s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_turn_out_log` WHERE  `out_u_id` = 66  AND `coin_type` = 'bhp' LIMIT 1 [ RunTime:0.001071s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_turn_out_log` WHERE  `out_u_id` = 66  AND `coin_type` = 'bhp' ORDER BY create_time desc LIMIT 0,6 [ RunTime:0.000522s ]
+[ error ] [8]未定义变量: sys[E:\web\demo\im.blockhp.com\runtime\temp\68a8a4bfe352656b24e89f07f6aca3f5.php:6]
+[ error ] [8]未定义变量: sys[E:\web\demo\im.blockhp.com\runtime\temp\68a8a4bfe352656b24e89f07f6aca3f5.php:7]
+[ error ] [8]未定义变量: sys[E:\web\demo\im.blockhp.com\runtime\temp\68a8a4bfe352656b24e89f07f6aca3f5.php:8]
+
+---------------------------------------------------------------
+[ 2019-04-18T22:51:00+08:00 ] 127.0.0.1 127.0.0.1 GET /public/static/mobile/js/web3.js.map
+[ log ] www.ming.cc/public/static/mobile/js/web3.js.map [运行时间：0.036645s][吞吐率：27.29req/s] [内存消耗：1,147.65kb] [文件加载：31]
+[ info ] [ LANG ] E:\web\demo\im.blockhp.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'static',
+    2 => 'mobile',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'phone_user_name=ming; phone_user_id=66; phone_user_sign=%C3%A6%C5%A1%E2%80%9A%C3%A6%E2%80%94%C2%A0; phone_user_avatar=%2Fpublic%2Fstatic%2Fcommon%2Fimages%2Fcommon.jpg; PHPSESSID=e2dn0r8sv5r0t27opt5qnbc7r6; is_mobile=1; user_id=66; is_distribut=1; uname=ming',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Mobile Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.ming.cc',
+)
+[ info ] [ PARAM ] array (
+  'js' => 'web3.js.map',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-04-18T22:51:16+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php
+[ log ] www.ming.cc/admin.php [运行时间：0.034359s][吞吐率：29.10req/s] [内存消耗：1,147.42kb] [文件加载：31]
+[ info ] [ LANG ] E:\web\demo\im.blockhp.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin.php',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'phone_user_name=ming; phone_user_id=66; phone_user_sign=%C3%A6%C5%A1%E2%80%9A%C3%A6%E2%80%94%C2%A0; phone_user_avatar=%2Fpublic%2Fstatic%2Fcommon%2Fimages%2Fcommon.jpg; PHPSESSID=e2dn0r8sv5r0t27opt5qnbc7r6; is_mobile=1; user_id=66; is_distribut=1; uname=ming',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Mobile Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.ming.cc',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-04-18T22:51:22+08:00 ] 127.0.0.1 127.0.0.1 GET /public/static/mobile/js/web3.js.map
+[ log ] www.ming.cc/public/static/mobile/js/web3.js.map [运行时间：0.054650s][吞吐率：18.30req/s] [内存消耗：1,147.65kb] [文件加载：31]
+[ info ] [ LANG ] E:\web\demo\im.blockhp.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'static',
+    2 => 'mobile',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'phone_user_name=ming; phone_user_id=66; phone_user_sign=%C3%A6%C5%A1%E2%80%9A%C3%A6%E2%80%94%C2%A0; phone_user_avatar=%2Fpublic%2Fstatic%2Fcommon%2Fimages%2Fcommon.jpg; PHPSESSID=e2dn0r8sv5r0t27opt5qnbc7r6; is_mobile=1; user_id=66; is_distribut=1; uname=ming',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Mobile Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.ming.cc',
+)
+[ info ] [ PARAM ] array (
+  'js' => 'web3.js.map',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------

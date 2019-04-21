@@ -375,7 +375,7 @@ layui.use('mobile', function(){
                 selfSetting();
 
                 break;
-            // 个人设置
+            // 关于
             case 'about':
                 var _html = [
                     '<div id="about">',
@@ -424,7 +424,6 @@ layui.use('mobile', function(){
 
     //监听查看更多记录
     layim.on('chatlog', function(data, ul){
-        console.log(data);
         layim.panel({
             title: '与 '+ data.username +' 的聊天记录' //标题
             ,tpl: '<div style="padding: 10px;">这里是模版，{{d.data.test}}</div>' //模版
@@ -872,7 +871,7 @@ function showDetail(id) {
         ].join('');
 
         layim.panel({
-            title: '群成员' //标题
+            title: '群成员<a onclick="settingGroup('+ id + ')" style="float: right;"><i class="layui-icon iconfont icon-more"></i></a>' //标题
             ,tpl: _html
         });
 
@@ -891,10 +890,85 @@ function showDetail(id) {
                     _html += '</div>'
                     _html += '</li>';
                 });
-
                 $("#detail").html(_html);
             }
         });
+    });
+}
+
+//聊天设置
+function changeMode(id) {
+    layui.use(['mobile', 'jquery'], function() {
+        var mobile = layui.mobile,
+            layim = mobile.layim,
+            layer = mobile.layer,
+            $ = layui.jquery;
+
+        var settingId = localStorage.getItem(id);
+        if(settingId != null) //有缓存
+        {
+            if(settingId)
+            {
+                if(settingId == 0) //常规聊
+                {
+                    localStorage.setItem(id,1); //存入私聊
+                    $('#friend'+id).html('<i class="layui-icon iconfont icon-yinsi"></i>');
+                    layer.msg('私聊模式设置成功！');
+                }
+
+                if(settingId == 1) //私聊
+                {
+                    localStorage.setItem(id,0); //存入常规聊
+                    $('#friend'+id).html('<i class="layui-icon iconfont icon-kejian1"></i>');
+                    layer.msg('正常模式设置成功！');
+                }
+            } else {
+                localStorage.setItem(id,1); //存入默认第一次点击私聊
+                $('#friend'+id).html('<i class="layui-icon iconfont icon-yinsi"></i>');
+                layer.msg('私聊模式设置成功！');
+            }
+        } else {  //无缓存
+            localStorage.setItem(id,1); //存入默认第一次点击私聊
+            $('#friend'+id).html('<i class="layui-icon iconfont icon-yinsi"></i>');
+            layer.msg('私聊模式设置成功！');
+        }
+    });
+}
+
+//群设置
+function settingGroup(id) {
+
+    layui.use(['mobile', 'jquery'], function(){
+        var mobile = layui.mobile,
+            layim = mobile.layim,
+            layer = mobile.layer,
+            $ = layui.jquery;
+
+        var _html = [
+            '<div id="selfSetting">',
+            '</div>',
+        ].join('');
+
+
+        $.getJSON('/phone/index/groupSetting', {gid: id}, function(res){
+            var _html = '';
+            if(res) {
+                console.log(res);
+                _html += '<li style="background: white;margin-top: 5px;padding-bottom:40px;"><form id="jvForm" method="post" enctype="multipart/form-data">';
+                _html += '<div style="position: relative;"><input onclick="uploadingGroupImg()" type="file" name="image" id="file" class="inputfile" accept="image/*"><img class="person-img" style="width: 150px;height:150px;margin: 0 auto;padding-top: 10px;display: block;border-radius:50%" src="' + res.data.avatar + '"></div>';
+                _html += '<div style="width:calc(100% - 30px);margin: 20px auto 10px auto;" class="form-group"><input style="padding: 0 0 0 3px;text-indent: 10px;" name="group_name" class="form-control" value="' + res.data.group_name + '" /></div>';
+                _html += '<div class="create_qun" onclick="changeGroupInfo('+ id +')" style="width:calc(100% - 30px);">修改 </div>';
+                _html += '</form></li>';
+
+                $("#selfSetting").html(_html);
+            }
+        });
+
+        layim.panel({
+            title: '群设置' //标题
+            ,tpl: _html
+        });
+
     });
 }
 
@@ -930,7 +1004,56 @@ function kick(obj) {
 
 }
 
-//上传图片
+//上传群图片
+function uploadingGroupImg() {
+    layui.use(['mobile', 'jquery'], function(){
+        var mobile = layui.mobile,
+            layim = mobile.layim,
+            layer = mobile.layer,
+            $ = layui.jquery;
+
+        //ajax异步图片上传
+        $('#file').change(function(){
+            var file_obj = document.getElementById('file').files[0];
+            var fd = new FormData();//创建一个表单对象fd，ajax传值就传这个对象
+            fd.append('pic', file_obj);
+            // 上传设置
+            $.ajax({
+                // 规定把请求发送到那个URL
+                url: "/Phone/Index/uploadingGroupImg",
+                // 请求方式
+                type: "post",
+                dtaType: 'json',
+                data:new FormData($('#jvForm')[0]),//传值就传fd对象了
+                processData:false,  //告诉jQuery不要处理数据
+                contentType: false,  //告诉jQuery不要设置contentType
+                // 请求成功时执行的回调函数
+                success: function (data) {
+                    if(data.code == 200)
+                    {
+                        $('.person-img').attr('src',data.msg);
+                        layer.open({
+                            content: '头像设置成功！'
+                            ,skin: 'msg'
+                            ,time: 2 //2秒后自动关闭
+                        });
+                    }
+                    if(data.code == 100)
+                    {
+                        layer.open({
+                            content: data.msg
+                            ,skin: 'msg'
+                            ,time: 2 //2秒后自动关闭
+                        });
+                    }
+                }
+            });
+        });
+
+    });
+}
+
+//上传个人图片
 function uploadingImg() {
     layui.use(['mobile', 'jquery'], function(){
         var mobile = layui.mobile,
@@ -976,6 +1099,50 @@ function uploadingImg() {
             });
         });
 
+    });
+}
+
+//群信息修改
+function changeGroupInfo(id) {
+    layui.use(['mobile', 'jquery'], function(){
+        var mobile = layui.mobile,
+            layim = mobile.layim,
+            layer = mobile.layer,
+            $ = layui.jquery;
+
+        if($("input[name='group_name']").val() == '')
+        {
+            layer.open({
+                content: '请填写群用戶名！'
+                ,skin: 'msg'
+                ,time: 2 //2秒后自动关闭
+            });
+            return false;
+        }
+
+        $.ajax({
+            // 规定把请求发送到那个URL
+            url: "/phone/index/changeGroupInfo",
+            // 请求方式
+            type: "post",
+            dtaType: 'json',
+            data: {
+                'group_name': $("input[name='group_name']").val(),
+                'avatar': $(".person-img").attr('src'),
+                'id': id,
+            },
+            success: function (res) {
+                layer.open({
+                    content: res.msg
+                    ,skin: 'msg'
+                    ,time: 2 //2秒后自动关闭
+                });
+                if(res.code == 200)
+                {
+                    setTimeout(function(){ window.location.reload(); },1000);
+                }
+            }
+        });
     });
 }
 

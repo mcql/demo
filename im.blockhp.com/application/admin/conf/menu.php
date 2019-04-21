@@ -103,6 +103,7 @@ return	array(
 					array('name' => '商家转款列表', 'act'=>'store_remittance', 'op'=>'Finance'),
 					array('name' => '会员提现申请', 'act'=>'withdrawals', 'op'=>'Finance'),
 					array('name' => '会员转款列表', 'act'=>'remittance', 'op'=>'Finance'),
+                    array('name' => '会员充值列表', 'act'=>'userecharge', 'op'=>'Finance'),
 					array('name' => '商家结算记录', 'act'=>'order_statis', 'op'=>'Finance'),
 	       			array('name' => '平台支出记录', 'act'=>'expense_log', 'op'=>'Finance'),
 			)),

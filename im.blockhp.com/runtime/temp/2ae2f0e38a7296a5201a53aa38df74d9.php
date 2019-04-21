@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:6:{s:37:"./template/mobile/new/user/index.html";i:1554039008;s:40:"./template/mobile/new/public/header.html";i:1491382656;s:44:"./template/mobile/new/public/uer_topnav.html";i:1554040346;s:40:"./template/mobile/new/public/footer.html";i:1491382656;s:44:"./template/mobile/new/public/footer_nav.html";i:1491382656;s:42:"./template/mobile/new/public/wx_share.html";i:1491382656;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:6:{s:37:"./template/mobile/new/user/index.html";i:1555671705;s:40:"./template/mobile/new/public/header.html";i:1555520524;s:44:"./template/mobile/new/public/uer_topnav.html";i:1555520524;s:40:"./template/mobile/new/public/footer.html";i:1555520524;s:44:"./template/mobile/new/public/footer_nav.html";i:1555520524;s:42:"./template/mobile/new/public/wx_share.html";i:1555520524;}*/ ?>
 <!DOCTYPE html >
 <html>
 <head>
@@ -271,5 +271,10 @@ function follow_wx()
 <?php endif; ?>
 <!--微信关注提醒  end-->
 <!-- 微信浏览器 调用微信 分享js  end-->
+<style>
+.Wallet a dl dt{
+	font-size: 14px;
+}
+</style>
 </body>
 </html>

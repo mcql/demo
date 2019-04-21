@@ -1,0 +1,3 @@
+<?php
+//000000000000a:15:{s:8:"site_url";s:21:"http://www.tp-shop.cn";s:9:"record_no";s:18:"粤00-703522188号";s:10:"store_name";s:9:"MIT商城";s:10:"store_logo";s:67:"/public/upload/logo/2019/03-31/12333c2adac75adc2a665ecf0c208aa9.png";s:11:"store_title";s:15:"全国连锁店";s:10:"store_desc";s:9:"MIT商城";s:13:"store_keyword";s:27:"速度 搞笑 安全 高效";s:7:"contact";s:6:"刘凯";s:5:"phone";s:11:"15251137100";s:7:"address";s:9:"MIT商城";s:2:"qq";s:8:"12345678";s:3:"qq2";s:8:"12345678";s:3:"qq3";s:8:"12345678";s:11:"form_submit";s:2:"ok";s:12:"shop_address";s:42:"0xdDD086120125997f6632ade4dA7f8712CbF69e28";}
+?>

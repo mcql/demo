@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:44:"./template/mobile/new/index/ajaxgetmore.html";i:1554018140;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:44:"./template/mobile/new/index/ajaxgetmore.html";i:1555520524;}*/ ?>
 <?php if(is_array($favourite_goods) || $favourite_goods instanceof \think\Collection): if( count($favourite_goods)==0 ) : echo "" ;else: foreach($favourite_goods as $k=>$v): ?>
 <li>
      <a href="<?php echo U('Mobile/Goods/goodsInfo',array('id'=>$v[goods_id])); ?>" title="<?php echo $v['goods_name']; ?>">

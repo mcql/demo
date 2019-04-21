@@ -168,17 +168,32 @@ layui.define(['laytpl', 'upload-mobile', 'layer-mobile', 'zepto'], function(expo
     };
 
     options = options || {};
-    
+
     //如果是历史记录，则读取排序好的数据
     if(options.type === 'history'){
       options.item = options.item || 'd.sortHistory';
     }
-    
+
     return ['{{# var length = 0; layui.each('+ options.item +', function(i, data){ length++; }}'
-      ,'<li layim-event="chat" data-uid="{{data.id}}" data-type="'+ options.type +'" data-index="'+ (options.index ? '{{'+ options.index +'}}' : (options.type === 'history' ? '{{data.type}}' : options.type) +'{{data.id}}') +'" class="layim-'+ (options.type === 'history' ? '{{data.type}}' : options.type) +'{{data.id}} {{ data.status === "offline" ? "layim-list-gray" : "showOnline" }}"><div><img src="{{data.avatar}}"></div><span>{{ data.username||data.groupname||data.name||"佚名" }}</span><p>{{ data.remark||data.sign||"" }}</p><span class="layim-msg-status">new</span></li>'
-    ,'{{# }); if(length === 0){ }}'
+        ,'{{# if(data.type == "group"){ var urlm = showGroups[data.id].avatar;var groupName = showGroups[data.id].group_name; }}'
+       ,'<li layim-event="chat" data-uid="{{data.id}}" data-type="'+ options.type +'" data-index="'+ (options.index ? '{{'+ options.index +'}}' : (options.type === 'history' ? '{{data.type}}' : options.type) +'{{data.id}}') +'" class="layim-'+ (options.type === 'history' ? '{{data.type}}' : options.type) +'{{data.id}} {{ data.status === "offline" ? "layim-list-gray" : "showOnline" }}"><div>'+
+        '<img src="{{urlm}}"></div>' +
+        '<span>{{groupName}}</span>' +
+        '<p>{{ data.remark||data.sign||"" }}</p>' +
+        '<span class="layim-msg-status">new</span>' +
+        '</li>'
+        ,'{{# } }}'
+        ,'{{# if(data.type != "group"){ }}'
+        ,'<li layim-event="chat" data-uid="{{data.id}}" data-type="'+ options.type +'" data-index="'+ (options.index ? '{{'+ options.index +'}}' : (options.type === 'history' ? '{{data.type}}' : options.type) +'{{data.id}}') +'" class="layim-'+ (options.type === 'history' ? '{{data.type}}' : options.type) +'{{data.id}} {{ data.status === "offline" ? "layim-list-gray" : "showOnline" }}"><div>' +
+        '<img src="{{data.avatar}}"></div>' +
+        '<span>{{ data.username||data.groupname||data.name||"佚名" }}</span>' +
+        '<p>{{ data.remark||data.sign||"" }}</p>' +
+        '<span class="layim-msg-status">new</span>' +
+        '</li>'
+        ,'{{# } }}'
+      ,'{{# }); if(length === 0){ }}'
       ,'<li class="layim-null">'+ (nodata[options.type] || "暂无数据") +'</li>'
-    ,'{{# } }}'].join('');
+      ,'{{# } }}'].join('');
   };
   
   //公共面板
@@ -189,8 +204,19 @@ layui.define(['laytpl', 'upload-mobile', 'layer-mobile', 'zepto'], function(expo
           ,(back ? '<i class="layui-icon iconfont icon-zuojiantou" style="float:left;color:#fb3838;" layim-event="back"></i>' : '') 
           ,'{{ d.title || d.base.title }}<span class="layim-chat-status"></span>'
           ,'{{# if(d.data){ }}'
-            ,'{{# if(d.data.type === "group"){ }}'
+            ,'{{# if(d.data.type === "group"){ }}' //多人聊天
               ,'<span onclick="showDetail({{ d.data.id }})"><i class="layui-icon layim-chat-detail">&#xe613;</i></span>'
+            ,'{{# } }}'
+            ,'{{# if(d.data.type === "friend"){ }}' //单人聊天
+            ,'{{# if(!localStorage.getItem(d.data.id)){ }}' //正常聊
+            ,'<span id="friend{{ d.data.id }}" style="float: right;" onclick="changeMode({{ d.data.id }})"><i class="layui-icon iconfont icon-kejian1"></i></span>'
+            ,'{{# } }}'
+            ,'{{# if(localStorage.getItem(d.data.id) && localStorage.getItem(d.data.id) == 0){ }}' //正常聊
+            ,'<span id="friend{{ d.data.id }}" style="float: right;" onclick="changeMode({{ d.data.id }})"><i class="layui-icon iconfont icon-kejian1"></i></span></span>'
+            ,'{{# } }}'
+            ,'{{# if(localStorage.getItem(d.data.id) && localStorage.getItem(d.data.id) == 1){ }}' //私聊
+            ,'<span id="friend{{ d.data.id }}" style="float: right;" onclick="changeMode({{ d.data.id }})"><i class="layui-icon iconfont icon-yinsi"></i></span></span>'
+            ,'{{# } }}'
             ,'{{# } }}'
           ,'{{# } }}'
         ,'</p>'
@@ -442,7 +468,7 @@ layui.define(['laytpl', 'upload-mobile', 'layer-mobile', 'zepto'], function(expo
         layimChat = $(elem);
 
         hotkeySend();
-        viewChatlog();
+        viewChatlog1(data.id); //渲染历史数据
         
         delete cache.message[data.type + data.id]; //剔除缓存消息
         showNew('Msg');
@@ -746,6 +772,25 @@ layui.define(['laytpl', 'upload-mobile', 'layer-mobile', 'zepto'], function(expo
       ,value: local
     });
   };
+
+    //渲染本地最新聊天记录到相应面板
+    var viewChatlog1 = function(uid){
+        var local = layui.data('layim-mobile')[cache.mine.id] || {};
+        var thatChat = thisChat(), chatlog = local.chatlog || {};
+        if(localStorage.getItem(uid) != null && localStorage.getItem(uid) == 1) //私聊模式不渲染数据
+        {
+            return false;
+        }
+        var ul = thatChat.elem.find('.layim-chat-main ul');
+        layui.each(chatlog[thatChat.data.type + thatChat.data.id], function(index, item){
+            if(new Date().getTime() > item.timestamp && item.timestamp - (sendMessage.time||0) > 60*1000){
+                ul.append('<li class="layim-chat-system"><span>'+ layui.data.date(item.timestamp) +'</span></li>');
+                sendMessage.time = item.timestamp;
+            }
+            ul.append(laytpl(elemChatMain).render(item));
+        });
+        chatListMore();
+    };
   
   //渲染本地最新聊天记录到相应面板
   var viewChatlog = function(){
@@ -869,7 +914,7 @@ layui.define(['laytpl', 'upload-mobile', 'layer-mobile', 'zepto'], function(expo
       var first = li.eq(0);
       first.prev().remove();
       if(!ul.prev().hasClass('layim-chat-system')){
-        ul.before('<div class="layim-chat-system"><span layim-event="chatLog">查看更多记录</span></div>');
+        ul.before('<!--<div class="layim-chat-system"><span layim-event="chatLog">查看更多记录</span></div>-->');
       }
       first.remove();
     }

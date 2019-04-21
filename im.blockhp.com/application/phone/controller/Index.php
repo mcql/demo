@@ -118,6 +118,40 @@ class Index extends Base
         }
     }
 
+    //修改群信息
+    public function changeGroupInfo()
+    {
+        if(request()->isAjax()) {
+            $group_name = input('param.group_name');
+            $avatar = input('param.avatar');
+            $id = input('param.id');
+
+            if($group_name == '' || $avatar == '' || $id == '')
+            {
+                return json(['code' => 100, 'msg' => '请完善群资料完整！']);
+            }
+
+            $doWhere['id'] = array('neq',$id);
+            $doWhere['group_name'] = $group_name;
+            if(db('chatgroup')->where($doWhere)->find())
+            {
+                return json(['code' => 100, 'msg' => '该群名已存在，请重新输入！']);
+            }
+
+            $where['id'] = $id; //条件
+            $saveData['group_name'] = $group_name;
+            $saveData['avatar'] = $avatar;
+
+            if(db('chatgroup')->where($where)->update($saveData))
+            {
+                //更新当前群最新10聊天数据
+                /*db('chatlog')->where(['to_id'=>$id,'type'=>'group'])->limit(10)->order('timeline desc')->update(['']);*/
+                return json(['code' => 200, 'msg' => '群信息修改成功！']);
+            }
+            return json(['code' => 100, 'msg' => '群信息修改失败！']);
+        }
+    }
+
     public function index()
     {
 
@@ -204,9 +238,31 @@ class Index extends Base
 
         //echo json_encode($return);die;
 
+        //获取所有当前用户的群
+        $allGroupDetails = db('groupdetail')->where(['user_id'=>cookie('phone_user_id')])->field('group_id')->select();
+        $allGroup = array();
+        $allGroups = array();
+        if(count($allGroupDetails) > 0)
+        {
+            foreach ($allGroupDetails as $k => $v)
+            {
+                $oneGroup = db('chatgroup')->where(['id'=>$v['group_id']])->field('id,group_name,avatar')->find();
+                if($oneGroup)
+                {
+                    $allGroup[] = $oneGroup;
+                }
+            }
+            for($a=0;$a<count($allGroup);$a++)
+            {
+                $allGroups[$allGroup[$a]['id']]['group_name'] = $allGroup[$a]['group_name'];
+                $allGroups[$allGroup[$a]['id']]['avatar'] = $allGroup[$a]['avatar'];
+            }
+        }
+
         $this->assign([
             'userlist' => json_encode($return),
-            'uinfo' => $userInfo
+            'uinfo' => $userInfo,
+            'allGroups' => json_encode($allGroups),
         ]);
 
         return $this->fetch();
@@ -233,6 +289,18 @@ class Index extends Base
         $info = db('groupdetail')->where('group_id', $gid)->select();
 
         return json(['code' => 1, 'data' => $info, 'msg' => cookie('phone_user_id')]);
+    }
+
+    //获取群信息
+    public function groupSetting()
+    {
+        $gid = input('param.gid');
+        $groups = db('chatgroup')->where('id', $gid)->where('owner_id', cookie('phone_user_id'))->find();
+        if(empty($groups)) {
+            return json(['code' => -2, 'data' => '', 'msg' => '无权操作']);
+        }
+
+        return json(['code' => 1, 'data' => $groups, 'msg' => cookie('phone_user_id')]);
     }
 
     // 移出成员出组
@@ -267,7 +335,28 @@ class Index extends Base
     }
 
 
-    //图片上传
+    //群图片上传
+    public function uploadingGroupImg()
+    {
+        $file = request()->file('image');
+        // 移动到框架应用根目录/public/uploads/ 目录下
+        if($file){
+            $info = $file->move(ROOT_PATH . 'public/uploads');
+            if($info){
+                // 成功上传后 获取上传信息
+                $route = $info->getSaveName();
+                //获取路径
+                $route = '/public/uploads/' . $route;
+                //修改群头像
+                return json(['code' => 200, 'msg' => $route]);
+            }else{
+                // 上传失败获取错误信息
+                return json(['code' => 100, 'msg' => '群头像修改失败']);
+            }
+        }
+    }
+
+    //个人图片上传
     public function uploadingImg()
     {
         $file = request()->file('image');

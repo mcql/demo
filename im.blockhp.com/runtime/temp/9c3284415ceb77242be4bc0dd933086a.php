@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:67:"/www/wwwroot/im.blockhp.com/application/phone/view/login/index.html";i:1554629468;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:67:"/www/wwwroot/im.blockhp.com/application/phone/view/login/index.html";i:1555658311;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -30,6 +30,10 @@
         .titleH {
             margin-bottom: 20px;
         }
+        .gray-bg{
+            background: url(/public/static/phone/images/login_bg.jpg) no-repeat center center;
+            background-size: cover;
+        }
     </style>
 </head>
 
@@ -50,10 +54,25 @@
             </div>
             <button type="submit" class="btn btn-primary block full-width m-b">登 录</button>
             <a href="<?php echo url('register'); ?>" class="btn btn-primary block full-width m-b">注 册</a>
-            <a href="<?php echo url('forgetPwd'); ?>" class="forgetPwd">忘记密码？</a>
+            <a href="<?php echo url('forgetPwd'); ?>" style="margin-top:20px;display:block;" class="forgetPwd">忘记密码？</a>
         </form>
     </div>
 </div>
+<style>
+    .loginscreen.middle-box{
+        width:calc(100% - 30px);
+    }
+    .m-b{
+        width:100%;
+        line-height: 32px;
+        padding:0;
+        background-color: #fb3838b0;
+        color: #fff;
+        border-radius: 8rem;
+        text-align: center;
+        margin: 20px auto 0;
+    }
+</style>
 <script src="__COMMON__/jquery.min.js"></script>
 <script src="__COMMON__/bootstrap.min.js?v=3.3.6"></script>
 <script src="__COMMON__/layui/layui.js"></script>

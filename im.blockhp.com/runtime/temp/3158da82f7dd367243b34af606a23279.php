@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:44:"./template/mobile/new/goods/ajaxcomment.html";i:1491382656;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:44:"./template/mobile/new/goods/ajaxcomment.html";i:1555520524;}*/ ?>
 
  <!---晒单end-->
  <script>
